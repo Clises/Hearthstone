@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#box1 {
+				width: 1024px;
+				height: 3130px;
+				position: absolute;
+				top: 52px;
+				margin: 0 auto;
+				/*border-top: 1px burlywood solid;*/
+				background-image: url(img/bgcenter.png);
+				background-size: 100%;
+				background-repeat: repeat-y;
+			}
+			
+			#boxnew {
+				width: 1024px;
+				/*实际宽度为1002,因为加上边框,高度同理*/
+				height: 3130px;
+				/*border: 1px black solid;*/
+				border-radius: 8px;
+				margin: 0 auto;
+				position: relative;
+				top: 45px;
+			}
+		</style>
+		<script src='js/jquery-1.8.3.min.js'>
+		</script>
+		<script src="js/jquery.luara.0.0.1.min.js"></script>
+		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+		<!--导航栏滚动js	-->
+		<script src="js/card.js" type="text/javascript" charset="utf-8"></script>
+		<!--背景卡片浮动js-->
+		<script src="js/daohang.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/farms.js" charset="utf-8"></script>
+		<script src="js/放大图.js" type="text/javascript">
+		</script>
+		<script src="js/hero-icon.js" type="text/javascript">
+		</script>
+		<script type="text/javascript">
+			window.onload = function() {
+				fudong();
+				daohang1();
+				hero();
+				yincang();
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/css1.css" />
+		<link rel="stylesheet" href="css/luara.left.css" />
+
+		<link rel="stylesheet" type="text/css" href="css/css1.css" />
+		<link rel="stylesheet" type="text/css" href="css/daohang.css" />
+		<link rel="stylesheet" type="text/css" href="css/farm.css" />
+	</head>
+
+	<body>
+		<div id="ice">
+			<!--首页最上边俩边的冰块背景图-->
+
+		</div>
+		<div id="logo_box">
+			<!--放置炉石图标的容器-->
+			<div id="logo">
+				<h1><img src="img/logo.png"/></h1>
+			</div>
+			<div id="card">
+				<!--背景图需要跟随鼠标动的卡牌-->
+				<img src="img/card1.png" />
+				<img src="img/card2.png" />
+				<img src="img/card3.png" />
+				<img src="img/card4.png" />
+				<img src="img/card5.png" />
+			</div>
+		</div>
+
+		<div id="boxnew">
+			<div id="bar">
+				<!--//首页导航栏 (宽1000px)-->
+				<div class="lbar"><img src="img/barleft.png" /></div>
+
+				<!--导航栏效果-->
+				<div class="daohang">
+					<!--导航栏成块级元素之后显示的效果-->
+					<ul class="li1">
+						<li class="c1" id="oc1">
+							<a href="../炉石首页.html"></a>
+							<!--首页-->
+						</li>
+						<li class="c2">
+							<div id="onews">
+								<a href="../新闻/新闻页.html"></a>
+								<!--新闻-->
+								<ul id="news">
+									<li class="lili">
+										<a href="../新闻/新闻页.html#zuixin">最新</a>
+									</li>
+									<li class="lili">
+										<a href="../新闻/新闻页.html#bowe">博文</a>
+									</li>
+									<li class="lili">
+										<a href="../新闻/新闻页.html#bisai">赛事</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="c3">
+							<div id="onews1">
+								<a href="#"></a>
+								<!--游戏指南-->
+								<ul id="news1">
+									<li class="lili">
+										<a href="#banben">版本</a>
+									</li>
+									<li class="lili">
+										<a href="#jichu">基础知识</a>
+									</li>
+
+								</ul>
+							</div>
+
+						</li>
+						<li class="c4">
+
+							<div id="onews2">
+								<a href="../视频图片.html"></a>
+								<!--视频图片-->
+								<ul id="news2">
+									<li class="lili">
+										<a href="../视频图片.html#shipin">视频</a>
+									</li>
+									<li class="lili">
+										<a href="../视频图片.html#tupian">截图</a>
+									</li>
+									<li class="lili">
+										<a href="../视频图片.html#tupian1">壁纸</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+						<li class="c5">
+							<!--卡牌工具-->
+							<a href="../卡牌工具1.html"></a>
+						</li>
+						<li class="c6">
+							<!--游戏下载-->
+							<a href="../游戏下载.html"></a>
+						</li>
+						<li class="c7">
+							<div id="onews3">
+								<a href="../电子竞技.html"></a>
+								<!--电子竞技-->
+								<ul id="news3">
+									<li class="lili">
+										<a href="../电子竞技.html#jifen">积分排名</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="c8">
+							<!--论坛-->
+							<a href="../论坛.html"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="rbar"><img src="img/barright.png" /></div>
+			</div>
+
+			<div id="box1">
+				<!--在box1里写内容-->
+				<div class="V1" align="center">
+					<div id='div1'>
+						<div id="div2">
+							<h2>游戏指南</h2>
+							<p style="text-align: left;width: 497px;margin-left:-400px;margin-top: 10px;">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;想要自己组建一副套牌，然后用它来和其他玩家对战？ 现在马上就
+								<a href="http://hs.blizzard.cn/download/" target="_blank">下载《炉石传说》</a>并投入游戏吧， 没有什么比参与实战更能让你学到东西的了！ 而如果你在完成教学关卡之后仍有一些疑惑，这 个页面的内容将帮助你补充所有遗漏的游戏知识。
+							</p>
+
+						</div>
+						<ul id="box3" style="list-style: none;">
+							<li style="background-image: url(img/icon.png); background-position:-25px -320px;" onmouseover="style.backgroundPositionY='-485px';style.height='170px'" onmouseleave="style.backgroundPositionY='-320px';style.height='120px'"></li>
+							<li style="background-image: url(img/icon.png); background-position:-393px -320px;" onmouseover="style.backgroundPositionY='-485px';style.height='170px'" onmouseleave="style.backgroundPositionY='-320px';style.height='120px'"></li>
+							<li style="background-image: url(img/icon.png); background-position:-578px -320px;" onmouseover="style.backgroundPositionY='-485px';style.height='170px'" onmouseleave="style.backgroundPositionY='-320px';style.height='120px'"></li>
+						</ul>
+					</div>
+					<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;版本</h3><a name="banben"></a>
+					<div id='t1'>
+						<ul id="t1_ul">
+							<a href="../冰封王座/冰封王座.html" target="_blank"><li id="t1_li1" style="background-image:url(img/li1_1.jpg);background-size:cover ;"><img src="img/li1_2.png" width="260px" height="230px">
+								<div></div>
+							</li></a>
+							<a href="../安戈洛/安戈洛.html" target="_blank"><li id="t1_li2" style="background-image:url(img/li2_1.jpg);background-size:cover ;"><img src="img/li2_2.png" width="260px" height="230px">
+								<div></div>
+							</li></a>
+							<a href="../加基森/龙争虎斗.html" target="_blank"><li id="t1_li3" style="background-image:url(img/li3_1.png);background-size:cover ;"><img src="img/li3_2.png" width="260px" height="230px">
+								<div></div>
+							</li></a>
+							<a href="../卡拉赞/卡拉赞.html" target="_blank"><li id="t1_li4" style="background-image:url(img/li4_1.jpg);background-size:cover ;"><img src="img/li4_2.png" width="260px" height="230px">
+								<div></div>
+							</li></a>
+							<a href="../上古之神/上古之神.html" target="_blank"><li id="t1_li5" style="background-image:url(img/li5_1.jpg);background-size:cover ;"><img src="img/li5_2.png" width="260px" height="230px">
+								<div></div>
+							</li></a>
+							
+							<a href="../冠军的试炼/冠军的试炼.html" target="_blank"><li id="t1_li7" style="background-image:url(img/li7_1.jpg);background-size:cover ;"><img src="img/li7_2.png" width="260px" height="230px">
+								<div></div>
+							</li></a>
+						</ul>
+					</div>
+					<h3 id="h3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基础知识</h3><a name="jichu"></a>
+					<div id="t2">
+						<ul id="t2_ul">
+							<li>
+								<div style="background-image: url(img/icon.png);background-position:-22px -10px;" onmouseover="style.backgroundPositionY='-88px';" onmouseleave="style.backgroundPositionY='-10px';"></div><span onmouseover="style.backgroundColor='#CE9F56'" onmouseleave="style.backgroundColor='#D8BC91';">界面预览</span></li>
+							<li>
+								<div style="background-image: url(img/icon.png);background-position:-122px -10px;" onmouseover="style.backgroundPositionY='-88px';" onmouseleave="style.backgroundPositionY='-10px';"></div><span onmouseover="style.backgroundColor='#CE9F56'" onmouseleave="style.backgroundColor='#D8BC91';">回合步骤</span></li>
+							<li>
+								<div style="background-image: url(img/icon.png);background-position:-222px -10px;" onmouseover="style.backgroundPositionY='-88px';" onmouseleave="style.backgroundPositionY='-10px';"></div><span onmouseover="style.backgroundColor='#CE9F56'" onmouseleave="style.backgroundColor='#D8BC91';">卡牌和套牌</span></li>
+							<li>
+								<div style="background-image: url(img/icon.png);background-position:-322px -10px;" onmouseover="style.backgroundPositionY='-88px';" onmouseleave="style.backgroundPositionY='-10px';"></div><span onmouseover="style.backgroundColor='#CE9F56'" onmouseleave="style.backgroundColor='#D8BC91';">技能和特效</span></li>
+							<li>
+								<div style="background-image: url(img/icon.png);background-position:-422px -10px;" onmouseover="style.backgroundPositionY='-88px';" onmouseleave="style.backgroundPositionY='-10px';"></div><span onmouseover="style.backgroundColor='#CE9F56'" onmouseleave="style.backgroundColor='#D8BC91';">游戏模式</span></li>
+							<li>
+								<div style="background-image: url(img/icon.png);background-position:-522px -10px;" onmouseover="style.backgroundPositionY='-88px';" onmouseleave="style.backgroundPositionY='-10px';"></div><span onmouseover="style.backgroundColor='#CE9F56'" onmouseleave="style.backgroundColor='#D8BC91';">任务成就</span></li>
+							<li>
+								<div style="background-image: url(img/icon.png);background-position:-622px -10px;" onmouseover="style.backgroundPositionY='-88px';" onmouseleave="style.backgroundPositionY='-10px';"></div><span onmouseover="style.backgroundColor='#CE9F56'" onmouseleave="style.backgroundColor='#D8BC91';">社交互动</span></li>
+							<li>
+								<div style="background-image: url(img/icon.png);background-position:-722px -10px;" onmouseover="style.backgroundPositionY='-88px';" onmouseleave="style.backgroundPositionY='-10px';"></div><span onmouseover="style.backgroundColor='#CE9F56'" onmouseleave="style.backgroundColor='#D8BC91';">打造分解</span></li>
+						</ul>
+					</div>
+					<h3 id="h3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;九大职业&nbsp;&nbsp;为你而战</h3>
+					<p align="center" id='p1'>在《炉石传说》中，你扮演的是游戏中九个职业。每个职业都具有独特的英雄技能以及专属的职业卡牌。你可以在这个章节中了解这些职业独到的玩法。 你可以在练习模式中可以逐一解锁他们。尝试着了解各个职业的特色，作出选择，然后开始你的《炉石传说》之旅吧！
+					</p>
+					<div id='t3'>
+						<ul id='t3_ul'>
+							<h4 id='h4'> <span>法师</br></span>吉安娜·普罗德摩尔</h4>
+							<p id="hero-intro">
+								若要说谁最擅长把法力转化成燃烧的烈焰，恐怕没有人能和吉安娜相比。 她会把套牌中大量的直接伤害法术肆无忌惮地砸在对手身上，包括许多强大的清场法术。 再加上她那能够有效地对付小型随从的英雄技能， 以及各种奥秘，吉安娜可算得上是一个全面而致命的对手。
+							</p>
+							<span id='hero-skill'><div id='skill-img' ></div>
+						<strong id='skill-intro'>火焰冲击：</strong>
+						<span id='hero-skillchild'>造成1点伤害</span>
+							</span>
+							<div id='texing'>
+								<h5>特性简介</h5> 法师是掌控魔法的智者。吉安娜•普罗德摩尔在魔兽系列中，已是一名历经数战的著名大法师。 她能熟练地掌控奥术、冰霜和火焰魔法，拥有丰富的法术和强大的火力输出。 火焰冲击能无视嘲讽对任意目标造成伤害。作为拥有秘能卡的英雄之一，吉安娜能通过寒冰护体来保护自己， 也能使用镜像实体来复制对手的随从。她拥有强大的AOE能力，同时，她的火球术和炎爆术，更是极为强大的火力输出。 而法师的招牌技能——变形术，也为吉安娜提供了控制对手的手段，往往能为战局带来更多变化和惊喜
+							</div>
+							<li id="oli1" style="background-image: url(img/hreo-icon.png);background-position:-27px -15px ;"></li>
+							<li id="oli2" style="background-image: url(img/hreo-icon.png);background-position:-99px -15px ;"></li>
+							<li id="oli3" style="background-image: url(img/hreo-icon.png);background-position:-173px -15px ;"></li>
+							<li id="oli4" style="background-image: url(img/hreo-icon.png);background-position:-248px -15px ;"></li>
+							<li id="oli5" style="background-image: url(img/hreo-icon.png);background-position:-322px -15px ;"></li>
+							<li id="oli6" style="background-image: url(img/hreo-icon.png);background-position:-399px -15px ;"></li>
+							<li id="oli7" style="background-image: url(img/hreo-icon.png);background-position:-474px -15px ;"></li>
+							<li id="oli8" style="background-image: url(img/hreo-icon.png);background-position:-555px -15px ;"></li>
+							<li id="oli9" style="background-image: url(img/hreo-icon.png);background-position:-634px -15px ;"></li>
+						</ul>
+					</div>
+					<h3 id="h3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;炉石大事件</h3>
+					<div class="demo">
+						<a class="control prev"></a>
+						<a class="control next abs"></a>
+						<!--自定义按钮，移动端可不写-->
+						<div class="slider">
+							<!--主体结构，请用此类名调用插件，此类名可自定义-->
+							<ul>
+								<li>
+									<a href=""><img src="img/1.jpg" alt="国服内测开始" /></a>
+								</li>
+								<li>
+									<a href=""><img src="img/2.jpg" alt="玩炉石送魔兽天马" /></a>
+								</li>
+								<li>
+									<a href=""><img src="img/3.jpg" alt="移动端正式上线" /></a>
+								</li>
+								<li>
+									<a href=""><img src="img/4.jpg" alt="冒险模式-探险者协会" /></a>
+								</li>
+								<li>
+									<a href=""><img src="img/5.jpg" alt="全新英雄，全新篇章" /></a>
+								</li>
+								<li>
+									<a href=""><img src="img/6.jpg" alt="拓展卡包-冠军的试炼" /></a>
+								</li>
+								<li>
+									<a href=""><img src="img/7.jpg" alt="拓展卡包-上古之神的轻语" /></a>
+								</li>
+								<li>
+									<a href=""><img src="img/8.jpg" alt="拓展卡包-龙争虎斗加基森" /></a>
+								</li>
+								<li>
+									<a href=""><img src="img/9.jpg" alt="拓展卡包-勇闯安戈洛" /></a>
+								</li>
+								<li>
+									<a href=""><img src="img/10.jpg" alt="拓展卡包-冰封王座的骑士" /></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<script src="js/jquery.min.js"></script>
+					<script src="js/YuxiSlider.jQuery.min.js"></script>
+					<script>
+						$(".slider").YuxiSlider({
+							width: 850, //容器宽度
+							height: 330, //容器高度
+							control: $('.control'), //绑定控制按钮
+							during: 4000, //间隔4秒自动滑动
+							speed: 800, //移动速度0.8秒
+							mousewheel: false, //是否开启鼠标滚轮控制
+							direkey: true //是否开启左右箭头方向控制
+						});
+					</script>
+					</center>
+
+					<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+
+					</div>
+
+					<div id="btobg">
+						<!--页面底部补齐背景的图片-->
+					</div>
+				</div>
+
+			</div>
+			
+
+		</div>
+		<div id="farm">
+				<!--首页底部的内容-->
+
+				<!--<div class="farm1">
+				<a href="#"><div class="farm2"></div></a>
+			</div>-->
+				<div class="farm3">
+					<ul class="mul">
+						<li class="far1">
+							<a href="#">
+								<div class="da1"></div> 在线客服</a>
+						</li>
+						<li class="far2">
+							<a href="#">
+								<div class="da2"></div> 反馈</a>
+						</li>
+						<li class="far3">
+							<a href="#">
+								<div class="da3"></div>加入我们</a>
+						</li>
+					</ul>
+					<div class="mu2">
+						<span>合作品牌：</span>
+						<a href="#">
+							<div class="mu2t"></div>
+						</a>
+						<a href="#"><span>+</span>&nbsp;&nbsp;<span>|</span>&nbsp;<span>合作媒体</span></a>
+						<a href="javascript:;">
+							<div class="farmoo"></div>
+						</a>
+					</div>
+					<div class="farm3_1">
+						<table width="778" height="85">
+							<tr>
+								<td>
+									<a href="#" class="aooo2">网易游戏</a>
+								</td>
+								<td>
+									<a href="#" class="aooo2">网易看游戏</a>
+								</td>
+								<td>
+									<a href="#" class="aooo2">电玩巴士</a>
+								</td>
+								<td>
+									<a href="#" class="aooo2">17173</a>
+								</td>
+								<td>
+									<a href="#" class="aooo2">178</a>
+								</td>
+								<td>
+									<a href="#" class="aooo2">不凡游戏</a>
+								</td>
+								<td>
+									<a href="#" class="aooo2">UUU9</a>&nbsp;&nbsp;&nbsp;<span class="farnspan">收起</span></td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="aooo2">腾讯游戏频道</a>
+								</td>
+								<td>
+									<a href="#" class="aooo2">口袋巴士</a>
+								</td>
+								<td>
+									<a href="#" class="aooo2">叶子猪</a>
+								</td>
+								<td>
+									<a href="#" class="aooo2">太平洋游戏</a>
+								</td>
+								<td>
+									<a href="#" class="aooo2">52PK</a>
+								</td>
+								<td>
+									<a href="#" class="aooo2">锐派</a>
+								</td>
+								<td>
+									<a href="#" class="aooo2">新浪游戏</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="aooo2">天极网</a>
+								</td>
+								<td>
+									<a href="#" class="aooo2">要我玩</a>
+								</td>
+								<td>
+									<a href="#" class="aooo2">炉石咖啡厅</a>
+								</td>
+								<td>
+									<a href="#" class="aooo2">兔玩网</a>
+								</td>
+								<td>
+									<a href="#" class="aooo2">全球电竞网</a>
+								</td>
+								<td>
+									<a href="#" class="aooo2">掌游宝</a>
+								</td>
+								<td>
+									<a href="#" class="aooo2">多玩网</a>
+								</td>
+							</tr>
+						</table>
+						<a href="#" class="oaaa1">申请合作</a>
+					</div>
+					<div class="farm4">
+						<a href="#"><img src="img/tuFlogo_blizzard.png" class="farmimg1"></a>
+						<a href="#"><img src="img/wangyifarm.png" class="farmimg2"></a>
+					</div>
+					<div class="farm5">
+						<a href="#">隐私&nbsp;&nbsp;|&nbsp;&nbsp;法律条款&nbsp;&nbsp;|&nbsp;&nbsp;API</a>
+						<p>©2017 暴雪娱乐有限公司版权所有 由上海网之易网络科技发展有限公司运营 著作权侵权 新出审字[2013]1510号<br /> 文网进字[2013]029号 沪网文[2014]0731-161号 增值电信业务经营许可证编号：沪B2－20080012<br /> 互联网违法和不良信息举报电话：0571-28090163 沪公网安备 31011502022167号</p><br />
+						<div class="farm6">
+							<a href="#"><img src="img/farm002.png" class="farmimg3"></a>
+							<a href="#"><img src="img/farm004.png" class="farmimg4"></a>
+							<a href="#"><img src="img/farm003.png" class="farmimg5"></a>
+							<a href="#"><img src="img/farm001.png" class="farmimg6"></a>
+						</div>
+						<div class="farm7">| 适龄提示：适合13岁及以上使用 家长监护工程</div>
+					</div>
+				</div>
+
+	</body>
+
+</html>

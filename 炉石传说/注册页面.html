@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>炉石传说</title>
+		<link rel="stylesheet" type="text/css" href="css/farm.css" />
+		<link rel="stylesheet" type="text/css" href="css/download.css" />
+		<link rel="stylesheet" type="text/css" href="css/css1.css" />
+		<link rel="stylesheet" type="text/css" href="css/daohang.css" />
+		<style type="text/css">
+			#zc{
+					width: 1024px;
+					height: 600px;
+					background-image:url(img/Fcon-bg.png);
+					background-size: 100%;
+					background-repeat:repeat-y;
+					position: relative;
+					
+				}
+				#boxzc{
+					width:1024px ;/*实际宽度为1002,因为加上边框,高度同理*/
+					height: 800px;
+					/*border: 1px black solid;*/
+					border-radius:8px ;
+					margin: 0 auto;
+					position: relative;
+					top: 45px;
+				}
+				.zc1{
+					position: absolute;
+					top: 20px;
+					left: 40px;
+					width: 930px;
+					height: 40px;
+					background-color: #E2C79C;
+					text-align: center;
+					line-height: 40px;
+					font-weight: 600;
+					font-size: 25px;
+				}
+				.zcneirong{
+					position: absolute;
+					top: 80px;
+					left: 20px;
+					width: 970px;
+					height: 500px;
+					background-image: url(img/zcbg2.jpg);
+					background-size: 100% 100%;
+					/*border: 1px solid red;*/
+				}
+				#zcnr1{
+					width: 500px;
+					height: 400px;
+					margin: 0 auto;
+					background-image: url(img/zcbg.png);
+					background-size: 100% 100%;
+					/*border: 1px solid red;*/
+				}
+				#zcbtn{
+					width: 50px;
+					height: 20px;
+					position: relative;
+					left: 140px;
+				}
+				#zcbtn1{
+					width: 100px;
+					height: 20px;
+					position: relative;
+					left: 170px;
+				}
+		</style>
+		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+		<!--导航栏滚动js	-->
+		<script src="js/card.js" type="text/javascript" charset="utf-8"></script>
+		<!--背景卡片浮动js-->
+		<script src="js/daohang.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/farms.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload = function() {
+				fudong();
+				daohang1();
+				yincang();
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<div id="ice">
+			<!--首页最上边俩边的冰块背景图-->
+		</div>
+		<div id="logo_box">
+			<!--放置炉石图标的容器-->
+			<div id="logo">
+				<h1><img src="img/logo.png"/></h1>
+			</div>
+			<div id="card">
+				<!--背景图需要跟随鼠标动的卡牌-->
+				<img src="img/card1.png" />
+				<img src="img/card2.png" />
+				<img src="img/card3.png" />
+				<img src="img/card4.png" />
+				<img src="img/card5.png" />
+			</div>
+		</div>
+
+		<div id="boxzc">
+			<!--//首页的整体大框-->
+			<div id="bar">
+				
+				<div class="lbar"><img src="img/barleft.png" /></div>
+
+				<!--导航栏效果-->
+				<div class="daohang">
+					<!--导航栏成块级元素之后显示的效果-->
+					<ul class="li1">
+						<li class="c1" id="oc1">
+							<a href="炉石首页.html"></a>
+							<!--首页-->
+						</li>
+						<li class="c2">
+							<div id="onews">
+								<a href="新闻/新闻页.html"></a>
+								<!--新闻-->
+								<ul id="news">
+									<li class="lili">
+										<a href="新闻/新闻页.html#zuixin">最新</a>
+									</li>
+									<li class="lili">
+										<a href="新闻/新闻页.html#bowe">博文</a>
+									</li>
+									<li class="lili">
+										<a href="新闻/新闻页.html#bisai">赛事</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="c3">
+							<div id="onews1">
+								<a href="游戏指南/index.html"></a>
+								<!--游戏指南-->
+								<ul id="news1">
+									<li class="lili">
+										<a href="游戏指南/index.html#banben">版本</a>
+									</li>
+									<li class="lili">
+										<a href="游戏指南/index.html#jichu">基础知识</a>
+									</li>
+
+								</ul>
+							</div>
+
+						</li>
+						<li class="c4">
+
+							<div id="onews2">
+								<a href="视频图片.html"></a>
+								<!--视频图片-->
+								<ul id="news2">
+									<li class="lili">
+										<a href="视频图片.html#shipin">视频</a>
+									</li>
+									<li class="lili">
+										<a href="视频图片.html#tupian">截图</a>
+									</li>
+									<li class="lili">
+										<a href="视频图片.html#tupian1">壁纸</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+						<li class="c5">
+							<!--卡牌工具-->
+							<a href="卡牌工具1.html"></a>
+						</li>
+						<li class="c6">
+							<!--游戏下载-->
+							<a href="游戏下载.html"></a>
+						</li>
+						<li class="c7">
+							<div id="onews3">
+								<a href="电子竞技.html"></a>
+								<!--电子竞技-->
+								<ul id="news3">
+									<li class="lili">
+										<a href="电子竞技.html#jifen">积分排名</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="c8">
+							<!--论坛-->
+							<a href="论坛.html"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="rbar"><img src="img/barright.png" /></div>
+			</div>
+
+			<div id="boxxz">
+				<!--整体大框-->
+				<div id="zc">
+						<div class="zc1">注册用户</div>
+						<div class="zcneirong">
+							<div id="zcnr1">
+								
+							<br /><br />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真实姓名：<input type="text" id="" value="" style="border-radius:4px;width: 200px;height: 20px;"/><br /><br />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户性别：<input type="text" id="" value="" style="border-radius:4px;width: 200px;height: 20px;"/><br /><br />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;游戏账号：<input type="text" id="" value="" style="border-radius:4px;width: 200px;height: 20px;"/><br /><br />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;游戏密码：<input type="text" id="" value="" style="border-radius:4px;width: 200px;height: 20px;"/><br /><br />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电子邮箱：<input type="text" id="" value="" style="border-radius:4px;width: 200px;height: 20px;"/><br /><br />
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话号码：<input type="text" id="" value="" style="border-radius:4px;width: 200px;height: 20px;"/><br /><br />
+							<input type="button" id="zcbtn" value="注册" /><a href="炉石首页.html"><input type="button" id="zcbtn1" value="返回首页" /></a>
+							</div>
+						</div>
+				</div>
+				<div id="h4">
+
+				</div>
+			</div>
+
+		</div>
+		<div id="farm"><!--首页底部的内容-->
+			
+			<div class="farm3">
+				<ul class="mul">
+					<li class="far1"><a href="v"><div class="da1"></div> 在线客服</a></li>
+					<li class="far2"><a href="javascript:;"><div class="da2"></div> 反馈</a></li>
+					<li class="far3"><a href="javascript:;"><div class="da3"></div>加入我们</a></li>
+				</ul>
+				<div class="mu2">
+					<span>合作品牌：</span>
+					<a href="javascript:;">
+						<div class="mu2t"></div>
+					</a>
+					<a href="javascript:;"><span>+</span>&nbsp;&nbsp;<span>|</span>&nbsp;<span>合作媒体</span></a>
+					<a href="javascript:;" > <div class="farmoo"></div></a>
+				</div>
+				<div class="farm3_1">
+				<table width="778" height="85">
+				<tr>
+					<td><a href="javascript:;" class="aooo2">网易游戏</a></td>
+					<td><a href="javascript:;"  class="aooo2">网易看游戏</a></td>
+					<td><a href="javascript:;"  class="aooo2">电玩巴士</a></td>
+					<td><a href="javascript:;"  class="aooo2">17173</a></td>
+					<td><a href="javascript:;"  class="aooo2">178</a></td>
+					<td><a href="javascript:;" class="aooo2">不凡游戏</a></td>
+					<td><a href="javascript:;"  class="aooo2">UUU9</a>&nbsp;&nbsp;&nbsp;<span class="farnspan">收起</span></td>
+				</tr>
+				<tr>
+					<td><a href="javascript:;"  class="aooo2">腾讯游戏频道</a></td>
+					<td><a href="javascript:;"  class="aooo2">口袋巴士</a></td>
+					<td><a href="javascript:;"  class="aooo2">叶子猪</a></td>
+					<td><a href="javascript:;"  class="aooo2">太平洋游戏</a></td>
+					<td><a href="javascript:;"  class="aooo2">52PK</a></td>
+					<td><a href="javascript:;"  class="aooo2">锐派</a></td>
+					<td><a href="javascript:;"  class="aooo2">新浪游戏</a></td>
+				</tr>
+				<tr>
+					<td><a href="javascript:;"  class="aooo2">天极网</a></td>
+					<td><a href="javascript:;"  class="aooo2">要我玩</a></td>
+					<td><a href="javascript:;"  class="aooo2">炉石咖啡厅</a></td>
+					<td><a href="javascript:;"  class="aooo2">兔玩网</a></td>
+					<td><a href="javascript:;"  class="aooo2">全球电竞网</a></td>
+					<td><a href="javascript:;"  class="aooo2">掌游宝</a></td>
+					<td><a href="javascript:;"  class="aooo2">多玩网</a></td>
+				</tr>
+				</table>
+				<a href="javascript:;" class="oaaa1">申请合作</a>
+			</div>
+			<div class="farm4">
+				<a href="javascript:;"><img src="img/tuFlogo_blizzard.png" class="farmimg1"></a>
+				<a href="javascript:;"><img src="img/wangyifarm.png" class="farmimg2"></a>
+			</div>
+			<div class="farm5">
+				<a href="javascript:;">隐私&nbsp;&nbsp;|&nbsp;&nbsp;法律条款&nbsp;&nbsp;|&nbsp;&nbsp;API</a>
+				<p>©2017 暴雪娱乐有限公司版权所有 由上海网之易网络科技发展有限公司运营 著作权侵权 新出审字[2013]1510号<br />
+					文网进字[2013]029号 沪网文[2014]0731-161号 增值电信业务经营许可证编号：沪B2－20080012<br />
+					互联网违法和不良信息举报电话：0571-28090163 沪公网安备 31011502022167号</p><br />
+				<div class="farm6">
+					<a href="javascript:;"><img src="img/farm002.png" class="farmimg3"></a>	
+					<a href="javascript:;"><img src="img/farm004.png" class="farmimg4"></a>	
+					<a href="javascript:;"><img src="img/farm003.png" class="farmimg5"></a>	
+					<a href="javascript:;"><img src="img/farm001.png" class="farmimg6"></a>	
+				</div>	
+				<div class="farm7">|  适龄提示：适合13岁及以上使用 家长监护工程</div>
+			</div>
+			</div>
+			
+		</div>	
+
+	</body>
+
+</html>

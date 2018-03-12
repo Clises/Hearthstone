@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+		<!--导航栏滚动js	-->
+		<script src="js/card.js" type="text/javascript" charset="utf-8"></script>
+		<!--背景卡片浮动js-->
+		<script src="js/daohang.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/farms.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload = function() {
+				fudong();
+				daohang1();
+				yincang();
+			}
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/css1.css" />
+		<link rel="stylesheet" type="text/css" href="css/daohang.css" />
+		<link rel="stylesheet" type="text/css" href="css/farm.css" />
+		<link rel="stylesheet" type="text/css" href="css/css2.css" />
+	</head>
+
+	<body>
+		<div id="ice">
+			<!--首页最上边俩边的冰块背景图-->
+
+		</div>
+		<div id="logo_box">
+			<!--放置炉石图标的容器-->
+			<div id="logo">
+				<h1><img src="img/logo.png"/></h1>
+			</div>
+			<div id="card">
+				<!--背景图需要跟随鼠标动的卡牌-->
+				<img src="img/card1.png" />
+				<img src="img/card2.png" />
+				<img src="img/card3.png" />
+				<img src="img/card4.png" />
+				<img src="img/card5.png" />
+			</div>
+		</div>
+
+		<div id="boxxie">
+			<div id="bar">
+				<!--//首页导航栏 (宽1000px)-->
+				<div class="lbar"><img src="img/barleft.png" /></div>
+
+				<!--导航栏效果-->
+				<div class="daohang">
+					<!--导航栏成块级元素之后显示的效果-->
+					<ul class="li1">
+						<li class="c1" id="oc1">
+							<a href="炉石首页.html"></a>
+							<!--首页-->
+						</li>
+						<li class="c2">
+							<div id="onews">
+								<a href="新闻/新闻页.html"></a>
+								<!--新闻-->
+								<ul id="news">
+									<li class="lili">
+										<a href="新闻/新闻页.html#zuixin">最新</a>
+									</li>
+									<li class="lili">
+										<a href="新闻/新闻页.html#bowe">博文</a>
+									</li>
+									<li class="lili">
+										<a href="新闻/新闻页.html#bisai">赛事</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="c3">
+							<div id="onews1">
+								<a href="游戏指南/index.html"></a>
+								<!--游戏指南-->
+								<ul id="news1">
+									<li class="lili">
+										<a href="游戏指南/index.html#banben">版本</a>
+									</li>
+									<li class="lili">
+										<a href="游戏指南/index.html#jichu">基础知识</a>
+									</li>
+
+								</ul>
+							</div>
+
+						</li>
+						<li class="c4">
+
+							<div id="onews2">
+								<a href="视频图片.html"></a>
+								<!--视频图片-->
+								<ul id="news2">
+									<li class="lili">
+										<a href="视频图片.html#shipin">视频</a>
+									</li>
+									<li class="lili">
+										<a href="视频图片.html#tupian">截图</a>
+									</li>
+									<li class="lili">
+										<a href="视频图片.html#tupian1">壁纸</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+						<li class="c5">
+							<!--卡牌工具-->
+							<a href="卡牌工具1.html"></a>
+						</li>
+						<li class="c6">
+							<!--游戏下载-->
+							<a href="游戏下载.html"></a>
+						</li>
+						<li class="c7">
+							<div id="onews3">
+								<a href="电子竞技.html"></a>
+								<!--电子竞技-->
+								<ul id="news3">
+									<li class="lili">
+										<a href="电子竞技.html#jifen">积分排名</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="c8">
+							<!--论坛-->
+							<a href="论坛.html"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="rbar"><img src="img/barright.png" /></div>
+			</div>
+
+			<div id="box1">
+				<!--在box1里写内容-->
+				<div id="beijing">
+					<!--第一行开始-->
+					<div id="beijing0">
+						<img width="1000" height="60" src="img/xian.png" />
+					</div>
+					<img width="1000" height="420" src="img/beijing1.png" />
+					<div id="nav1">
+						<img id="dongtu1" src="img/dongtu1.gif" width="470" height="252" />
+						<div id="nav1_1">
+							<img id="img1" width="450" height="252" src="img/3_media_20160115_video-1.jpg" />
+						</div>
+					</div>
+
+					<div id="nav2">
+						<img id="dongtu2" width="480" height="252" src="img/dongtu2.gif" />
+						<div id="nav2_1">
+							<img id="img2" width="470" height="252" src="img/3_media_20160115_video-2.jpg" />
+						</div>
+					</div>
+
+					<div id="lang"><a name="shipin"></a>
+						<img id="tu1" src="img/lang.png" width="320" height="220" />
+					</div>
+					<div id="lv">
+						<img id="tu2" src="img/lvren.png" width="200" height="220" />
+					</div>
+					<!--第一行结束-->
+
+					<!--第二行开始-->
+					<div id="kuang1">
+						<img width="45" height="30" src="img/anniu1.jpg" /><span id="wenzi1"><h3>视频</h3> </span>
+						<img id="anniu1" width="30" height="30" src="img/anniu2.jpg" />
+					</div>
+					<div id="shipin1">
+						<img width="285" height="160" src="img/shipin1.jpg" />
+						<p id="p1">勇闯安戈洛开场动画</p>
+
+						<a href="#">
+
+							<div id="hei1">
+								<object width="100%" height="100%" id="FPlayer" data="http://v.163.com/swf/video/NetEaseFlvPlayerV3.swf" type="application/x-shockwave-flash"><param value="true" name="allowFullScreen"><param value="always" name="allowscriptaccess"><param value="http://v.163.com/swf/video/NetEaseFlvPlayerV3.swf"  allownetworking="all"  name="movie"><param value="topicid=0031&vid=VCDBT4QIK&sid=VAU858JF3&coverpic=http://vimg1.ws.126.net/image/snapshot/2017/2/I/L/VCDBT4QIL.jpg&autoplay=true" name="flashvars"></object>
+								<!--<div id="hei1_1">
+						 <img id="anniu3" src="img/anniu0.png" />
+					</div>-->
+							</div>
+					</div>
+					</a>
+					<div id="shipin2">
+						<img width="285" height="160" src="img/shipin2.jpg" />
+						<p id="p2">冠军的试炼开场动画</p>
+
+						<a href="#">
+							<div id="hei2">
+								<object width="100%" height="100%" id="FPlayer" data="http://v.163.com/swf/video/NetEaseFlvPlayerV3.swf" type="application/x-shockwave-flash"><param value="true" name="allowFullScreen"><param value="always" name="allowscriptaccess"><param value="http://v.163.com/swf/video/NetEaseFlvPlayerV3.swf"  allownetworking="all"  name="movie"><param value="topicid=0031&vid=VBS51RJCO&sid=V9LKOJ9CL&coverpic=http://vimg1.ws.126.net/image/snapshot/2016/7/C/P/VBS51RJCP.jpg&autoplay=true" name="flashvars"></object>
+								<!--<div id="hei2_1">
+						 <img id="anniu4" src="img/anniu0.png" />
+					</div>-->
+							</div>
+					</div>
+					</a>
+
+					<div id="shipin3">
+						<img width="285" height="160" src="img/shipin3.jpg" />
+						<p id="p3">黑石山的火焰开场动画</p>
+
+						<a href="#">
+							<div id="hei3">
+								<object width="100%" height="100%" id="FPlayer" data="http://v.163.com/swf/video/NetEaseFlvPlayerV3.swf" type="application/x-shockwave-flash"><param value="true" name="allowFullScreen"><param value="always" name="allowscriptaccess"><param value="http://v.163.com/swf/video/NetEaseFlvPlayerV3.swf"  allownetworking="all"  name="movie"><param value="topicid=0031&vid=VBGV7EKRJ&sid=VAU858JF3&coverpic=http://hearthstone.nos.netease.com/a/images/2016/3/11/OGannounce_HS_Spotlight_EK_480x270.jpg&autoplay=true" name="flashvars"></object>
+								<!--<div id="hei3_1">
+						 <img id="anniu5" src="img/anniu0.png" />
+					</div>-->
+							</div>
+					</div>
+					</a>
+					<!--第二行结束-->
+
+					<!--第三行开始-->
+					<div id="beijing2"><a name="tupian1"></a>
+						<div id="jietu">
+							<ul id="jietu_1">
+								<li class="q1">
+									<a class="a1" href='javascript:;'>截图</a>
+								</li>
+								<li class="q1">
+									<a class="a2" href='javascript:;'>原画</a>
+								</li>
+								<li class="q1">
+									<a class="a3" href='javascript:;'>玩家作品</a>
+								</li>
+							</ul>
+						</div>
+
+						<div id="xxk" style="display: block;" class="jj1">
+							<div id="jiantou">
+								<a href='javascript:;'><img src="img/jiantou1.png" id="jiantou_1" /></a>
+								<a href='javascript:;'><img src="img/jiantou2.png" id="jiantou_2" /></a>
+							</div>
+
+							<div class="xxk_1" style="display: block;">
+								<img id="xxk_1_1" width="670" height="470" src="img/tu1.jpg" />
+							</div>
+
+							<div id="xxk_2"><a name="tupian"></a>
+
+								<!--<div id="xxk-2"></div>-->
+								<ul id="xxk_2_1">
+									<li class="d1">
+										<a href='javascript:;'><img width="110" height="65" src="img/tu1_1.jpg" /> </a>
+									</li>
+									<li class="d1">
+										<a href='javascript:;'><img width="110" height="65" src="img/tu2_2.jpg" /> </a>
+									</li>
+									<li class="d1">
+										<a href='javascript:;'><img width="110" height="65" src="img/tu3_3.jpg" /> </a>
+									</li>
+									<li class="d1">
+										<a href='javascript:;'><img width="110" height="65" src="img/tu4_4.jpg" /> </a>
+									</li>
+									<li class="d1">
+										<a href='javascript:;'><img width="110" height="65" src="img/tu5_5.jpg" /> </a>
+									</li>
+									<li class="d1">
+										<a href='javracript:;'><img width="110" height="65" src="img/tu6_6.jpg" /> </a>
+									</li>
+
+								</ul>
+							</div>
+
+						</div>
+						<div id="yuanhua" class="jj1">
+							<div id="jiantou2">
+								<a href='javascript:;'><img src="img/jiantou1.png" id="jiantou-1" /></a>
+								<a href='javascript:;'><img src="img/jiantou2.png" id="jiantou-2" /></a>
+							</div>
+
+							<div class="yuanhua_1" style="display: block;">
+								<img id="yuanhua_1_1" width="670" height="470" src="img/yh1.png" />
+							</div>
+
+							<div id="yuanhua_2">
+
+								<!--<div id="yuanhua-2"></div>-->
+								<ul id="yuanhua_2_1">
+									<li class="e1">
+										<a href='javascript:;'><img width="110" height="65" src="img/yh1_1 .png" /> </a>
+									</li>
+									<li class="e1">
+										<a href='javascript:;'><img width="110" height="65" src="img/yh2_2.png" /> </a>
+									</li>
+									<li class="e1">
+										<a href='javascript:;'><img width="110" height="65" src="img/yh3_3.png" /> </a>
+									</li>
+									<li class="e1">
+										<a href='javascript:;'><img width="110" height="65" src="img/yh4_4.png" /> </a>
+									</li>
+									<li class="e1">
+										<a href='javascript:;'><img width="110" height="65" src="img/yh5_5.png" /> </a>
+									</li>
+									<li class="e1">
+										<a href='javascript:;'><img width="110" height="65" src="img/yh6_6.png" /> </a>
+									</li>
+
+								</ul>
+							</div>
+
+						</div>
+
+						<div id="wanjia" class="jj1">
+							<div id="jiantou3">
+								<a href='javascript:;'><img src="img/jiantou1.png" id="jiantou__1" /></a>
+								<a href='javascript:;'><img src="img/jiantou2.png" id="jiantou__2" /></a>
+							</div>
+
+							<div class="wanjia_1" style="display: block;">
+								<img id="wanjia_1_1" width="670" height="470" src="img/wj1.jpg" />
+							</div>
+
+							<div id="wanjia_2">
+
+								<!--<div id="wanjia-2"></div>-->
+								<ul id="wanjia_2_1">
+									<li class="f1">
+										<a href='javascript:;'><img width="110" height="65" src="img/wj1_1.jpg" /> </a>
+									</li>
+									<li class="f1">
+										<a href='javascript:;'><img width="110" height="65" src="img/wj2_2.jpg" /> </a>
+									</li>
+									<li class="f1">
+										<a href='javascript:;'><img width="110" height="65" src="img/wj3_3.jpg" /> </a>
+									</li>
+									<li class="f1">
+										<a href='javascript:;'><img width="110" height="65" src="img/wj4_4.jpg" /> </a>
+									</li>
+									<li class="f1">
+										<a href='javascript:;'><img width="110" height="65" src="img/wj5_5.jpg" /> </a>
+									</li>
+									<li class="f1">
+										<a href='javascript:;'><img width="110" height="65" src="img/wj6_6.jpg" /> </a>
+									</li>
+
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+
+					<!--第四行开始-->
+
+					<div id="kuang2">
+						<img width="45" height="30" src="img/anniu1.jpg" /><span id="wenzi1"><h3>截图</h3> </span>
+						<img id="anniu1" width="30" height="30" src="img/anniu2.jpg" />
+					</div>
+					<div id="lunbo">
+						<ul id="lunbo_1">
+							<a href='javascript:;'>
+								<li><img src="img/tu1_1.jpg" width="430" height="230" /> </li>
+							</a>
+							<a href='javascript:;'>
+								<li><img src="img/tu2_2.jpg" width="430" height="230" /> </li>
+							</a>
+							<a href='javascript:;'>
+								<li><img src="img/tu3_3.jpg" width="430" height="230" /> </li>
+							</a>
+							<a href='javascript:;'>
+								<li><img src="img/tu4_4.jpg" width="430" height="230" /> </li>
+							</a>
+							<a href='javascript:;'>
+								<li><img src="img/tu5_5.jpg" width="430" height="230" /> </li>
+							</a>
+							<a href='javascript:;'>
+								<li><img src="img/tu1_1.jpg" width="430" height="230" /> </li>
+							</a>
+						</ul>
+					</div>
+					<div id="baiye">
+						<div class="baiye_1">
+							<a href='javasctipt:;'><img src="img/baiye1.jpg" width="230" height="230" /></a>
+						</div>
+						<div class="baiye_1">
+							<a href='javasctipt:;'><img src="img/baiye2.jpg" width="230" height="230" /> </a>
+						</div>
+						<div class="baiye_1">
+							<a href='javasctipt:;'><img src="img/baiye3.jpg" width="230" height="230" /></a>
+						</div>
+						<div class="baiye_1">
+							<a href='javasctipt:;'><img src="img/baiye4.jpg" width="230" height="230" /> </a>
+						</div>
+						<div class="baiye_1" style="width: 230px;">
+							<a href='javasctipt:;'><img src="img/baiye5.png" width="230" height="230" /></a>
+						</div>
+					</div>
+					<div id="tanchu"></div>
+					<div id="tanchu_1"></div>
+
+					<!--第五行开始-->
+					<div id="sucai">
+						<img width="45" height="30" src="img/anniu1.jpg" /><span id="wenzi1"><h3>素材</h3> </span>
+						<ul id="sucai_1">
+							<li>
+								<a class="sucai_1_1" href='javascript:;'></a>
+								<span>“黑石山的火焰”媒体素材包</span>
+								<a class="sucai_1_1_1" href='javascript:;'>下载</a>
+							</li><br />
+							<li>
+								<a class="sucai_1_1" href='javascript:;'></a>
+								<span>&nbsp;&nbsp;&nbsp;网站素材包</span>
+								<a class="sucai_1_1_1" href='javascript:;'>下载</a>
+							</li>
+
+						</ul>
+
+					</div>
+					<div id="yinyue">
+						<img width="45" height="30" src="img/anniu1.jpg" /><span id="wenzi1"><h3>音乐</h3> </span>
+						<ul id="yinyue_1">
+							<li>
+								<a class="yinyue_1_1" href="http://file.ws.126.net/game/hs/music/playingwithafulldeck.mp3"></a><span></span>
+								<a class="yinyue_1_2" href="http://file.ws.126.net/game/hs/music/playingwithafulldeck.rar">下载</a>
+							</li><br /><br />
+							<li>
+								<a class="yinyue_1_1" href="http://file.ws.126.net/game/hs/music/thearenaawaits.mp3"></a><span></span>
+								<a class="yinyue_1_2" href="http://file.ws.126.net/game/hs/music/thearenaawaits.rar">下载</a>
+							</li>
+						</ul>
+
+					</div>
+					<!--第五行结束-->
+					<div id="btobg2">
+						<!--页面底部补齐背景的图片-->
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		</div>
+<div id="farm"><!--首页底部的内容-->
+			
+			<div class="farm3">
+				<ul class="mul">
+					<li class="far1"><a href="v"><div class="da1"></div> 在线客服</a></li>
+					<li class="far2"><a href="javascript:;"><div class="da2"></div> 反馈</a></li>
+					<li class="far3"><a href="javascript:;"><div class="da3"></div>加入我们</a></li>
+				</ul>
+				<div class="mu2">
+					<span>合作品牌：</span>
+					<a href="javascript:;">
+						<div class="mu2t"></div>
+					</a>
+					<a href="javascript:;"><span>+</span>&nbsp;&nbsp;<span>|</span>&nbsp;<span>合作媒体</span></a>
+					<a href="javascript:;" > <div class="farmoo"></div></a>
+				</div>
+				<div class="farm3_1">
+				<table width="778" height="85">
+				<tr>
+					<td><a href="javascript:;" class="aooo2">网易游戏</a></td>
+					<td><a href="javascript:;"  class="aooo2">网易看游戏</a></td>
+					<td><a href="javascript:;"  class="aooo2">电玩巴士</a></td>
+					<td><a href="javascript:;"  class="aooo2">17173</a></td>
+					<td><a href="javascript:;"  class="aooo2">178</a></td>
+					<td><a href="javascript:;" class="aooo2">不凡游戏</a></td>
+					<td><a href="javascript:;"  class="aooo2">UUU9</a>&nbsp;&nbsp;&nbsp;<span class="farnspan">收起</span></td>
+				</tr>
+				<tr>
+					<td><a href="javascript:;"  class="aooo2">腾讯游戏频道</a></td>
+					<td><a href="javascript:;"  class="aooo2">口袋巴士</a></td>
+					<td><a href="javascript:;"  class="aooo2">叶子猪</a></td>
+					<td><a href="javascript:;"  class="aooo2">太平洋游戏</a></td>
+					<td><a href="javascript:;"  class="aooo2">52PK</a></td>
+					<td><a href="javascript:;"  class="aooo2">锐派</a></td>
+					<td><a href="javascript:;"  class="aooo2">新浪游戏</a></td>
+				</tr>
+				<tr>
+					<td><a href="javascript:;"  class="aooo2">天极网</a></td>
+					<td><a href="javascript:;"  class="aooo2">要我玩</a></td>
+					<td><a href="javascript:;"  class="aooo2">炉石咖啡厅</a></td>
+					<td><a href="javascript:;"  class="aooo2">兔玩网</a></td>
+					<td><a href="javascript:;"  class="aooo2">全球电竞网</a></td>
+					<td><a href="javascript:;"  class="aooo2">掌游宝</a></td>
+					<td><a href="javascript:;"  class="aooo2">多玩网</a></td>
+				</tr>
+				</table>
+				<a href="javascript:;" class="oaaa1">申请合作</a>
+			</div>
+			<div class="farm4">
+				<a href="javascript:;"><img src="img/tuFlogo_blizzard.png" class="farmimg1"></a>
+				<a href="javascript:;"><img src="img/wangyifarm.png" class="farmimg2"></a>
+			</div>
+			<div class="farm5">
+				<a href="javascript:;">隐私&nbsp;&nbsp;|&nbsp;&nbsp;法律条款&nbsp;&nbsp;|&nbsp;&nbsp;API</a>
+				<p>©2017 暴雪娱乐有限公司版权所有 由上海网之易网络科技发展有限公司运营 著作权侵权 新出审字[2013]1510号<br />
+					文网进字[2013]029号 沪网文[2014]0731-161号 增值电信业务经营许可证编号：沪B2－20080012<br />
+					互联网违法和不良信息举报电话：0571-28090163 沪公网安备 31011502022167号</p><br />
+				<div class="farm6">
+					<a href="javascript:;"><img src="img/farm002.png" class="farmimg3"></a>	
+					<a href="javascript:;"><img src="img/farm004.png" class="farmimg4"></a>	
+					<a href="javascript:;"><img src="img/farm003.png" class="farmimg5"></a>	
+					<a href="javascript:;"><img src="img/farm001.png" class="farmimg6"></a>	
+				</div>	
+				<div class="farm7">|  适龄提示：适合13岁及以上使用 家长监护工程</div>
+			</div>
+			</div>
+			
+		</div>	
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//第二行效果开始
+			var oHei1 = document.getElementById("hei1");
+			var oShi1 = document.getElementById("shipin1")
+			oShi1.onmouseover = function() {
+
+				oHei1.style.display = "block"
+			}
+			oShi1.onmouseout = function() {
+
+				oHei1.style.display = "none"
+			}
+			var oHei2 = document.getElementById("hei2");
+			var oShi2 = document.getElementById("shipin2")
+			oShi2.onmouseover = function() {
+				//		               			alert("a")
+				oHei2.style.display = "block"
+			}
+			oShi2.onmouseout = function() {
+				oHei2.style.display = "none"
+			}
+			var oHei3 = document.getElementById("hei3");
+			var oShi3 = document.getElementById("shipin3")
+			oShi3.onmouseover = function() {
+				oHei3.style.display = "block"
+			}
+			oShi3.onmouseout = function() {
+				oHei3.style.display = "none"
+			}
+
+			//第二行效果结束
+			//第一行效果开始
+			$("#nav1_1").mouseover(function() {
+				$("#img1").hide();
+			})
+			$("#nav1").mouseout(function() {
+				$("#img1").show();
+			})
+
+			$("#nav2_1").mouseover(function() {
+				$("#img2").hide();
+			})
+			$("#nav2").mouseout(function() {
+				$("#img2").show();
+			})
+			//第一行效果结束
+
+			//第三行效果开始
+
+			var oJt1 = document.getElementById("jiantou_1");
+			var oJt2 = document.getElementById("jiantou_2");
+			var oXx = document.getElementsByClassName("xxk_1");
+			var oXx1 = document.getElementsByClassName("d1");
+			var oLi = document.getElementsByClassName("d1");
+			var oImg = document.getElementById("xxk_1_1")
+			var oXxk = document.getElementById("xxk")
+			var num = 1;
+			oLi[0].style.border = "3px 3px 5px greenyellow,-3px -3px 5px greenyellow ";
+			oJt1.onclick = function() {
+				num++;
+				for(var j = 0; j < oLi.length; j++) {
+					oLi[j].style.boxShadow = "0px 0px 0px greenyellow,0px 0px 0px greenyellow";
+				}
+				if(num == 7) {
+					num = 6;
+				}
+				oImg.src = "img/tu" + num + ".jpg"
+				oLi[num - 1].style.boxShadow = "3px 3px 5px greenyellow,-3px -3px 5px greenyellow ";
+				if(oLi[num - 1]) {
+					oLi[num - 2].style.boxShadow = "0px 0px 0px greenyellow,0px 0px 0px greenyellow";
+
+				}
+			}
+
+			oLi[0].style.boxShadow = "3px 3px 5px greenyellow,-3px -3px 5px greenyellow ";
+			oJt2.onclick = function() {
+				num--;
+
+				if(num == 0) {
+					num = 1
+				}
+				for(var j = 0; j < oLi.length; j++) {
+					oLi[j].style.boxShadow = "0px 0px 0px greenyellow,0px 0px 0px greenyellow";
+				}
+				oImg.src = "img/tu" + num + ".jpg"
+				oLi[num - 1].style.boxShadow = "3px 3px 5px greenyellow,-3px -3px 5px greenyellow ";
+				if(oLi[num - 1]) {
+
+					oLi[num].style.boxShadow = "0px 0px 0px greenyellow,0px 0px 0px greenyellow";
+				}
+			}
+
+			for(i = 0; i < oLi.length; i++) {
+				oLi[i].a = i;
+				oLi[i].onclick = function() {
+
+					oImg.src = "img/tu" + [this.a + 1] + ".jpg";
+					num = this.a + 1
+					for(var j = 0; j < oLi.length; j++) {
+						oLi[j].style.boxShadow = "0px 0px 0px greenyellow,0px 0px 0px greenyellow";
+					}
+					oLi[this.a].style.boxShadow = "3px 3px 5px greenyellow,-3px -3px 5px greenyellow ";
+				}
+			}
+
+			var oJt1_1 = document.getElementById("jiantou-1");
+			var oJt2_1 = document.getElementById("jiantou-2");
+			var oXx_1 = document.getElementsByClassName("yuanhua_1");
+			var oXx1_1 = document.getElementsByClassName("e1");
+			var oLi_1 = document.getElementsByClassName("e1");
+			var oImg_1 = document.getElementById("yuanhua_1_1")
+			var yhh = 1;
+			oLi_1[0].style.boxShadow = "3px 3px 5px greenyellow,-3px -3px 5px greenyellow ";
+
+			oJt1_1.onclick = function() {
+				yhh++;
+				for(var j = 0; j < oLi_1.length; j++) {
+					oLi_1[j].style.boxShadow = "0px 0px 0px greenyellow,0px 0px 0px greenyellow";
+				}
+				if(yhh == 7) {
+					yhh = 6;
+				}
+				oImg_1.src = "img/yh" + yhh + ".png"
+				oLi_1[yhh - 1].style.boxShadow = "3px 3px 5px greenyellow,-3px -3px 5px greenyellow ";
+				if(oLi_1[yhh - 1]) {
+					oLi_1[yhh - 2].style.boxShadow = "0px 0px 0px greenyellow,0px 0px 0px greenyellow";
+
+				}
+			}
+			oLi_1[0].style.boxShadow = "3px 3px 5px greenyellow,-3px -3px 5px greenyellow ";
+			oJt2_1.onclick = function() {
+				yhh--;
+				for(var j = 0; j < oLi_1.length; j++) {
+					oLi_1[j].style.boxShadow = "0px 0px 0px greenyellow,0px 0px 0px greenyellow";
+				}
+				if(yhh == 0) {
+					yhh = 1
+				}
+				oImg_1.src = "img/yh" + yhh + ".png"
+				oLi_1[yhh - 1].style.boxShadow = "3px 3px 5px greenyellow,-3px -3px 5px greenyellow ";
+				if(oLi_1[yhh - 1]) {
+
+					oLi_1[yhh].style.boxShadow = "0px 0px 0px greenyellow,0px 0px 0px greenyellow";
+				}
+			}
+			for(i = 0; i < oLi_1.length; i++) {
+				oLi_1[i].a = i;
+				oLi_1[i].onclick = function() {
+					yhh = this.a + 1
+					oImg_1.src = "img/yh" + [this.a + 1] + ".png";
+					for(var j = 0; j < oLi_1.length; j++) {
+						oLi_1[j].style.boxShadow = "0px 0px 0px greenyellow,0px 0px 0px greenyellow";
+					}
+					oLi_1[this.a].style.boxShadow = "3px 3px 5px greenyellow,-3px -3px 5px greenyellow ";
+				}
+			}
+			var oJt1_2 = document.getElementById("jiantou__1");
+			var oJt2_2 = document.getElementById("jiantou__2");
+			var oXx_2 = document.getElementsByClassName("wanjia_1");
+			var oXx1_2 = document.getElementsByClassName("f1");
+			var oLi_2 = document.getElementsByClassName("f1");
+			var oImg_2 = document.getElementById("wanjia_1_1")
+			var wj = 1;
+			oLi_2[0].style.boxShadow = "3px 3px 5px greenyellow,-3px -3px 5px greenyellow ";
+			oJt1_2.onclick = function() {
+				wj++;
+				for(var j = 0; j < oLi_2.length; j++) {
+					oLi_2[j].style.boxShadow = "0px 0px 0px greenyellow,0px 0px 0px greenyellow";
+				}
+				if(wj == 7) {
+					wj = 6;
+				}
+				oImg_2.src = "img/wj" + wj + ".jpg";
+				oLi_2[wj - 1].style.boxShadow = "3px 3px 5px greenyellow,-3px -3px 5px greenyellow ";
+				if(oLi_2[wj - 1]) {
+					oLi_2[wj - 2].style.boxShadow = "0px 0px 0px greenyellow,0px 0px 0px greenyellow";
+				}
+
+			}
+			oLi_2[0].style.boxShadow = "3px 3px 5px greenyellow,-3px -3px 5px greenyellow ";
+			oJt2_2.onclick = function() {
+				wj--;
+				for(var j = 0; j < oLi_2.length; j++) {
+					oLi_2[j].style.boxShadow = "0px 0px 0px greenyellow,0px 0px 0px greenyellow";
+				}
+				if(wj == 0) {
+					wj = 1
+				}
+				oImg_2.src = "img/wj" + wj + ".jpg";
+				oLi_2[wj - 1].style.boxShadow = "3px 3px 5px greenyellow,-3px -3px 5px greenyellow ";
+				if(oLi_2[wj - 1]) {
+
+					oLi_2[wj].style.boxShadow = "0px 0px 0px greenyellow,0px 0px 0px greenyellow";
+				}
+
+			}
+			for(i = 0; i < oLi_2.length; i++) {
+				oLi_2[i].a = i;
+				oLi_2[i].onclick = function() {
+					oImg_2.src = "img/wj" + [this.a + 1] + ".jpg"
+					wj = this.a + 1
+					for(var j = 0; j < oLi_1.length; j++) {
+						oLi_2[j].style.boxShadow = "0px 0px 0px greenyellow,0px 0px 0px greenyellow";
+					}
+					oLi_2[this.a].style.boxShadow = "3px 3px 5px greenyellow,-3px -3px 5px greenyellow ";
+				}
+			}
+			// 时间  截图、原画、玩家作品的跳转 
+			var oQq1 = document.getElementsByClassName("q1");
+			var oQq2 = document.getElementsByClassName("jj1");
+			for(var i = 0; i < oQq1.length; i++) {
+				oQq1[i].index = i
+				oQq1[i].onclick = function() {
+					for(var j = 0; j < oQq2.length; j++) {
+						oQq2[j].style.display = "none";
+					}
+					oQq2[this.index].style.display = "block"
+				}
+			}
+			//第三行效果结束
+
+			// 第四行效果开始
+			var oLun = document.getElementById("lunbo_1")
+			var oLun1 = document.getElementById("lunbo")
+			var timer = null
+
+			function lunbo() {
+				clearInterval(timer);
+				timer = setInterval(function() {
+					if(oLun.offsetLeft == -428) {
+						clearInterval(timer);
+					}
+					if(oLun.offsetLeft == -858) {
+						clearInterval(timer);
+					}
+					if(oLun.offsetLeft == -1288) {
+						clearInterval(timer);
+					}
+					if(oLun.offsetLeft == -1718) {
+						clearInterval(timer);
+					}
+					if(oLun.offsetLeft == -2148) {
+						clearInterval(timer);
+						oLun.style.left = "0px"
+					}
+					oLun.style.left = oLun.offsetLeft - 2 + "px";
+				}, 10)
+			}
+			setInterval(function() {
+				lunbo()
+			}, 1000)
+
+			var oBye1 = document.getElementById("baiye");
+			var oBye2 = oBye1.getElementsByClassName("baiye_1");
+			for(var i = 0; i < oBye2.length; i++) {
+				oBye2[i].onclick = function() {
+					for(var j = 0; j < oBye2.length; j++) {
+						oBye2[j].style.width = "50px";
+					}
+					this.style.width = "230px";
+				}
+			}
+			// 第四行效果结束
+		</script>
+	</body>
+
+</html>

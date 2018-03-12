@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#banner{
+				width: 100%;
+				height: 40px;
+				background-color: #262128;
+				/*border: black 1px solid;*/
+				
+			}
+			#box1{
+				width: 1024px;
+				height: 600px;
+				/*border: 1px green solid;*/
+				position: relative;
+				margin: 0 auto;
+				background-image: url(img/商城img/back1.jpg);
+				background-size: 100% ;
+				background-position: -30px -200px;
+			}
+			#logo{
+				width: 180px;
+				height: 80px;
+				/*border: 1px red solid;*/
+				position: absolute;
+				left: 130px;
+				top:30px;
+				background-image: url(img/logo.png);
+				background-size: 100% 100%;
+			}
+			#word1{
+				width: 200px;
+				height: 80px;
+				/*border: 1px blue solid;*/
+				position: absolute;
+				left:100px;
+			    top: 120px;
+			    
+			}
+			#word2{
+				width: 350px;
+				height: 100px;
+				/*border: 1px purple solid;*/
+				position: absolute;
+				left: 100px;
+				top: 230px;
+			}
+			#anniu{
+				width: 80px;
+				height: 30px;
+				/*border: 1px yellow solid;*/
+				position: absolute;
+				background-color: #0E86CA;
+				left: 100px;
+				top:340px ;
+			}
+			#anniu:hover{
+				background-color: #118ED5;
+			}
+			#word3{
+				width: 300px;
+				height: 200px;
+				/*border: 1px cadetblue solid;*/
+				position: absolute;
+				left: 100px;
+				top: 400px;
+			}
+			#ul1 a{
+				text-decoration: none;
+			}
+			#box2{
+				width: 1024px;
+				height: 550px;
+				/*border: 1px yellow solid;*/
+				margin: 0 auto;
+				position: relative;
+			}
+			#word_a{
+				width: 400px;
+				height: 100px;
+				/*border: 1px coral solid;*/
+				position: absolute;
+				top: 10px;
+				left:100px
+				
+			}
+			#pic1{
+				width: 260px;
+				height: 150px;
+				/*border: 1px palegoldenrod solid;*/
+				position: absolute;
+				left: 100px;
+				top: 150px ;
+			}
+			#pic2{
+				width: 260px;
+				height: 150px;
+				/*border: 1px palegoldenrod solid;*/
+				position: absolute;
+				left: 385px;
+				top: 150px ;
+			}
+			#pic3{
+				width: 260px;
+				height: 150px;
+				/*border: 1px palegoldenrod solid;*/
+				position: absolute;
+				left: 670px;
+				top: 150px ;
+			}
+			#word_b{
+				width:260px ;
+				height: 120px;
+				/*border: 1px #FF7F50 solid;*/
+				position: absolute;
+				left: 100px;
+				top: 320px;
+			}
+			#biaoti1{
+				width: 250px;
+				height: 30px;
+				/*border: 1px red solid;*/
+			}
+			#neirong1{
+				width: 250px;
+				height: 90px;
+				/*border: 1px red solid;*/
+			}
+			#word_c{
+				width:260px ;
+				height: 120px;
+				/*border: 1px #FF7F50 solid;*/
+				position: absolute;
+				left:385px;
+				top: 320px;
+			}
+			#biaoti2{
+				width: 250px;
+				height: 30px;
+				/*border: 1px red solid;*/
+			}
+			#neirong2{
+				width: 250px;
+				height: 90px;
+				/*border: 1px red solid;*/
+			}
+			#word_d{
+				width:260px ;
+				height: 120px;
+				/*border: 1px #FF7F50 solid;*/
+				position: absolute;
+				left: 670px;
+				top: 320px;
+			}
+			#biaoti3{
+				width: 250px;
+				height: 30px;
+				/*border: 1px red solid;*/
+			}
+			#neirong3{
+				width: 250px;
+				height: 90px;
+				/*border: 1px red solid;*/
+			}
+			#box3{
+				width: 700px;
+				height: 300px;
+				/*border: 1px wheat solid;*/
+				margin: 0 auto;
+				background-image: url(img/商城img/botton.png);
+				background-size: 100% 100%;
+			}
+			#ul{
+				list-style: none;
+				position: absolute;
+				left: 300px;
+			}
+			#ul li{
+				width: 80px;
+				height: 40px;
+				float: left;
+				line-height: 40px;
+			}
+			#ul li:hover{
+				line-height: 30px;
+			}
+			#ul a{
+				text-decoration: none;
+				color: white;
+			}
+			#tubiao1{
+				width: 100px;
+				height: 40px;
+				position: absolute;
+				/*border: 1px red solid;*/
+				left:180px;
+				background-image: url(img/商城img/tubiao1.png);
+				background-size: 100% 100%;
+			}
+			
+		</style>
+		
+		<script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oImg=document.getElementsByClassName("image");
+				var oTil=document.getElementsByClassName("title");
+				var oCon=document.getElementsByClassName("content")
+				ajax("yingxin.txt",function(str){
+					var arr=eval(str);
+					for(var i=0;i<arr.length;i++)
+					{
+						oImg[i].src=arr[i].Tu;
+						oTil[i].innerHTML=arr[i].Title;
+						oCon[i].innerHTML=arr[i].Wen;
+						
+					}
+				})
+			}
+		</script>
+	</head>
+	
+	<body bgcolor="#211926">
+		<div id="banner">
+			<div id="tubiao1">
+				
+			</div>
+			<ul id="ul">
+				<li><a href="#">商城</a></li>
+				<li><a href="新闻页.html">新闻</a></li>
+			</ul>
+		</div>
+		<div id="box1">
+			 <div id="logo">
+			 </div>	
+			 <div id="word1">
+			 	<p><font color="white" size="5">迎新合集</font></p>
+                <p><font color="orange">新玩家的最佳选择</font></p>
+                <p><font color="gainsboro"size="2">《炉石传说®》奥术之尘礼包</font></p>
+
+			 </div>
+			 <div id="word2">
+			 	<p><font color="white" size="5">10点奥术之尘（赠送10包经典卡牌包和1张随机经典职业传说卡牌） - ¥30</font></p>
+			 </div>
+			 <div id="anniu">
+			 	<p align="center">
+			 		<a href="javascript:;" style="text-decoration: none;"><font color="white" size="2" >立即购买</font></p></a>
+			 </div>
+			<div id="word3">
+				<ul id="ul1">
+					<li><font color="gainsboro"size="1">需要网络连接和暴雪®游戏通行证。</font></li>
+					<li><font color="gainsboro"size="1"><a href="#">需要下载《炉石传说®》。</a> </font></li>
+					<li><font color="gainsboro"size="1">卡牌包也可以通过游戏机制获得。</font></li>
+					<li><font color="gainsboro"size="1">只有在完成教学任务后你才可以使用这些卡牌包。</font></li>
+					<li><font color="gainsboro"size="1">单独购买10点奥术之尘即获赠10包经典卡牌包和1张随机的经典职业传说卡牌</font></li>
+					<li><font color="gainsboro"size="1">每个帐号只能购买一次。之前已购买过的玩家将无法再次获得。</font></li>
+					
+				</ul>
+			</div>
+		</div>
+		<div id="box2">
+		 <div id="word_a">
+		 	<font color="white" size="5">相聚炉石</font><br />
+		 	<font color="gainsboro" size="2">相旅店老板已经在炉火旁为你准备好座椅了，大家都在期待着你能开出什么卡牌！继续努力组建套牌，炉石旅店的下一个冠军可能就是你！</font>
+		 </div>	
+		 <div id="pic1">
+		 	<img class="image" style="width: 260;height: 150px;"/>
+		 </div>
+		 <div id="word_b">
+		 	<div id="biaoti1" >
+		 		<font color="white"class="title">#</font>
+		 	</div>
+		 	<div id="neirong1" >
+		 		<font color="gainsboro" size="2" class="content">#</font>
+		 	</div>
+		 </div>
+		 <div id="pic2">
+		 	<img class="image" style="width: 260;height: 150px;"/>
+		 </div>
+		 <div id="word_c">
+		 	<div id="biaoti2" ><font color="white"class="title">#</font></div>
+		 	<div id="neirong2" ><font color="gainsboro" size="2" class="content">#</font></div>
+		 </div>
+		 <div id="pic3">
+		 	<img class="image" style="width: 260;height: 150px;"/>
+		 </div>
+		 <div id="word_d">
+		 	<div id="biaoti3"><font color="white"class="title">#</font></div>
+		 	<div id="neirong3" ><font color="gainsboro" size="2" class="content">#</font></div>
+		 </div>
+		</div>
+		
+		<div id="box3"></div>
+	</body>
+</html>

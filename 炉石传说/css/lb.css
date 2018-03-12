@@ -1,0 +1,75 @@
+/**{
+				margin: 0;
+				padding: 0;
+			}*/
+			#left .lb{
+				width: 640px;
+				height: 300px;
+				border: 1px #B7894C solid;
+				position: absolute;
+				margin-left: 20px;
+				margin-top: 28px;/*距离box的高度,包含了导航栏的高度*/
+				overflow: hidden;
+			}
+			
+			#ul1{
+				width: 2560px;
+				height: 300px;
+				list-style: none;
+				position: absolute;
+			}
+			 #ul1 li{
+				width:640px;
+				height:300px;
+				float: left;
+				
+			}
+				
+			.div1{
+				width: 640px;
+				height:43px ;
+				background-color: black;
+				opacity:0.3;
+				position: relative;
+				top: 257px;
+				z-index:0;
+				/*border: 1px solid red;*/
+			}
+			 #text{
+				height: 43px;
+				width: 250px;
+				color: white;
+				text-align: center;
+				line-height: 43px;
+				position: absolute;
+				top: 257px;
+				font-weight: 600;
+				/*border: 1px solid blue;*/
+			}
+			#ul2{
+				width: 220px;
+				height: 30px;
+				list-style: none;
+				position: absolute;
+				right: 5px;
+				top: 6px;
+				opacity:1;
+				z-index: 99;
+				margin-top:258px;
+				
+			}
+			#ul2 li{
+				width: 63px;
+				height: 30px;
+				margin-left: 5px;
+				float: left;
+				display: inline-block;
+				border: 1px solid black;
+			}
+			#ul2 #li1{
+				border-color: yellow;
+			}
+			#ul2 img{
+				width: 63px;
+				height: 30px;
+			}

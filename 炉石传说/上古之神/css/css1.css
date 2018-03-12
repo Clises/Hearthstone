@@ -1,0 +1,471 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-image: url(../img/bg1.jpg),url(../img/bg2.jpg);
+	background-size: 105% auto,155%;
+	background-position: top center,bottom center;
+	background-repeat: no-repeat,repeat;
+	background-attachment:fixed;
+
+    
+}
+
+
+#logo_box{
+	width:1000px ;
+	height: 185px;
+	position: relative;
+	top: 50px;
+	margin: 0 auto;
+}
+#logo{
+	width:350px ;
+	height: 184px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+#ice{
+	width:100%;
+	height: 125px;
+	position: absolute;
+	top: 0px;
+	background-image: url(../img/bg3.png);
+	/*background-size: 100%;*/
+	background-repeat: no-repeat;
+	/*border:1px solid red;*/
+}
+.V1 #div1{
+	width:957px;
+	height: 477px;
+	border: 1px red solid;
+margin-top: 100px;
+    background-image:url(../img/bg.jpg) ;
+    }
+.V1 #div1 #div2{
+	width:957px;
+	height: 251px;
+	border: 1px black solid;
+	
+	}
+	.V1 #div1 #div2 h2{
+		text-align: left;
+		margin-top:30px;
+		margin-left:20px;
+	}
+.V1 #div1 #box{width: 600px; height:220px; border: 1px solid #ccc;
+        margin-left:-360px;
+}
+.V1 #div1 #box li{
+	float: left;
+	margin-left:20px;
+	margin-top:104px;
+	width:160px;
+	height:120px;
+}
+h3{
+	background-image: url(../img/icon.png);
+	width: 957px;
+	height:35px;
+	background-position:-40px -260px;
+	margin-top:60px;
+	text-align: left;
+	line-height: 35px;
+	color:#251C0F;
+	background-color:#E1C79D;
+}
+#t1{
+	margin-top:20px;
+	border: 1px green solid;
+	width:957px;
+    height:1400px;
+}
+#t1_ul{
+	list-style: none;
+}
+#t1_ul li{
+	width: 450px;
+	height: 250px;
+	border: 1px salmon solid;
+	float: left;
+	margin-left: 18px;
+	margin-top:20px;
+	border-radius: 10px;
+	position: relative;
+}
+#t1_ul li img{
+margin-top:10px;
+z-index: 0;
+}
+
+#t1_ul li div{
+	width: 450px;
+	height: 250px;
+	position: absolute;
+	display:inline-block; 
+	margin-left:-355px;
+	border-radius: 10px;
+	z-index: -10;
+}
+#h3{
+	background-image: url(../img/icon.png);
+	width: 957px;
+	height:35px;
+	background-position:-40px -260px;
+	margin-top:30px;
+	text-align: left;
+	line-height: 35px;
+	color:#251C0F;
+	background-color:#E1C79D;
+}
+#t2{
+	width:957px;
+	height: 150px;	
+}
+#t2_ul{
+	float: left;
+	position:absolute;
+	margin-top: 30px;
+	list-style: none;
+}
+#t2_ul li{
+	width:90px;
+	height: 105px;
+	float: left;
+	margin-left:25px;
+
+}
+#t2_ul li div{
+	width:70px;
+	height:70px;
+
+}
+#t2_ul li span{
+	width:95px;
+	height: 30px;
+	background-color:#D8BC91;
+	border:1px #EFD9B4 solid;
+	border-radius: 5px;
+	display: block;
+	line-height: 30px;
+	font-weight:600;
+	font-size:16px;
+}
+#h4{
+	height:20px;
+}
+#p1{
+	width: 880px;
+	height: 90px;
+	text-align: left;
+	font-size: 18px;
+	display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    line-height: 30px;
+    color:#5B4B38;
+}
+#t3{
+	width:940px;
+	height: 670px;
+	border: 1px red solid;
+}
+#t3_ul{
+	width:940px;
+	height: 600px;
+	list-style: none;
+	margin-top:80px;
+	background-position-x:380px ;
+	background-image:url(../img/法师.png);
+	background-repeat: no-repeat;
+	background-position-y:0px;
+
+}
+#t3_ul li{
+	width:40px;
+	height: 40px;
+	margin-left:830px;
+	margin-top: 20px;
+	overflow: visible;
+}
+h4{
+text-align: left;
+margin-left:30px;
+font-weight: 400;
+font-size: 36px;
+float: left;
+margin-top:-50px;
+}
+h4 span{
+font-size: 28px;
+color: crimson;
+font-weight:500;
+}
+#hero-intro{
+text-align: left;
+width: 455px;
+margin-left:30px;
+margin-top:60px;
+line-height:25px;
+font-size:18px;
+float: left;
+clear: left;
+}
+#hero-skill{
+	width: 500px;
+	height: 100px;
+    border:1px red solid;
+    margin-top:220px;
+    margin-left:-460px;
+    display: inline-block;
+    float: left;
+    text-align: left;
+    color: red;
+	font-size: 22px;
+	line-height: 100px;
+	font-weight: 600;
+}
+
+#hero-skill #skill-img{
+	height:95px;
+	width:90px;
+	background-image: url(../img/Skill-icon.png);
+    background-position:0px -670px ;
+    float: left;
+    margin-left: 10px;
+}
+#skill-intro{
+	color: bisque;
+	font-size: 22px;
+	line-height: 100px;
+}
+#texing{
+	width: 500px;
+	height:245px;
+	border: 1px red solid;
+	float: left;
+	margin-left:28px;
+	text-align: left;
+	line-height:25px;
+	font-weight:500;
+	color:firebrick;
+	
+}
+#texing h5{
+font-size: 22px;
+color: saddlebrown;
+font-weight:600;
+line-height: 30px;
+margin-bottom:8px;
+margin-top:10px;
+}
+
+
+
+/*---------------------------样式归零 By 天涯浅唱 QQ：122452357----------------------*/
+em
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: 0 0;
+	font-weight: 400;
+	font-style: inherit;
+	font-family: inherit;
+	vertical-align: top
+}
+
+.demo body {
+	line-height: 1;
+	color: #000;
+	background: #fff;
+	font-size: 12px;
+	font-family: 'simsun'
+}
+
+.demo article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+hr,
+menu,
+nav,
+section {
+	display: block
+}
+
+.demo nav ul,
+.demo ol,
+ul {
+	list-style: none
+}
+
+:focus,
+.demo a {
+	outline: 0
+}
+
+.demo a {
+	margin: 0;
+	font-size: 100 %;
+	vertical-align: baseline;
+	background: 0 0;
+	blr: expression(this.onFocus=this.blur())
+}
+
+.demo a,
+ins {
+	text-decoration: none
+}
+
+.demo a,
+hr {
+	padding: 0
+}
+
+.demo ins,
+mark {
+	background-color: #ff9;
+	color: #000
+}
+
+.demo mark {
+	font-style: italic;
+	font-weight: 700
+}
+
+.demo blockquote,
+q {
+	quotes: none
+}
+
+.demo blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+	content: '';
+	content: none
+}
+
+.demo del {
+	text-decoration: line-through
+}
+
+.demo abbr[title],
+dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help
+}
+
+.demo table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+.demo caption,
+td,
+th {
+	text-align: left;
+	font-weight: 400
+}
+
+.demo hr {
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0
+}
+
+.demo input,
+.demo select {
+	vertical-align: middle;
+	border: 0
+}
+
+
+/*-------------------------归零样式END，请于样式表最前面调用-------------------------*/
+
+
+/*-----------------自定义按钮样式，移动端不需要，PC端根据实际情况选择----------------*/
+
+.demo {
+	margin-top: 50px;
+	width:1100px;
+	height: 330px;
+	font-size: 14px;
+	position: relative;
+}
+
+.demo a.control {
+	position: absolute;
+	display: block;
+	top: 50%;
+	margin-top: -78px;
+	width: 76px;
+	height: 112px;
+	cursor: pointer;
+	z-index: 2;
+	background: url(../img/buttons.png) no-repeat
+}
+
+.demo a.prev {
+	left: 0;
+	background-position: 0 0
+}
+
+.demo a.next {
+	right: 0;
+	background-position: -76px 0
+}
+
+.demo a.prev:hover {
+	background-position: 0 -112px
+}
+
+.demo a.next:hover {
+	background-position: -76px -112px
+}
+
+
+/*----------------------------为保证最佳效果，建议设置如下样式------------------------*/
+
+.slider {
+	display: none
+}
+#t4{
+	width: 900px;
+	height: 380px;
+	padding: 50px;
+	background-size: contain;
+	background-image: url(../img/bgx.png);
+margin-bottom: 100px;
+}
+#t4 div{
+	height: 300px;
+	width: 300px;
+	float:left;
+	text-align: left;
+}
+dt{
+	margin-top:30px;
+	margin-bottom: 20px;
+}
+dd{
+	
+	height: 30px;
+}
+hr{
+	border:1px soild RGB(218,197,152) ;
+	width:60%;
+}
+

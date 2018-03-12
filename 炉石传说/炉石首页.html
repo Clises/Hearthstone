@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>炉石传说</title>
+		 <!--<script src='js/jquery-1.8.3.min.js'> </script>
+		 <script src="js/jquery.luara.0.0.1.min.js"></script>-->
+		 <link rel="stylesheet" type="text/css" href="css/css1.css"/>
+		 <link rel="stylesheet" type="text/css" href="css/lb.css"/> <!--引入轮播图的css-->
+		 <link rel="stylesheet" type="text/css" href="css/daohang.css"/>
+		 <link rel="stylesheet" type="text/css" href="css/farm.css" />
+		 
+		 <script src="js/card.js" type="text/javascript" charset="utf-8"></script><!--背景卡片浮动js-->
+		 <script src="js/nav.js" type="text/javascript" charset="utf-8"></script><!--导航栏滚动js	-->
+		 <script src="js/lb.js" type="text/javascript" charset="utf-8"></script><!--轮播图js-->
+		 <script src="js/daohang.js" type="text/javascript" charset="utf-8"></script>
+		 <script type="text/javascript" src="js/farms.js" charset="utf-8"></script>
+		 <script src="js/moseover.js" type="text/javascript" charset="utf-8"></script>
+		 
+		 <link rel="stylesheet" type="text/css" href="css/chou.css"/>
+		<script src="js/chou.js" type="text/javascript" charset="utf-8"></script>
+		 <script type="text/javascript" src="js/ajax.js" ></script>
+		 <script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+		 <script type="text/javascript">
+		 	window.onload=function(){
+		 		fudong();
+		 		daohang1();
+		 		lb();
+		 		chou();
+		 		over();
+		 		yincang();
+		 		uslogin();
+		 	}
+		 </script>
+		
+	</head>
+	<body>
+		<div id="ice"><!--首页最上边俩边的冰块背景图--></div>
+		<div id="logo_box"><!--放置炉石图标的容器-->
+			<div id="logo">
+				<h1><img src="img/logo.png"/></h1>
+			</div>
+			<div id="card"><!--背景图需要跟随鼠标动的卡牌-->
+				<img src="img/card1.png" />
+				<img src="img/card2.png" />
+				<img src="img/card3.png" />
+				<img src="img/card4.png" />
+				<img src="img/card5.png" />
+			</div>
+		</div>
+		
+		
+		
+		<div id="box"><!--//首页的整体大框-->
+			<div id="bar"><!--//首页导航栏 (宽1000px)-->
+				<div class="lbar"><img src="img/barleft.png"/></div>
+				
+				<!--导航栏效果-->
+				<div class="daohang"  ><!--导航栏成块级元素之后显示的效果-->
+					<ul class="li1">
+						<li class="c1" id="oc1">
+							<a href="炉石首页.html"></a><!--首页-->
+						</li>
+						<li class="c2">
+							<div id="onews">
+								<a href="新闻/新闻页.html"></a><!--新闻-->
+								<ul id="news">
+									<li class="lili"><a href="新闻/新闻页.html#zuixin">最新</a></li>
+									<li class="lili"><a href="新闻/新闻页.html#bowe">博文</a></li>
+									<li class="lili"> <a href="新闻/新闻页.html#bisai">赛事</a></li>
+								</ul>
+							</div>
+						</li>
+						
+						<li class="c3">
+							<div id="onews1">
+								<a href="游戏指南/index.html"></a><!--游戏指南-->
+								<ul id="news1">
+									<li class="lili"><a href="游戏指南/index.html#banben">版本</a></li>
+									<li class="lili"><a href="游戏指南/index.html#jichu">基础知识</a></li>
+									
+								</ul>
+							</div>
+							
+						</li>
+						<li class="c4">
+							
+							<div id="onews2">
+								<a href="视频图片.html"></a><!--视频图片-->
+								<ul id="news2">
+									<li class="lili"><a href="视频图片.html#shipin">视频</a></li>
+									<li class="lili"><a href="视频图片.html#tupian">截图</a></li>
+									<li class="lili"><a href="视频图片.html#tupian1">壁纸</a></li>
+									
+								</ul>
+							</div>
+						</li>
+						<li class="c5"><!--卡牌工具-->
+							<a href="卡牌工具1.html"></a>
+						</li>
+						<li class="c6"><!--游戏下载-->
+							<a href="游戏下载.html"></a>
+						</li>
+						<li class="c7">
+							<div id="onews3">
+								<a href="电子竞技.html"></a><!--电子竞技-->
+								<ul id="news3">
+									<li class="lili"><a href="电子竞技.html#jifen">积分排名</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="c8"><!--论坛-->
+							<a href="论坛.html"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="rbar"><img src="img/barright.png"/></div>
+			</div>
+			
+			<div id="left"><!--内容的左边大框-->
+				<div class="lb"><!--轮播图的div-->
+					<ul id="ul1">
+						<li><img src="img/3.png"  width="640" height="300"/></li>
+						<li><img src="img/2.jpg" width="640" height="300"/></li>
+						<li><img src="img/1.jpg" width="640" height="300"/></li>
+						<li><img src="img/3.png"  width="640" height="300"/></li>
+					</ul>
+					<div class="div1"></div>
+					<div id="text">“冰封王座的骑士”现已上线</div>
+					<ul id="ul2">
+						<li id="li1"><img src="img/3.png" /></li>
+						<li id="li2"><img src="img/2.jpg" /></li>
+						<li id="li3"><img src="img/1.jpg" /></li>
+					</ul>
+				</div>
+				
+				<div id="six"><!--六个div的大框-->
+					<div class="banben">
+						<div class="bbfont">
+							<div class="bbimg"></div>
+							<span >版本</span>
+						</div>
+					</div>
+					<div class="bb1">
+						<a href="冰封王座/冰封王座.html"  target="_blank"><div class="xin  bb1_1"></div>
+						<div class="bt">
+							<strong>冰封王座的骑士</strong>
+						</div>
+						<p>旅店墙外冰风怒号，然而那不是让你背脊发凉的原因。没有英雄躲得过巫妖王的腐蚀，即便是最坚定的圣光勇士也变成了扭曲的死亡骑士。</p>
+						</a>
+					</div>
+					<hr />
+					<div class="bb1">
+						<a href="安戈洛/安戈洛.html"  target="_blank"><div class="xin  bb1_2"></div>
+						<div class="bt">
+							<strong>勇闯安戈洛</strong>
+						</div>
+						<p>出发，目标安戈洛环型山！这片禁闭的森林中游荡着创世之初的远古生物。这里到处可见史前时代的动植物，巨大的恐龙无情地追捕着它们的猎物，狂放不羁的元素生物尽情释放着它们的原始魔法。</p>
+					    </a>
+					</div>
+					<hr />
+					<div class="bb1">
+						<a href="加基森/龙争虎斗.html"  target="_blank"><div class="xin  bb1_3"></div>
+						<div class="bt">
+							<strong>龙争虎斗加基森</strong>
+						</div>
+						<p>加基森，塔纳利斯沙漠中的奇迹明珠。据诺森弗格市长办公室的统计数据显示，该市的经济近来出现了爆炸性增长，各类贸易也是一片繁荣。</p>
+					    </a>
+					</div>
+					<hr />
+					<div class="bb1">
+						<a href="上古之神/上古之神.html"  target="_blank"><div class="xin  bb1_4"></div>
+						<div class="bt">
+							<strong>上古之神的低语</strong>
+						</div>
+						<p>千百年来，被泰坦封印在地下的上古之神似乎陷入到沉睡之中。而现在，渐渐苏醒的它们开始蠢蠢欲动，甚至对炉石旅店都产生了难以估量的影响！你能感受到腐化的力量在牌桌上肆意蔓延，曾经的一些熟面孔竟也长出了遍布周身的眼球和触须！</p>
+						</a>
+					</div>
+					<hr />
+					<div class="bb1">
+						<a href="冠军的试炼/冠军的试炼.html"  target="_blank"><div class="xin  bb1_5"></div>
+						<div class="bt">
+							<strong>冠军的试炼</strong>
+						</div>
+						<p>当巫妖王和他的亡灵天灾威胁大陆的和平时，银色北伐军召集了艾泽拉斯最强大的英雄，在波澜壮阔的比武大会上展示了自己的力量。现在，虽然巫妖王已经被消灭，但冠军的试炼却仍在继续……</p>
+						</a>
+					</div>
+					<hr />
+					<div class="bb1">
+						<a href="卡拉赞/卡拉赞.html"  target="_blank"><div class="xin  bb1_6"></div>
+						<div class="bt">
+							<strong>卡拉赞之夜</strong>
+						</div>
+						<p>过去的卡拉赞可谓是奥术能量的研习圣地，而今它将以一个焕然一新的姿态展现在所有人面前！大法师麦迪文使尽浑身解数，力求将这场极致奢华的盛大派对呈现给到场的每一位嘉宾，而你正是当中一位。</p>
+						</a>						
+					</div>
+				</div>
+				<div id="btobg"><!--页面底部补齐背景的图片-->
+				
+				</div>
+			</div>
+			
+			<div id="right"><!--内容框的右边-->
+				<div id="login">
+					<div class="logo1">
+						
+					</div>
+					<div id="login_1">
+						<span >账户：</span><input type="text" id="user"   style="width: 100px"/><br />
+						<span >密码：</span><input type="password" id="password" style="width: 100px"/><br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" id="lg1" value="登陆" style="width: 50px"/>
+						<a href="注册页面.html"><input type="button" id="lg" value="注册" style="width: 50px"/></a><br />
+						<a href="后台/首页（新闻管理）.html">我是管理员</a>
+					</div>
+				</div>
+				
+				<div class="rbox">
+					<center><span id="headchou">
+						抽取你的英雄
+					</span>
+					</center>
+					<div id="chou">
+						<ul>
+							<li style="display: block;"><img src="img/抽奖/？.png"/></li>
+							<li class="chouli"><img src="img/抽奖/Fdruid.jpg" /></li>
+							<li class="chouli"><img src="img/抽奖/Fhunter.jpg"/></li>
+							<li class="chouli"><img src="img/抽奖/Fmage.jpg"/></li>
+							<li class="chouli"><img src="img/抽奖/Fpaladin.jpg"/></li>
+							<li class="chouli"><img src="img/抽奖/Fpriest.jpg"/></li>
+							<li class="chouli"><img src="img/抽奖/Frogue.jpg"/></li>
+							<li class="chouli"><img src="img/抽奖/Fshaman.jpg"/></li>
+							<li class="chouli"><img src="img/抽奖/Fwarlock.jpg"/></li>
+							<li class="chouli"><img src="img/抽奖/Fwarrior.jpg"/></li>
+							
+						</ul>
+					</div>	
+					<center>
+						<br /><br />
+						<input type="button" id="star" value="开始" />
+						<input type="button" id="fin" value="暂停" />
+					</center>
+				</div>
+				<div class="rbox2">
+					<center><span id="headchou">
+						九大职业
+					</span>
+					</center>
+					<div class="nine">
+						<img src="img/抽奖/nine.jpg" />
+					</div>
+					<p id="spanx">
+						在《炉石传说》中，你扮演的是游戏中九个职业。每个职业都具有独特的英雄技能以及专属的职业卡牌。你可以在练习模式中可以逐一解锁他们。尝试着了解各个职业的特色，作出选择，然后开始你的《炉石传说》之旅吧！
+					</p>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<div id="farm"><!--首页底部的内容-->
+			<div class="farm1">
+				<a href="javascript:;"><div class="farm2"></div></a>
+			</div>
+			<div class="farm3">
+				<ul class="mul">
+					<li class="far1"><a href="javascript:;"><div class="da1"></div> 在线客服</a></li>
+					<li class="far2"><a href="javascript:;"><div class="da2"></div> 反馈</a></li>
+					<li class="far3"><a href="javascript:;"><div class="da3"></div>加入我们</a></li>
+				</ul>
+				<div class="mu2">
+					<span>合作品牌：</span>
+					<a href="javascript:;">
+						<div class="mu2t"></div>
+					</a>
+					<a href="javascript:;"><span>+</span>&nbsp;&nbsp;<span>|</span>&nbsp;<span>合作媒体</span></a>
+					<a href="javascript:;" > <div class="farmoo"></div></a>
+				</div>
+				<div class="farm3_1">
+				<table width="778" height="85">
+				<tr>
+					<td><a href="javascript:;" class="aooo2">网易游戏</a></td>
+					<td><a href="javascript:;"  class="aooo2">网易看游戏</a></td>
+					<td><a href="javascript:;"  class="aooo2">电玩巴士</a></td>
+					<td><a href="javascript:;"  class="aooo2">17173</a></td>
+					<td><a href="javascript:;"  class="aooo2">178</a></td>
+					<td><a href="javascript:;" class="aooo2">不凡游戏</a></td>
+					<td><a href="javascript:;"  class="aooo2">UUU9</a>&nbsp;&nbsp;&nbsp;<span class="farnspan">收起</span></td>
+				</tr>
+				<tr>
+					<td><a href="javascript:;"  class="aooo2">腾讯游戏频道</a></td>
+					<td><a href="javascript:;"  class="aooo2">口袋巴士</a></td>
+					<td><a href="javascript:;"  class="aooo2">叶子猪</a></td>
+					<td><a href="javascript:;"  class="aooo2">太平洋游戏</a></td>
+					<td><a href="javascript:;"  class="aooo2">52PK</a></td>
+					<td><a href="javascript:;"  class="aooo2">锐派</a></td>
+					<td><a href="javascript:;"  class="aooo2">新浪游戏</a></td>
+				</tr>
+				<tr>
+					<td><a href="javascript:;"  class="aooo2">天极网</a></td>
+					<td><a href="javascript:;"  class="aooo2">要我玩</a></td>
+					<td><a href="javascript:;"  class="aooo2">炉石咖啡厅</a></td>
+					<td><a href="javascript:;"  class="aooo2">兔玩网</a></td>
+					<td><a href="javascript:;"  class="aooo2">全球电竞网</a></td>
+					<td><a href="javascript:;"  class="aooo2">掌游宝</a></td>
+					<td><a href="javascript:;"  class="aooo2">多玩网</a></td>
+				</tr>
+				</table>
+				<a href="javascript:;" class="oaaa1">申请合作</a>
+			</div>
+			<div class="farm4">
+				<a href="javascript:;"><img src="img/tuFlogo_blizzard.png" class="farmimg1"></a>
+				<a href="javascript:;"><img src="img/wangyifarm.png" class="farmimg2"></a>
+			</div>
+			<div class="farm5">
+				<a href="javascript:;">隐私&nbsp;&nbsp;|&nbsp;&nbsp;法律条款&nbsp;&nbsp;|&nbsp;&nbsp;API</a>
+				<p>©2017 暴雪娱乐有限公司版权所有 由上海网之易网络科技发展有限公司运营 著作权侵权 新出审字[2013]1510号<br />
+					文网进字[2013]029号 沪网文[2014]0731-161号 增值电信业务经营许可证编号：沪B2－20080012<br />
+					互联网违法和不良信息举报电话：0571-28090163 沪公网安备 31011502022167号</p><br />
+				<div class="farm6">
+					<a href="javascript:;"><img src="img/farm002.png" class="farmimg3"></a>	
+					<a href="javascript:;"><img src="img/farm004.png" class="farmimg4"></a>	
+					<a href="javascript:;"><img src="img/farm003.png" class="farmimg5"></a>	
+					<a href="javascript:;"><img src="img/farm001.png" class="farmimg6"></a>	
+				</div>	
+				<div class="farm7">|  适龄提示：适合13岁及以上使用 家长监护工程</div>
+			</div>
+			</div>
+			
+		</div>	
+		 
+	</body>
+</html>

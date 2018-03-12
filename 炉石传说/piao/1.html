@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			html body{
+				height: 100%;
+				overflow:hidden;
+			}
+			#box {
+				width: 100%;
+				height:100%; 
+				/*position:absolute;  top:0px;right:auto; left:0; bottom:0;*/
+				margin: 0 auto;
+				/*border: 1px red solid;*/
+			}
+			
+			#box1 {
+				width: 100%;
+				height:auto;
+				background-image: url(img/导入页img/2.jpg);
+				background-size: 120% 100%;
+				background-position: top center; 
+				
+				position:absolute;  top:0px;right:auto; left:0; bottom:0;
+			}
+			
+			.img1 {
+				width: 500px;
+				height: 300px;
+				margin: 0 auto;
+				position: relative;
+				top: 150px;
+			}
+			
+			#box2 {
+				width: 100%;
+				height: 110px;
+				background-image: url(img/导入页img/3.jpg);
+				/*border: 1px red solid;*/
+				background-size: 100%;
+				position: absolute;
+				bottom: 0px;
+			}
+			
+			#lianjie {
+				width: 100%;
+				height: 110px;
+				background-image: url(img/导入页img/4.png);
+				/*border: 1px blue solid;*/
+				background-size: 100% 100%;
+				position: absolute;
+				bottom: 110px;
+			}
+			
+			#btno {
+				width: 480px;
+				height: 250px;
+				background-image: url(img/导入页img/open.png);
+				background-position: -120px 430px;
+				/*border: 1px red solid;*/
+				position: relative;
+				top: -150px;
+				margin:  0 auto;
+				overflow: hidden;
+			}
+			
+			#img2 {
+				opacity: 0.7;
+				position: relative;
+				left: -190px;
+				/*border: 1px palegreen solid;*/
+				top: 80px;
+				/*margin:  0 auto;*/
+			}
+		</style>
+
+		<script src="http://cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
+
+		<script type="text/javascript">
+			window.onload = function() {
+				var oImg2 = document.getElementById("img2");
+				var aTu1 = document.getElementsByClassName("tu1");
+				var aZi1 = document.getElementsByClassName("tu1_a");
+
+				for(var i = 0; i < aZi1.length; i++) {
+					aZi1[i].index = i;
+					aZi1[i].onmouseover = function() {
+						this.style.backgroundImage = "url(img/导入页img/1_bg.png)"
+
+					}
+					aZi1[i].onmouseout = function() {
+						this.style.backgroundImage = "url(img/导入页img/11.png)"
+
+					}
+				}
+
+				oImg2.onmouseover = function() {
+					oImg2.style.opacity = "1";
+				}
+				oImg2.onmouseout = function() {
+					oImg2.style.opacity = "0.7";
+				}
+
+			}
+		</script>
+
+	</head>
+
+	<body>
+
+		<div id="box">
+
+			<div id="box1">
+				
+			</div>
+
+			<center><img src="img/导入页img/12.png" class="img1" /></center>
+				<div id="lianjie"></div>
+				<div id="box2">
+					<div id="btno">
+						<a href="../炉石首页.html"><img src="img/导入页img/open1.png" id="img2" /></a>
+					</div>
+	
+					<script src="js/xiaxue.js" type="text/javascript" charset="utf-8"></script>
+				</div>	
+		</div>		
+	</body>
+
+</html>

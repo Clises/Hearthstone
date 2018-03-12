@@ -1,0 +1,301 @@
+#boxkala{
+	width: 1024px;
+	height: 2650px;
+	/*border: 1px red solid;*/
+	margin: 0 auto;
+	position: relative;
+}
+#kala1{
+	width: 1024px;
+	height: 2500px;
+	background-image: url(../imgkala/bgcenter.png);
+	background-size: 100% ;
+	/*border: 1px saddlebrown solid;*/
+}
+#kaka1{
+	width: 1024px;
+	height: 50px;
+	/*border: 1px red solid;*/
+	position: absolute;
+	top: 70px;
+	left: 20px;
+	font-size: 12px;
+	padding-bottom: 4px;
+	padding: 22px 0 0 56px;
+}
+
+#kala1 .kalaspan{
+	color: darkred;
+}
+#kaka2{
+	width: 993px;
+	height: 440px;
+	/*border: 1px red solid;*/
+	margin: 0 auto;
+	position: absolute;
+	top:52px;
+}
+#kaka3{
+	width: 993px;
+	height: 400px;
+	/*border: 1px red solid;*/
+	position: relative;
+	top: 36px;
+	left: 14px;
+	background-image: url(../imgkala/kaka2bg.png);
+}
+#kaka4{
+	margin: auto;
+	width: 937px;
+	height: 1974px;
+	/*border: 1px red solid;*/
+	position: absolute;
+	top: 480px;
+	left: 56px;
+}
+.kaka4_1{
+	padding: 10px 20px 30px ;
+}
+.kak4_2{
+	width: 924px;
+	height: 33px;
+	/*border: 1px royalblue solid;*/
+	bottom: 20px;
+}
+#kaka3 h2{
+	color: #233a6e;
+    font-size: 36px;
+    font-weight: 600;
+    position: absolute;
+    left: 35px;
+    top:400px;
+    
+    margin-bottom: 20px;
+}
+#kaka4 p{
+	color: #000000;
+	font-size: 16px;
+	line-height: 30px;
+}
+.kao1{
+	background-color: #dac197;
+   /* border: 1px solid #d4ba8c;*/
+    border-radius: 4px;
+    float: left;
+    padding: 16px;
+    width: 185px;
+    height: 404px;
+    margin-left: -35px;
+}
+.kao1 ul{
+	list-style: none;
+	padding: 50px;
+	
+}
+.kao1 li{
+	padding-top: 20px;
+}
+a{
+	color: #db6800;
+	text-decoration: none;
+	
+}
+a:hover{
+	color: #63170a;
+}
+.kao1 .katee{
+	color: #63170a;
+}
+#kaka5{
+	
+	position: relative;
+	width: 684px;
+	height: 432px;
+	border: 2px lightgoldenrodyellow solid;
+	box-shadow: yellow 0px 0px 5px;
+	margin-left: 219px;
+	margin-top: -31px;
+	background-image: url(../imgkala/ka1.png);
+	background-size: 100% 100%;
+	transition:all 0.8s;
+}
+
+.kakah4{
+	color: #233A6E;
+	padding-top: 20px;
+	padding-left: 80px;
+}
+#kaka6{
+	margin-top: 50px;
+	width: 905px;
+	height: 495px;
+	/*border: 1px red solid;*/
+	position: relative;
+}
+#kaka6 .kakuang1{
+	width: 100%;
+	height:8px;
+	top: 0px;
+	background-image: url(../imgkala/kay.jpg);
+	z-index: 11;
+}
+#kaka6 .kakuang3{
+	width: 8px;
+	height:100%;
+	position: absolute;
+	top: 0px;
+	background-image: url(../imgkala/kax.jpg);
+	z-index: 10;
+}
+#kaka6 .kakuang4{
+	width: 8px;
+	height:100%;
+	position: absolute;
+	top: 0px;
+	margin-left: 898px;
+	background-image: url(../imgkala/kax.jpg);
+	z-index: 10;
+}
+#kaka6 .kakuang2{
+	width: 100%;
+	height:8px;
+	margin-top: 480px;
+	background-image: url(../imgkala/kay.jpg);
+	z-index: 11;
+}
+
+
+#kaka6 .kakuang5{
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 19px;
+	height: 17px;
+	background-image: url(../imgkala/kaxy.png);
+	z-index: 10;
+}
+#kaka6 .kakuang6{
+	position: absolute;
+	top: 0px;
+	left: 887px;
+	width: 19px;
+	height: 17px;
+	background-image: url(../imgkala/kaxy.png);
+	z-index: 10;
+	background-position: 18px 0px ;
+}
+#kaka6 .kakuang7{
+	position: absolute;
+	width: 19px;
+	height: 17px;
+	top: 480px;
+	background-image: url(../imgkala/kaxy.png);
+	z-index: 10;
+	background-position: 0px 16px ;
+}
+#kaka6 .kakuang8{
+	position: absolute;
+	width: 19px;
+	height: 17px;
+	left: 887px;
+	top: 480px;
+	background-image: url(../imgkala/kaxy.png);
+	z-index: 10;
+	background-position: 18px 16px ;
+}
+#kakadaobg{
+	top: 8px;
+	position: absolute;
+	width: 905px;
+	height: 480px;
+	background-image: url(../imgkala/kakadabg.jpg);
+	z-index: 9;
+}
+.kaka4{
+	width: 924px;
+	height: 93px;
+/*	border: 1px red solid;*/
+	position: absolute;
+	top: 535px;
+	border-bottom: 1px #D4BA8C solid;
+	border-top: 1px #D4BA8C solid;
+}
+.kaka4_3 h3{
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 20px;
+}
+.kaka4_3 ul{
+	list-style-image: url(../imgkala/kaka2Flist-bullet.png);
+	padding-left: 50px;
+	margin-top: 9px;
+}
+.kaka4_3 li{
+	font-size: 16px;
+	margin-top: 9px;
+	
+}
+.kaka2f{
+	position: absolute;
+	right: 20px;
+	top: 624px;
+	z-index: 2;
+}
+.kaka3f{
+	position: absolute;
+	right: 20px;
+	top: 220px;
+	z-index: 2;
+}
+.kaka4_4{
+	width: 924px;
+	height: 595px;
+	/*border: 1px red solid;*/
+	position: relative;
+	top: 100px;
+}
+.kaka4_4 span{
+	position: absolute;
+    left: -26px;
+    top: 17px;
+    display: block;
+    width: 69px;
+    height: 69px;
+    background-image: url(../imgkala/icons.png);
+    background-position: 352px 0px;
+}
+.kaka4_4  h3{
+	margin-left: 11px;
+	background-color: #DAC197;
+	line-height: 50px;
+	padding-left: 30px;
+	margin-bottom: 30px;
+}
+.kaka4_4 {
+	padding-top: 30px;
+	margin-bottom: 30px;
+}
+.kaka4_4 .kakanew1 {
+	padding-top: 20px;
+}
+.kakaul{
+	float: left;
+	padding-left: 30px;
+	list-style-image: url(../imgkala/kaka2Flist-bullet.png);
+	
+	line-height: 30px;
+}
+.kakali{
+	padding-top: 20px;
+}
+#btobg1{
+	background-image: url(../img/bg-bot.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 1020px;
+	height: 34px;
+	position: absolute;
+	left: 3px;
+	bottom: 140px;
+	/*border: 1px red solid;*/
+}

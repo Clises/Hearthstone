@@ -1,0 +1,233 @@
+#farm{
+	width: 1340px;
+	height: 400px;
+	background-image: url(../img/新建文件夹/frombeijing.jpg);
+	background-size: 100% 100%;
+	position: absolute;
+	top: 870px;
+	margin-top: 100px;
+}
+.farm1{
+	width: 349px;
+    height: 87px;
+    position: absolute;
+    left: 50%;
+    top: -31.5px;
+    margin-left: -171px;
+	background-image: url(../img/from1.png);
+}
+.farm2{
+	width: 249px;
+	height: 83px;
+	position: absolute;
+	left: 50px;
+	top: 10px;
+	background-image: url(../img/新建文件夹/from11.png);
+	z-index: 100;
+}
+.farm2:hover{
+	background-position: 0px 78px;
+}
+.farm3{
+	width: 1000px;
+	height: 110px;
+	/*border: 1px red solid;*/
+	position: relative;
+	left: 50%;
+	margin-left: -500px ;
+	/*background-image: url(../img/siness.png);*/
+	
+}
+.farm3 .mul{
+	position: absolute;
+}
+.farm3 li{
+	display: block;
+	float: left;
+	/*padding-left: 80px;*/
+	padding-top: 83px;
+	line-height: 20px;
+	
+	
+}
+.farm3 li a{
+	float: left;
+	text-decoration: none;
+	padding-left: 50px;
+	color: white;
+	display: block;
+	/*background-image: url(../img/siness.png);*/
+	
+}
+.da1{
+	width: 30px;
+	height: 27px;
+	position: absolute;
+	left: 15px;
+	
+	float: left;
+	background-image: url(../img/新建文件夹/siness.png);
+	
+	z-index: 100;
+}
+
+.farm3  .mul .da1{
+	background-position: 2px -4px;
+}
+.da2{
+	width: 30px;
+	height: 27px;
+	position: absolute;
+	left: 128px;
+	float: left;
+	background-image: url(../img/新建文件夹/siness.png);
+	z-index: 100;
+}
+
+.farm3  .mul .da2{
+	background-position: -31px -5px;
+}
+.da3{
+	width: 30px;
+	height: 27px;
+	position: absolute;
+	left: 212px;
+	float: left;
+	background-image: url(../img/新建文件夹/siness.png);
+	z-index: 100;
+}
+.farm3  .mul .da3{
+	background-position: -2px -32px;
+}
+.farm3 .mu2{
+	width: 400px;
+	height: 30px;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	/*border: 1px red solid;*/
+}
+.mu2 span{
+	line-height: 30px;
+	color: white;
+	
+}
+.mu2 a{
+	
+	padding-left: 50px;
+	text-decoration: none;
+}
+.farmoo{
+	width: 24px;
+	height: 24px;
+	
+	position: absolute;
+	left: 286px;
+	top: 6px;
+	background-image: url(../img/新建文件夹/farmooo.jpg);
+	background-position: -14px -27px;
+}
+.farmoo:hover{
+	background-position: -14px -63px;
+}
+.mu2 .mu2t{
+	width: 100px;
+	height: 25px;
+	/*border: 1px red solid;*/
+	position: absolute;
+	left: 75px;
+	top: 3px;
+	background-image: url(../img/新建文件夹/mu2a.png);
+}
+.mu2 .mu2t{
+	background-position: -350px 0px;
+}
+.farm4{
+	width: 1000px;
+	height: 125px;
+	/*border: 1px red solid;*/
+	position: relative;
+	top: 150px;
+	margin: 0 auto;
+}
+.farm4 .farmimg1{
+	position: absolute;
+	left: 18px;
+	top: 42px;
+}
+.farm4 .farmimg2{
+	position: absolute;
+	left: 200px;
+	top: 80px;
+}
+.farm5{
+	width: 706px;
+	height: 119px;
+	/*border: 1px red solid;*/
+	position: relative;
+	left: 341px;
+	top: 42px;
+	z-index: 1;
+}
+.farm5 a{
+	text-decoration: none;
+	color: white;
+}
+.farm5 p{
+	color: #552c09;
+	font-size: 14px;
+}
+.farm6{
+	width: 160px;
+	height: 30px;
+	/*border: 1px red solid;*/
+	position: absolute;
+	top: 82px;
+	z-index: 1;
+}
+.farm6 a{
+	padding-left: 10px;
+}
+.farm7{
+	color: #552c09;
+	float: right;
+	position: absolute;
+	/*border: 1px red solid;*/
+	left: 170px;
+	top: 90px;
+	z-index: 1;
+}
+.farm3_1{
+	width: 778px;
+	height: 108px;
+	/*border: 1px red solid;*/
+	position: absolute;
+	background-color: #170C06;
+	left: 132px;
+	top: 109px;
+	z-index:1000 ;	
+	display: none;
+	
+}
+
+.farm3_1 .aooo2{
+	color: burlywood;
+	text-decoration: none;
+	opacity: 0.5;
+}
+.farm3_1 .aooo2:hover{
+	color: white;
+	opacity: 1;
+}
+.oaaa1{
+	clear: both;
+	position: absolute;
+	right: 30px;
+	color: goldenrod;
+}
+.oaaa1:hover{
+	color: white;
+}
+.farnspan{
+	color: white;
+}

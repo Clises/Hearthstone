@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/css1.css"/>
+		<link rel="stylesheet" type="text/css" href="css/farm.css"/>
+		<script src="js/farms.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload=function  ()
+			{
+//				var ohadden=document.getElementsByClassName("hadden");
+//				var oasli=document.getElementsByClassName("asli");
+//				
+//				for (var k=0;k<oasli.length;k++)
+//           	{
+//           		oasli[k].index=k;
+//           		oasli[k].onmousemove=function  ()
+//           		{
+//           			
+//           			for (var j=0;j<ohadden.length;j++)
+//           			{
+//           				ohadden[j].style.display="none";
+//           				
+//           			}
+//           			ohadden[this.index].style.display="block";
+//           			
+//           		}
+//           		
+//           		
+//           	}
+            var ohiden=document.getElementById("hiden");
+			var ohiden1=document.getElementById("hiden1");
+		    var oyincang=document.getElementById("yincang");
+		    var oyincang1=document.getElementById("yincang1");
+		    var oyincang2=document.getElementById("yincang2");
+			
+			var b=true;
+			var c=true;
+		    ohiden.onclick=function  ()
+		  {
+		  	c=false;
+		 	showdj();
+		  	showGame();
+		  	
+		  	
+ 		  }
+		      ohiden1.onclick=function  ()
+		  {
+		  	b=false;
+		 	showGame();
+		 	showdj();
+		 	
+ 		  }
+		  function showGame(){
+		  	
+		  	if(b){
+		  		oyincang.style.display="block";
+		 		oyincang1.style.display="block";
+		  	}else{
+		  		oyincang.style.display="none";
+		 		oyincang1.style.display="none";
+		  	}
+		  	b=!b;
+		  }
+		  function showdj(){
+		  	
+		  		if(c){
+		  		oyincang2.style.display="block";
+		 		oyincang1.style.display="block";
+		  	}else{
+		  		oyincang2.style.display="none";
+		 		oyincang1.style.display="none";
+		  	}
+		  	c=!c;
+		  }
+		  
+		  
+		  oyincang1.onclick=function  ()
+		  {
+		 	b=false;
+		 	showGame();
+		 	c=false;
+		 	showdj();
+		  }
+		    
+//		  $("#game-tu1").animate({height:280},300,function  ()
+//		  {
+//		  	$("#game-tu2").animate({height:280},300,function  ()
+//		  	{
+//		  		$("#game-tu3").animate({height:280},300,function  ()
+//		  		{
+//		  			$("#game-tu4").animate({height:280},300,function  ()
+//		  			{
+//		  				$("#game-tu5").animate({height:280},300,function  ()
+//		  				{
+//		  					$("#game-tu6").animate({height:280},300);
+//		  				});
+//		  			});
+//		  		});
+//		  	});
+//		  });
+//		  
+
+              
+			}
+		</script>
+		<title></title>
+	</head>
+	<body>
+		<div id="bar">
+			<a href="javascript:;" id="logo"></a>
+			<div id="bar1">
+				<ul>
+					<li><a href="javascript:;" id="hiden">游戏</a></li>
+					<li><a href="javascript:;">电竞</a></li>
+					<li><a href="javascript:;" id="hiden1">商城</a></li>
+				</ul>
+			</div>
+			
+			<div id="bar2">
+				<ul>
+					<li><a href="javascript:;">支持</a></li>
+					<li style="width: 90px;"><a href="javascript:;">你的通行证</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		<div id="yincang">
+			<ul id="game-ul">
+				<li><a href="#"><img src="img/game1.jpg" id="game-tu1"/></a></li>
+				<li><a href="#"><img src="img/game2.jpg" id="game-tu2"/></a></li>
+				<li><a href="#"><img src="img/game3.jpg" id="game-tu3"/></a></li>
+				<li><a href="#"><img src="img/game4.jpg" id="game-tu4"/></a></li>
+				<li><a href="#"><img src="img/game5.jpg" id="game-tu5"/></a></li>
+				
+			</ul>
+		</div>
+		<div id="yincang2">
+			<ul>
+				<li><a href="#"><div id="liansai1"><img src="img/liansai1.png"/></div></a></li>
+				<li><a href="#"><div id="liansai2"><img src="img/liansai2.png"/></div></a></li>
+				<li><a href="#"><div id="liansai3"><img src="img/liansai3.png"/></div></a></li>
+				<li><a href="#"><div id="liansai4"><img src="img/liansai4.png"/></div></a></li>
+				<li><a href="#"><div id="liansai5"><img src="img/liansai5.png"/></div></a></li>
+			</ul>
+		</div>
+		<div id="yincang1">
+			
+		</div>
+		
+		<div id="header">
+			<img src="img/bg1-1.png"/ id="bg1-1">
+			<img src="img/biglogo.png"/ id="biglogo">
+			
+			<div id="header-text">
+				<span>
+					<h1><b>一片生活着怪兽的大地！</b></h1> <br />
+					<p>出发，目标安戈洛环型山！这片禁闭的森林中游荡着创世之初的远古生物。<br />
+这里到处可见史前时代的动植物，巨大的恐龙无情地追捕着它们的猎物，狂放不羁的元素生物尽情释放着它们的原始魔法。<br />
+准备好你的套牌，来一场终身难忘的探险吧！</p>
+				</span>
+			</div>
+		</div>
+		
+		<!--<div id="box">-->
+			
+		
+		<div id="video">
+			<div id="video-border">
+				<img src="img/videoborder.png"/>
+			</div>
+		</div>
+		
+		<div id="look">
+			<div id="look-test">
+				<span>
+					<h2><b>查看已公布的“勇闯安戈洛”卡牌</b></h2> <br />
+					<p>你可以在这里查看所有已经揭晓的“勇闯安戈洛”卡牌，或查阅我们的卡牌收藏夹浏览迄今为止公布的所有卡牌。</p>
+				</span>
+				<img src="img/look-img.png"/>
+			</div>
+		</div>
+		
+		<div id="note">
+			<h1><b>教授的笔记</b></h1>
+			<div id="play">
+			<img src="img/play1.png" id="play1"/>
+			<img src="img/play2.png" id="play2"/>
+			<img src="img/play3.png" id="play3"/>
+			<img src="img/play4.png" id="play4"/>
+			</div>
+		</div>
+		
+		<div id="picture">
+			<span>
+				<h1><b>原始风貌</b></h1> <br />
+				<p>欣赏艾泽拉斯最伟大的自然主义画家描绘出的远古史前大陆那惊人的美景。</p>
+			</span>
+			
+			<div id="bigpicture">
+				<img src="img/videoborder.png"/>
+			</div>
+			
+			<div id="change">
+				<ul>
+					<li id="change1" class="asli">
+						<img src="img/videoborder.png"/>
+					    <!--<div class="hadden"></div>-->
+					</li>
+					<li id="change2" class="asli">
+						<img src="img/videoborder.png"/>
+						<!--<div class="hadden"></div>-->
+					</li>
+					<li id="change3" class="asli">
+						<img src="img/videoborder.png"/>
+						<!--<div class="hadden"></div>-->
+					</li>
+					<li id="change4" class="asli">
+						<img src="img/videoborder.png"/>
+						<!--<div class="hadden"></div>-->
+					</li>
+					<li id="change5" class="asli">
+						<img src="img/videoborder.png"/>
+					    <!--<div class="hadden"></div>-->
+					</li>
+					<li id="change6" class="asli">
+						<img src="img/videoborder.png"/>
+						<!--<div class="hadden"></div>-->
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	<!--	</div>-->
+		
+		<div id="farm"><!--首页底部的内容-->
+			<div class="farm1">
+				<a href="#"><div class="farm2"></div></a>
+			</div>
+			<div class="farm3">
+				<ul class="mul">
+					<li class="far1"><a href="#"><div class="da1"></div> 在线客服</a></li>
+					<li class="far2"><a href="#"><div class="da2"></div> 反馈</a></li>
+					<li class="far3"><a href="#"><div class="da3"></div>加入我们</a></li>
+				</ul>
+				<div class="mu2">
+					<span>合作品牌：</span>
+					<a href="#">
+						<div class="mu2t"></div>
+					</a>
+					<a href="#"><span>+</span>&nbsp;&nbsp;<span>|</span>&nbsp;<span>合作媒体</span></a>
+					<a href="javascript:;" > <div class="farmoo"></div></a>
+				</div>
+			</div>
+			<div class="farm3_1">
+				<table width="778" height="85">
+				<tr>
+					<td><a href="#" class="aooo2">网易游戏</a></td>
+					<td><a href="#"  class="aooo2">网易看游戏</a></td>
+					<td><a href="#"  class="aooo2">电玩巴士</a></td>
+					<td><a href="#"  class="aooo2">17173</a></td>
+					<td><a href="#"  class="aooo2">178</a></td>
+					<td><a href="#" class="aooo2">不凡游戏</a></td>
+					<td><a href="#"  class="aooo2">UUU9</a>&nbsp;&nbsp;&nbsp;<span class="farnspan">收起</span></td>
+				</tr>
+				<tr>
+					<td><a href="#"  class="aooo2">腾讯游戏频道</a></td>
+					<td><a href="#"  class="aooo2">口袋巴士</a></td>
+					<td><a href="#"  class="aooo2">叶子猪</a></td>
+					<td><a href="#"  class="aooo2">太平洋游戏</a></td>
+					<td><a href="#"  class="aooo2">52PK</a></td>
+					<td><a href="#"  class="aooo2">锐派</a></td>
+					<td><a href="#"  class="aooo2">新浪游戏</a></td>
+				</tr>
+				<tr>
+					<td><a href="#"  class="aooo2">天极网</a></td>
+					<td><a href="#"  class="aooo2">要我玩</a></td>
+					<td><a href="#"  class="aooo2">炉石咖啡厅</a></td>
+					<td><a href="#"  class="aooo2">兔玩网</a></td>
+					<td><a href="#"  class="aooo2">全球电竞网</a></td>
+					<td><a href="#"  class="aooo2">掌游宝</a></td>
+					<td><a href="#"  class="aooo2">多玩网</a></td>
+				</tr>
+				</table>
+				<a href="#" class="oaaa1">申请合作</a>
+			</div>
+			<div class="farm4">
+				<a href="#"><img src="img/tuFlogo_blizzard.png" class="farmimg1"></a>
+				<a href="#"><img src="img/wangyifarm.png" class="farmimg2"></a>
+			</div>
+			<div class="farm5">
+				<a href="#">隐私&nbsp;&nbsp;|&nbsp;&nbsp;法律条款&nbsp;&nbsp;|&nbsp;&nbsp;API</a>
+				<p>©2017 暴雪娱乐有限公司版权所有 由上海网之易网络科技发展有限公司运营 著作权侵权 新出审字[2013]1510号<br />
+					文网进字[2013]029号 沪网文[2014]0731-161号 增值电信业务经营许可证编号：沪B2－20080012<br />
+					互联网违法和不良信息举报电话：0571-28090163 沪公网安备 31011502022167号</p><br />
+				<div class="farm6">
+					<a href="#"><img src="img/farm002.png" class="farmimg3"></a>	
+					<a href="#"><img src="img/farm004.png" class="farmimg4"></a>	
+					<a href="#"><img src="img/farm003.png" class="farmimg5"></a>	
+					<a href="#"><img src="img/farm001.png" class="farmimg6"></a>	
+				</div>	
+				<div class="farm7">|  适龄提示：适合13岁及以上使用   <a href="#">家长监护工程></a></div>
+			</div>
+		</div>
+	</body>
+</html>

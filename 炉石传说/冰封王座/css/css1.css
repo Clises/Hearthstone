@@ -1,0 +1,807 @@
+
+	body{
+			background-image: url(img/bg.jpg)
+			background-size: 100% 100%;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-decoration: none;
+		}
+		#bar{
+			width: 100%;
+			height: 40px;
+			background-color: #2c0903;
+			position: absolute;
+			overflow: hidden;
+			
+		}
+		#logo{
+			display: block;
+			position: absolute;
+			left: 30px;
+			width: 90px;
+			height: 90px;
+			background-image: url(../img/icelogo.png);
+			background-position-y: -4px;
+		}
+		
+		#bar1{
+			position: absolute;
+			width: 182px;
+			height: 40px;
+			left: 140px;
+			
+		}
+			
+		#logo:hover{
+			background-position-y: -49px;
+		}
+		
+		#bar1 ul{
+			display: block;
+			width: 182px;
+			height: 40px;
+		}
+		
+		#bar1 ul li{
+			display: block;
+			width: 60px;
+			height: 40px;
+			float: left;
+			line-height: 40px;
+			
+        }
+		
+		#bar1 ul li a span{
+			color: grey;
+		}
+		
+		#bar1 ul li a span:hover{
+			color: white;
+		}
+		
+		#bar2{
+			
+			display: block;
+			width: 150px;
+			height: 40px;
+			position: absolute;
+			right: 60px;
+		}
+		
+		
+		
+		#bar2 ul li{
+			display: block;
+			width: 60px;
+			height: 40px;
+			float: left;
+			line-height: 40px;
+		}
+		
+		#bar2 ul li a span{
+			color: grey;
+		}
+		
+		#bar2 ul li a span:hover{
+			color: white;
+		}
+		
+		#yincang1{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			opacity: 0.5;
+			top:360px;
+			z-index: 200;
+			display: none;
+		}
+		#yincang{
+			width: 100%;
+			height: 320px;
+			background-color:#161b25;
+			opacity: 0.99;
+			position: absolute;
+			top: 40px;
+			z-index: 200;
+			display: none;
+		}
+		
+		
+		#game-ul{
+			display: block;
+			width: auto;
+			height: 320px;
+		}
+		
+		#game-ul li{
+			display: block;
+			width: 164px;
+			height: 280px;
+			float: left;
+			margin-left: 90px;	
+		}
+		
+		
+		#game-tu1{
+			display: block;
+			height: 0px;
+		}
+		#game-tu2{
+			display: block;
+			height: 0px;
+		}
+		#game-tu3{
+			display: block;
+			height: 0px;
+		}
+		#game-tu4{
+			display: block;
+			height: 0px;
+		}
+		#game-tu5{
+			display: block;
+			height: 0px;
+		}
+		#game-tu6{
+			display: block;
+			height: 0px;
+		}
+		#yincang2{
+			width: 100%;
+			height: 320px;
+			background-color:#161b25;
+			opacity: 0.99;
+			position: absolute;
+			top: 40px;
+			z-index: 200;
+			display: none;
+			
+		}
+		
+		#yincang2 ul{
+			display: block;
+			width: auto;
+			height: 320px;
+		}
+		
+		#yincang2 ul li{
+			display: block;
+			width:195px ;
+			height: 320px;
+			float: left;
+			margin-left: 65px;
+		}
+		
+		
+			
+		
+		#header{
+			width: 100%;
+			height: 1044px;
+			background-image:url(../img/newbg.jpg);
+			background-size: 100% 100%;
+			position: absolute;
+			top: 40px;
+			/*background-position:120% center ;*/
+		}
+		#biglogo{
+			display: block;
+			position: relative;
+			width: 536px;
+			height: 395px;
+			/*left: 427px;*/
+			margin: 0 auto;
+		    top: 212px;
+		}
+		
+		#yiqie{
+			display: block;
+			margin: 0 auto;
+		}
+		
+		#header-text{
+			width: 100%;
+			height: 584px;
+			position: relative;
+			/*border: 1px black solid;*/
+			/*left: 206px;*/
+			margin: 0 auto;
+			top: 180px;
+		}
+		
+		#header-text span{
+			color: white;
+			text-align: center;
+		}
+		
+		#header-text span em{
+			display: block;
+			position: absolute;
+			/*left: 345px;*/
+		    left: 35%;
+			font-size: 110%;
+		}
+		
+		#header-text h1{
+			font-size: 300%;
+		}
+		
+		#small1{
+			position: absolute;
+			width: 150px;
+			height: 150px;
+			/*left: 200px;*/
+			left: 18%;
+			top: 840px;
+		}
+		
+		#small2{
+			position: absolute;
+			width: 150px;
+			height: 150px;
+			/*left: 646px;*/
+			left: 48%;
+			top: 840px;
+		}
+		
+		#small3{
+			position: absolute;
+			width: 150px;
+			height: 150px;
+			/*left: 1070px;*/
+			left: 78%;
+			top: 827px;
+		}
+		.small{
+			color: white;
+		}
+		
+		#play{
+			position:relative;
+			width: auto;
+			height: 1350px;
+			background-image: url(../img/bg-2.jpg);
+			background-size: 100% 100%;
+			top: 1083px;
+		}
+		
+		/*#demo{
+			position: absolute;
+			top: -100px;
+			left: -321px;
+		}*/
+		
+		#bg1{
+			position: absolute;
+			z-index: 100;
+			/*width:67%;*/
+		}
+		
+		#bg2{
+			position: absolute;
+			z-index: 90;
+			/*width:67%;*/
+		}
+		
+		#bg3{
+			position: absolute;
+			z-index: 300;
+			/*width:67%;*/
+		}
+		
+		#bg4{
+			position: absolute;
+			width: 100%;
+			top: 782px;
+		}
+		
+		#play-1{
+			position: relative;
+			width: 560px;
+			height: 420px;
+			/*border: 1px white solid;*/
+			/*left: 680px;*/
+			left: 53%;
+			top: 180px;
+		}
+		
+		#play-text{
+			color: white;
+			text-align: center;
+		}
+		
+		#car1{
+			position: absolute;
+			z-index: 300;
+			display: block;
+			
+		}
+		
+		#car2{
+			position: absolute;
+			left: 10px;
+			top: 5px;
+			
+			display: block;
+			
+		}
+		
+		#shou{
+			position: absolute;
+			top: 340px;
+			left: 148px;
+		}
+		
+		#zi{
+			color: white;
+			font-size: 18px;
+			position: absolute;
+			top: 317px;
+			left: 65px;
+		}
+		
+		#car4{
+			position: absolute;
+			display: none;
+			left: -150px;
+			top: -70px;
+			}
+		#car5{
+			position: absolute;
+			display: none;
+			left: 200px;
+			top: 177px;
+			z-index: 310;
+        }
+        
+        #boom1{
+				position: absolute;
+				left: -50px;
+				top: -10px;
+				display: none;
+			}
+		#boom2{
+				position: absolute;
+				left: -111px;
+				top: -59px;
+				display: none;
+			}
+			
+		
+        #boom3{
+				position: absolute;
+				left: -222px;
+				top: -185px;
+				display: none;
+			}
+		#boom4{
+				position: absolute;
+				left: -240px;
+				top: -200px;
+				display: none;
+			}
+		
+        #newcar{
+				position: absolute;
+				left: -150px;
+				top: -60px;
+				display: none;
+				z-index: 300;
+			}
+		
+        #car2-1{
+        	position: absolute;
+			display: none;
+			left: 200px;
+			top: 177px;
+			z-index: 310;
+        }
+        
+        #picture{
+        	height: 355px;
+        	width: 100%;
+        	/*border: 1px black solid;*/
+        	position: absolute;
+        	top: 910px;
+        	/*left: -681px;*/
+        }
+        
+        #picture-text{
+        	display: block;
+        	width: 100%;
+        	color: white;
+
+        	text-align: center;
+        }
+        
+        #picture-1{
+        	position: absolute;
+        	/*border: 1px black solid;*/
+        	/*width: 420px;*/
+        	width: 30%;
+        	height: 242px;
+        	left: 2%;
+        	top: 85px;
+        	background-image: url(../img/picture1.png);
+        	background-size: 100% 100%;
+        }
+
+         #picture-2{
+        	position: absolute;
+        	/*border: 1px black solid;*/
+        	/*width: 420px;*/
+        	width: 30%;
+        	height: 242px;
+        	left: 34%;
+        	top: 85px;
+        	background-image: url(../img/picture2.png);
+        	background-size: 100% 100%;
+        }
+       
+         #picture-3{
+         	display: block;
+        	position: absolute;
+        	/*border: 1px black solid;*/
+        	/*width: 420px;*/
+        	width: 30%;
+        	height: 242px;
+        	left: 66%;
+        	top: 85px;
+        	background-image: url(../img/picture3.png);
+        	background-size: 100% 100%;
+        }
+        
+        #picture-1 span{
+            position: absolute;
+         	left: 190px;
+         	color: white;
+         }
+        
+ 
+
+         #picture-2 span{
+            position: absolute;
+         	left: 190px;
+         	color: white;
+         }
+         
+          #picture-3 span{
+         	position: absolute;
+         	left: 190px;
+         	color: white;
+         }
+        
+          #picture-1 img{
+        	width: 100%;
+        	height: 100%;
+        }
+        
+         #picture-2 img{
+        	width: 100%;
+        	height: 100%;
+        }
+        
+         #picture-3 img{
+        	width: 100%;
+        	height: 100%;
+        }
+        
+       
+        #demo{
+        	position: absolute;
+        	top: 467px;
+        	left: -182px;
+        	z-index: 10;
+        	width:45%;
+        }
+
+
+        #totalcar{
+        	/*background-color: #020D1A;*/
+        	position: absolute;
+        	width: 100%;
+        	height: 700px;
+        	background-image: url(../img/totalcar-bg.jpg);
+        	background-size: 100% 100%;
+        	top: 2431px;
+        	/*overflow: hidden;*/
+        }
+        
+        #totalcar-play1{
+        	/*display: none;*/
+        	position: absolute;
+        	/*left: -161px;*/
+        	left: -420px;
+        	top: -81px;
+        }
+        
+    #totalcar-play2_1{
+    	width: 500px;
+    	height: 700px;
+    	left: 60%;
+    	
+        top: 270px;
+    	position: absolute;
+    	z-index: 30;
+    	overflow: hidden;
+    	/*border: 1px solid red;*/
+    }
+        #totalcar-play2{
+        	position: absolute;
+        	/*right: -105px;*/
+        	right: -445px;
+        	bottom: 1px;
+        	z-index: 5;
+        	/*display: none;*/
+        	
+        }
+        
+        #totallookcar1{
+        	position: absolute;
+        	width:200px;
+        	height: 300px;
+        	z-index: 10;
+        	left: 6%;
+        	top: 177px;
+        }
+        
+        #totallookcar2{
+        	position: absolute;
+        	width:200px;
+        	height: 300px;
+        	z-index: 10;
+        	left: 24%;
+        	top: 177px;
+        }
+        
+        #totallookcar3{
+        	position: absolute;
+        	width:200px;
+        	height: 300px;
+        	z-index: 10;
+        	left: 42.5%;
+        	top: 177px;
+        }
+        
+        #totallookcar4{
+        	position: absolute;
+        	width:200px;
+        	height: 300px;
+        	z-index: 50;
+        	left: 60.5%;
+        	top: 177px;
+        }
+        
+        #totallookcar5{
+        	position: absolute;
+        	width:200px;
+        	height: 300px;
+        	z-index: 50;
+        	left: 78.5%;
+        	top: 177px;
+        }
+        
+        #totalcar h1{
+        	display: block;
+        	color: #233A6E;
+        	position: absolute;
+        	top: 84px;
+        	left: 41%;
+        	
+        }
+        
+        #lookallcar{
+        	/*border-radius:20% ;*/
+        	width: 164px;
+        	height: 59px;
+        	overflow: hidden;
+        	/*background-image: url(../img/lookallcar.png);*/
+        	position: absolute;
+        	left: 45%;
+        	bottom: 107px;
+        	z-index: 10;
+        }
+        
+       #looka{
+       	display: block;
+       	position: relative;
+       	width: 164px;
+       	height: 59px;
+       	background-image: url(../img/lookallcar.png);
+       	background-position-y:-2px ;
+       	background-position-x:-1px ;
+       	z-index: 100;
+       	margin: 0 auto;
+       }
+       
+       #looka:hover{
+       	background-position-y:58px ;
+       }
+       
+       #nowlookallcars{
+       	position: absolute;
+       	width: 1000px;
+       	height: 800px;
+       	background-color: black;
+       	display: none;
+       	top: 2260px;
+       	left:184px ;
+       	z-index: 50;
+       }
+       
+       #nowlookallcars h1{
+       	color: white;
+       	display: block;
+       	position: absolute;
+       	top: 10px;
+       	right: 10px;
+       }
+       
+        #nowlookallcars ul li img{
+        	width: 200px;
+        	height: 300px;
+        }
+       
+       #nowlookallcars ul li{
+       	display: block;
+       	width: 185px;
+       	height: 300px;
+       	float: left;
+       	margin: 30px;
+       }
+       
+       #meet{
+       	position: absolute;
+       	top: 3131px;
+       	width: 100%;
+       	height: 959px;
+        background-image: url(../img/meet-bg.jpg);
+        background-size: 100% 100%;
+       	color: white;
+       	text-align: center;
+       }
+       
+       #meet-1{
+       	width: 62.8%;
+       	height: 317px;
+       	position: relative;
+       	margin: 0 auto;
+       /*	border: 1px black solid;*/
+       	/*left: 237px;*/
+       	top: 125px;
+       	z-index: 500;
+       }
+       
+       #meetborder-1{
+       	position: absolute;
+       top: -20px;
+       left: -15px;
+       	width:315px;
+       }
+       
+        #meetborder-2{
+       	position: absolute;
+       top: -20px;
+       left: 300px;
+       	width:290px;
+       }
+       
+        #meetborder-3{
+       	position: absolute;
+        top: -20px;
+       	left: 600px;
+       	width:285px;
+       }
+       
+       #meet-1 ul li{
+       	position: relative;
+       	display: block;
+       	width: 274px;
+       	height: 147px;
+       	float: left;
+       	margin: 4px;
+       	padding-left:16px ;
+       }
+       
+       #meet-1 ul{
+       	display: block;
+       	width: 894px;
+       
+       	margin: 0 auto;
+       	position: relative;
+       	top: -30px;
+       
+       }
+       
+       /*#meet ul li a{
+       	display: block;
+       	width: 274px;
+       	height: 147px;
+       }*/
+       
+       #meetpicture1{
+       	background-image: url(../img/meetpicture1.jpg);
+       	background-size: 100% 100%;
+       }
+       
+        #meetpicture2{
+       	background-image: url(../img/meetpicture2.jpg);
+       	background-size: 100% 100%;
+       }
+       
+        #meetpicture3{
+       	background-image: url(../img/meetpicture3.jpg);
+       	background-size: 100% 100%;
+       }
+       
+        #meetpicture4{
+       	background-image: url(../img/meetpicture4.jpg);
+       	background-size: 100% 100%;
+       }
+       
+        #meetpicture5{
+       	background-image: url(../img/meetpicture5.jpg);
+       	background-size: 100% 100%;
+       }
+       
+        #meetpicture6{
+       	background-image: url(../img/meetpicture6.jpg);
+       	background-size: 100% 100%;
+       }
+       
+       .dw1{
+       	background-color: black;
+       	opacity: 0.5;
+       	z-index: 20;
+       	width: 274px;
+       	height: 147px;
+       	position: absolute;
+       	display: none;
+       	float: left;
+       	left: 0;
+       }
+       
+       .meetpicture{
+       	position: absolute;
+       	float: left;
+       	left: 0;
+       	width: 274px;
+       	height: 147px;
+       }
+       
+       .dwchakan{
+       	position: absolute;
+       	left: 100px;
+       	top: 40px;
+       	display: none;
+       }
+       
+       .bigpicture{
+       	width: 720px;
+       	height: 512px;
+       	/*background-image: url(../img/meetbigpicture1.jpg);*/
+       	z-index: 500;
+       	position: absolute;
+       	top: 2800px;
+       	left: 297px;
+       	display: none;
+       }
+       
+       .meetclose{
+       	color: white;
+       	position: absolute;
+       	right: 10px;
+       	top: 10px;
+       }
+       
+      
+       #box{
+       	position: relative;
+       	width: 100%;
+       	float: left;
+       }
+       

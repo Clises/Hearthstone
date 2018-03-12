@@ -1,0 +1,26 @@
+#chou{
+	width: 280px;
+	height: 300px;
+	/*border: 1px solid red;*/
+	
+	margin: 0 auto;
+	position: relative;
+	top: 25px;
+	left: 10px;
+}
+#chou ul{
+	width: 300px;
+	list-style: none;
+	
+}
+#chou img{
+	width: 280px;
+	height: 300px;
+}
+#chou li{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	float: left;
+}

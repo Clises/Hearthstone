@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	    <style type="text/css">
+	  			
+		 #boxwz{
+		 	top: 45px;
+		 	width: 1024px;
+		 	height: 1400px;
+		 	/*border: 2px blue solid;*/
+		 	background-image: url(img/bgcenter.png);
+		 	background-repeat: repeat-y;
+		 	background-size: 100% ;
+		 	margin:0 auto;
+		 	position: relative;
+		 	top: 45px;
+		 }
+		 
+		
+			#word1{
+				width: 500px;
+				height: 30px;
+				/*border: 1px green solid;*/
+				position: absolute;
+				top:80px;
+				left: 30px;
+			}
+			#word2{
+				width: 500px;
+				height: 60px;
+				/*border: 1px blue solid;*/
+				position: absolute;
+				left: 100px;
+				top: 120px;
+			}
+			#pic{
+				width:800px;
+				height: 300px;
+				/*border: 1px red solid;*/
+				position: absolute;
+				background-image:url(img/迎新合集img/ying1.jpg);
+				background-size: 100% 100%;
+				left: 100px;
+				top: 220px;
+			}
+			#word3{
+				width:800px;
+				height: 100px;
+				/*border: 1px red solid;*/
+				position: absolute;
+				left: 100px;
+				top: 520px;
+			}
+			#rid{
+				width:800px;
+				height: 300px;
+				/*border: 1px red solid;*/
+				position: absolute;
+				left: 100px;
+				top: 640px;
+			}
+			#word4{
+				width:800px;
+				height: 100px;
+				/*border: 1px red solid;*/
+				position: absolute;
+				left: 100px;
+				top: 1100px;
+			}
+			
+			#share{
+				width:300px;
+				height: 40px;
+				/*border: 1px red solid;*/
+				position: absolute;
+				left: 600px;
+				top: 1360px;
+			}
+			#share p{
+				width: 70px;
+				height: 25px;
+				/*border: 1px black solid;*/
+				position: absolute;
+				top: 10px;
+			}
+			#share #weibo{
+				width: 25px;
+				height: 25px;
+				/*border: 1px black solid;*/
+				position: absolute;
+				top: 10px;
+				left: 80px;
+				background-image: url(img/fenxiang.png);
+				background-position: 1px 1px;
+				
+			}
+			#share #weibo:hover{
+				background-position: 1px 26px;
+			}
+			#share #tengxunweibo{
+				width: 25px;
+				height:25px;
+				/*border: 1px black solid;*/
+				position: absolute;
+				top: 10px;
+				left: 120px;
+				background-image:url(img/fenxiang.png);
+				background-position: -47px 1px;
+			}
+			#share #tengxunweibo:hover{
+				background-position:-48px 26px;
+			}
+			#share #weixin{
+				width: 25px;
+				height:25px;
+				position: absolute;
+				/*border: 1px black solid;*/
+				top: 10px;
+				left: 160px;
+				background-image:url(img/fenxiang.png);
+				background-position: -143px 1px;
+			}
+			#share #weixin:hover{
+				background-position: -143px 26px;
+			}
+			
+			#share #qq{
+				width: 25px;
+				height:25px;
+				position: absolute;
+				top: 10px;
+				left: 200px;
+				/*border: 1px black solid;*/
+				background-image: url(img/fenxiang.png);
+				background-position: -239px 1px;
+			}
+			#share #qq:hover{
+				background-position: -239px 26px;
+			}
+				#share #tieba{
+				width: 25px;
+				height:25px;
+				position: absolute;
+				top: 10px;
+				left: 240px;
+				/*border: 1px black solid;*/
+				background-image: url(img/fenxiang.png);
+				background-position: -335px 1px;
+			}
+			#share #tieba:hover{
+				background-position: -335px 26px;
+			}
+		   #word1 .a1{
+				text-decoration: none;
+				color: #408ABB;
+			}
+			.a2{
+				text-decoration: none;
+				color:#FA8A24;
+			}
+
+
+	    </style>
+	    </style>
+		<link rel="stylesheet" type="text/css" href="css/css1.css"/>
+		 <link rel="stylesheet" type="text/css" href="css/daohang.css"/>
+		 <link rel="stylesheet" type="text/css" href="../css/farm.css" />
+
+		 <script src="../js/card.js" type="text/javascript" charset="utf-8"></script><!--背景卡片浮动js-->
+		 <script src="js/nav.js" type="text/javascript" charset="utf-8"></script><!--导航栏滚动js	-->
+		 <script src="js/daohang.js" type="text/javascript" charset="utf-8"></script>
+		 <script type="text/javascript" src="js/farms.js" charset="utf-8"></script>
+	     <script type="text/javascript">
+		 	window.onload=function(){
+		 		daohang1();
+		 		fudong();
+		 		yincang();
+		 	}
+		 </script>
+	</head>
+	<body>
+		<div id="ice"><!--首页最上边俩边的冰块背景图-->
+			
+		</div>
+		<div id="logo_box"><!--放置炉石图标的容器-->
+			<div id="logo">
+			<h1><img src="img/logo.png"/></h1>
+			</div>
+			<div id="card"><!--背景图需要跟随鼠标动的卡牌-->
+				<img src="img/card1.png" />
+				<img src="img/card2.png" />
+				<img src="img/card3.png" />
+				<img src="img/card4.png" />
+				<img src="img/card5.png" />
+		</div>
+		</div>
+
+		<div id="boxwz">
+			<div id="bar"><!--//首页导航栏 (宽1000px)-->
+				<div class="lbar"><img src="img/barleft.png"/></div>
+				
+				<!--导航栏效果-->
+				<div class="daohang"  ><!--导航栏成块级元素之后显示的效果-->
+					<ul class="li1">
+						<li class="c1" id="oc1">
+							<a href="../炉石首页.html"></a><!--首页-->
+						</li>
+						<li class="c2">
+							<div id="onews">
+								<a href="新闻页.html"></a><!--新闻-->
+								<ul id="news">
+									<li class="lili"><a href="新闻页.html#zuixin">最新</a></li>
+									<li class="lili"><a href="新闻页.html#bowe">博文</a></li>
+									<li class="lili"> <a href="新闻页.html#bisai">赛事</a></li>
+								</ul>
+							</div>
+						</li>
+						
+						<li class="c3">
+							<div id="onews1">
+								<a href="../游戏指南/index.html"></a><!--游戏指南-->
+								<ul id="news1">
+									<li class="lili"><a href="../游戏指南/index.html#banben">版本</a></li>
+									<li class="lili"><a href="../游戏指南/index.html#jichu">基础知识</a></li>
+									
+								</ul>
+							</div>
+							
+						</li>
+						<li class="c4">
+							
+							<div id="onews2">
+								<a href="../视频图片.html"></a><!--视频图片-->
+								<ul id="news2">
+									<li class="lili"><a href="../视频图片.html#shipin">视频</a></li>
+									<li class="lili"><a href="../视频图片.html#tupian">截图</a></li>
+									<li class="lili"><a href="../视频图片.html#tupian1">壁纸</a></li>
+									
+								</ul>
+							</div>
+						</li>
+						<li class="c5"><!--卡牌工具-->
+							<a href="../卡牌工具1.html"></a>
+						</li>
+						<li class="c6"><!--游戏下载-->
+							<a href="../游戏下载.html"></a>
+						</li>
+						<li class="c7">
+							<div id="onews3">
+								<a href="../电子竞技.html"></a><!--电子竞技-->
+								<ul id="news3">
+									<li class="lili"><a href="../电子竞技.html#jifen">积分排名</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="c8"><!--论坛-->
+							<a href="../论坛.html"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="rbar"><img src="img/barright.png"/></div>
+			</div>
+			<div id="word1">
+			  <a href="#"class="a1">炉石传说</a>><a href="新闻页.html"class="a1">新闻中心</a>>><span ><font color="#FA8A24">超值迎新合集</font></span>
+			</div>
+			<div id="word2">
+				<h4>超值好礼迎新合集！</h4>
+				<p>发布日期：2017-6-9</p>
+			</div>
+			<div id="pic">
+				
+			</div>
+			<div id="word3">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们的地精仓库管理员克里兹·加特为广大新老玩家准备了一份特别的礼物：迎新合集！</p>
+				<center><img src="img/迎新合集img/ying3.png"/></center>
+			</div>
+			<div id="rid">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以30元人民币购买10点奥术之尘获赠一份<a href="yingxinlibao.html" class="a2">迎新合集</a>，内含10包经典卡牌包和1张随机职业的经典传说卡牌。（每个账号仅能购买一次）</p>
+				<center><img src="img/迎新合集img/ying2.gif"/></center>
+			</div>
+			<div id="word4">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果你是一脸茫然，不知从何开始的新手玩家，迎新合集可以迅速帮你踏上征程。你可以用它来填充经典套牌模板，也可以自己构筑奇思妙想的套牌。你还将获得1张经典系列的随机职业传说卡牌，例如法师的职业传说卡牌“大法师安东尼达斯”或战士的职业传说卡牌“格罗玛什·地狱咆哮”！
+									如果你是个希望丰富经典卡牌收藏的老玩家，那么迎新合集也绝对是物美价廉的不二之选。</p>
+									<p>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请注意，每个玩家只能购买一次迎新合集。但只要克里兹·加特能维持虚空传送门的运转，我们就会一直卖下去。你是否已经蠢蠢欲动了呢？期待一下会有什么传说卡牌在等着你吧！。</p>
+									<p>* 迎新合集内含的传说卡牌并非金卡。</p>
+			</div>
+			<div id="share">
+				<p>分享到：</p>
+				<a href="#"><div id="weibo"></div></a>
+				<a href="#"><div id="tengxunweibo"></div></a>
+				<a href="#"><div id="weixin"></div></a>
+				<a href="#"><div id="qq"></div></a>
+				<a href="#"><div id="tieba"></div></a>
+			</div>
+			<div id="btobg"><!--页面底部补齐背景的图片-->
+				
+			</div>
+		</div>
+		<div id="farm">
+			<!--首页底部的内容-->
+			<!--<div class="farm1">
+				<a href="#"><div class="farm2"></div></a>
+			</div>-->
+			<div class="farm3">
+				<ul class="mul">
+					<li class="far1">
+						<a href="#">
+							<div class="da1"></div> 在线客服</a>
+					</li>
+					<li class="far2">
+						<a href="#">
+							<div class="da2"></div> 反馈</a>
+					</li>
+					<li class="far3">
+						<a href="#">
+							<div class="da3"></div>加入我们</a>
+					</li>
+				</ul>
+				<div class="mu2">
+					<span>合作品牌：</span>
+					<a href="#">
+						<div class="mu2t"></div>
+					</a>
+					<a href="#"><span>+</span>&nbsp;&nbsp;<span>|</span>&nbsp;<span>合作媒体</span></a>
+					<a href="javascript:;">
+						<div class="farmoo"></div>
+					</a>
+				</div>
+				<div class="farm3_1">
+					<table width="778" height="85">
+						<tr>
+							<td>
+								<a href="#" class="aooo2">网易游戏</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">网易看游戏</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">电玩巴士</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">17173</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">178</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">不凡游戏</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">UUU9</a>&nbsp;&nbsp;&nbsp;<span class="farnspan">收起</span></td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#" class="aooo2">腾讯游戏频道</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">口袋巴士</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">叶子猪</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">太平洋游戏</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">52PK</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">锐派</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">新浪游戏</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#" class="aooo2">天极网</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">要我玩</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">炉石咖啡厅</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">兔玩网</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">全球电竞网</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">掌游宝</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">多玩网</a>
+							</td>
+						</tr>
+					</table>
+					<a href="#" class="oaaa1">申请合作</a>
+				</div>
+				<div class="farm4">
+					<a href="#"><img src="../img/tuFlogo_blizzard.png" class="farmimg1"></a>
+					<a href="#"><img src="../img/wangyifarm.png" class="farmimg2"></a>
+				</div>
+				<div class="farm5">
+					<a href="#">隐私&nbsp;&nbsp;|&nbsp;&nbsp;法律条款&nbsp;&nbsp;|&nbsp;&nbsp;API</a>
+					<p>©2017 暴雪娱乐有限公司版权所有 由上海网之易网络科技发展有限公司运营 著作权侵权 新出审字[2013]1510号<br /> 文网进字[2013]029号 沪网文[2014]0731-161号 增值电信业务经营许可证编号：沪B2－20080012<br /> 互联网违法和不良信息举报电话：0571-28090163 沪公网安备 31011502022167号</p><br />
+					<div class="farm6">
+						<a href="#"><img src="../img/farm002.png" class="farmimg3"></a>
+						<a href="#"><img src="../img/farm004.png" class="farmimg4"></a>
+						<a href="#"><img src="../img/farm003.png" class="farmimg5"></a>
+						<a href="#"><img src="../img/farm001.png" class="farmimg6"></a>
+					</div>
+					<div class="farm7">| 适龄提示：适合13岁及以上使用 家长监护工程</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>

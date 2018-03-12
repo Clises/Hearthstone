@@ -1,0 +1,740 @@
+﻿*{
+	padding: 0px;
+	margin: 0px;
+}
+.big_box{
+	width: 100%;
+	height: 5615px;/*最外面大框*/
+	/*border: 1px red solid;*/
+}
+.head1{
+	width: 100%;/*顶上小导航外框*/
+	height: 40px;
+	/*position: relative;*/
+	background-color: #2C0903;
+}
+/*顶上小导航内容*/
+.head1_box{
+	width: 100%;
+	height: 40px;
+	margin: 0 auto;
+}
+/*顶上左边小导航*/
+.head1_left{
+	width: 300px;
+	height: 40px;
+}
+.ul1{
+	width: 200px;
+	height: 40px;
+	margin-top: -25px;
+	margin-left: 140px;
+}
+#slogo{
+	width: 95px;/*左边导航小图标*/
+	height: 35px;
+	background-image: url(../img1/Ficon-sprite.png);
+	background-position:0px -75px;
+	margin-left: 20px;
+}
+.ul1 li{
+	width: 95px;/*左边导航文字*/
+	height: 35px;	
+	list-style: none;
+	float: left;
+	margin: 0px -20px;
+}
+.ul1 a{
+	text-decoration:none;
+	color:#FFFFFF;
+	opacity: 0.6;
+}
+.ul1 a:hover{
+	opacity: 1;
+}
+/*右边小导航*/
+.head1_right{
+	width: 200px;
+	height: 40px;
+	float: right;
+	margin-top: -30px;
+}
+.ul2 li{
+	width: 95px;/*左边导航文字*/
+	height: 35px;	
+	list-style: none;
+	float: left;
+	margin: 0px -20px;
+}
+.ul2 a{
+	text-decoration:none;
+	color:#FFFFFF;
+	opacity: 0.6;
+}
+.ul2 a:hover{
+	opacity: 1;
+}
+
+/*全部内容的大框*/
+.body_box{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.head2{
+	width: 100%;/*大图*/
+	height: 1200px;/*设置为图片的高度*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img1/Fbanner1.jpg);
+	position: relative;
+}
+.head2_box{
+	width: 80%;
+	height: 862px;
+	margin: 0px auto;
+}
+.head2_top{
+	width: 250px;/*右上链接小图*/
+	height: 50px;
+	background-image: url(../img1/Fsprite.png);
+	background-position:390px -570px;
+	position: absolute;
+	right: 240px;
+	top: 5px;
+}
+/*右上小链接*/
+.ul3{
+	position: absolute;
+	left: 50px;
+	top: 13px;
+}
+.ul3 li{
+	list-style: none;
+	float: left;
+	margin: 0px 4px;
+}
+.ul3 a{
+	text-decoration:none;
+	color:#2C0903;
+}
+.ul3 a:hover{
+	color:#FFFFFF;
+}
+/*分享到的内容*/
+.ul4{
+	position: absolute;/*分享外框*/
+	right: 260px;
+	top: 60px;
+}
+.ul4 li{
+	text-align: center;
+	color: #FFFFFF;
+	width: 35px;
+	height: 30px;
+	margin: 0px -4px;
+	list-style: none;
+	float: left;
+}
+/*分享到6个小图*/
+#ul4_1{
+	background-image: url(../img1/Fsprite2.png);
+	background-position:-62px -370px;
+}
+#ul4_1:hover{
+	background-position:-62px -408px;
+}
+#ul4_2{
+	background-image: url(../img1/Fsprite2.png);
+	background-position:-1px -370px;
+}
+#ul4_2:hover{
+	background-position:-1px -408px;
+}
+#ul4_3{
+	background-image: url(../img1/Fsprite2.png);
+	background-position:-155px -370px;
+}
+#ul4_3:hover{
+	background-position:-155px -408px;
+}
+#ul4_4{
+	background-image: url(../img1/Fsprite2.png);
+	background-position:-92px -370px;
+}
+#ul4_4:hover{
+	background-position:-92px -408px;
+}
+#ul4_5{
+	background-image: url(../img1/Fsprite2.png);
+	background-position:-32px -370px;
+}
+#ul4_5:hover{
+	background-position:-32px -408px;
+}
+#ul4_6{
+	background-image: url(../img1/Fsprite2.png);
+	background-position:-124px -370px;
+}
+#ul4_6:hover{
+	background-position:-124px -408px;
+}
+
+#blogo{
+	width: 800px;/*龙争虎斗加基森logo边框*/
+	height: 1000px;
+	margin: 0px auto;
+}
+#blogo img{/*龙争虎斗加基森logo*/
+	margin-top: 264px;
+	position: absolute;
+	z-index: 4;
+}
+
+.hr{
+	width: 100%;/*分界图*/
+	height: 140px;
+	background-image: url(../img1/Fbanner-bg.png);
+	background-size: 100% ;
+	background-repeat: no-repeat;
+	position: relative;
+	top: -559px;
+	z-index: 3;
+}
+
+.body{
+	width: 100%;/*大图下内容大框*/
+	height: 4950px;
+	background-image: url(../img1/Fbg2.jpg);
+	background-size: 100%;
+	background-repeat:repeat-y;
+	margin: 0 auto;
+	position: relative;
+	top: -615px;
+	z-index: 2;
+	/*border: 1px solid red;*/
+}
+
+.body1{	
+	position: relative;
+	text-align: center;
+}
+.body1_p1{
+	width: 290px;/*现在购买图*/
+	height: 60px;	
+	background-image: url(../img1/Fbtn-bg.png);
+	margin: 0 auto;
+	position: relative;
+	top: 140px;
+}
+.body1_p1 a{
+	color: #FFFFFF;
+	text-decoration:none;
+	font-size: 18px;
+	font-weight: 700;
+	position: absolute;
+	top: 15px;
+	left: 110px;
+}
+.body1_pic1{
+	width: 1122px;/*报纸图*/
+	height: 1369px;
+	background-image: url(../img1/Fmodule-1-bg.png);
+	margin: 0 auto;
+	position: relative;
+	top: 160px;
+	
+}
+.body1_pic1 img{
+	position: relative;/*报纸内容图*/
+	top: 320px;
+	margin: 0 auto;
+}
+/*报纸文本内容*/
+.body1_p2{
+	width: 415px;/*左边内容*/
+	height: 350px;
+	font-size: 15px;
+	float: left;
+	position: absolute;
+	top: 830px;
+	left: 133px;
+}
+/*报纸左右边文本，同一个class*/
+.p2_1{
+	text-align: center;
+	font-size: 35px;
+	color:#2F2D2A;
+	font-weight: 700;
+}
+.p2_2{
+	font-size: 18px;
+	color:#2F2D2A;
+	font-weight: 700;
+	margin-top: 10px;
+}
+.p2_3{
+	line-height: 25px;
+	margin-top: 10px;
+}
+.body1_p3{
+	width: 415px;/*右边内容*/
+	height: 350px;
+	float: right;
+	position: absolute;	
+	top: 830px;
+	right: 110px;
+}
+
+#body_hr1{
+	width: 100%;/*第一条分界线*/
+	height: 167px;
+	margin: 0 auto;
+	position: relative;
+	top:-26px;
+}
+#body_hr1 img{
+	width: 100%;
+	height: 167px;
+}
+
+.body2{
+	width: 100%;/*第二个内容*/
+	height: 1550px;
+	text-align: center;
+	position: relative;
+	top: -50px;
+	margin: 0 auto;
+}
+.body2_p1{
+	width: 1175px;/*三分天下外框*/
+	height: 550px;
+	margin: -40px auto;
+}
+.body2_l{
+	width: 30%;/*左*/
+	height: 530px;
+	float: left;
+}
+.body2_m{
+	width: 30%;/*中*/
+	height: 530px;
+	margin-left: 60px;
+	float: left;
+}
+.body2_r{
+	width: 30%;/*右*/
+	height: 530px;
+	float: right;
+}
+.body2-p1{
+	font-size: 23px;
+	margin-top: -94px;
+}
+.body2-p2{
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 73px;
+}
+.body2-p3{
+	font-size: 13px;
+	margin-top: 10px;
+	line-height: 23px;
+	text-align: left;
+}
+.body2_p2{
+	width: 290px;/*查看全部卡片*/
+	height: 60px;
+	background-image: url(../img1/Fbtn-bg.png);
+	margin: 0 auto;
+	position: relative;
+	top: 150px;
+}
+.body2_p2 a{
+	color: #FFFFFF;
+	text-decoration:none;
+	font-size: 18px;
+	font-weight: 700;	
+	position: absolute;
+	top: 13px;
+	left: 95px;
+}
+#body_hr2{
+	width: 100%;/*第一条分界线*/
+	height: 167px;
+	margin: 0 auto;
+	position: relative;
+	top:180px;
+}
+#body_hr2 img{
+	width: 100%;
+	height: 167px;
+}
+
+
+.body3{
+	width: 100%;/*第三个内容*/
+	height: 550px;
+	text-align: center;
+	position: relative;
+	top: 100px;
+}
+.body3_p{
+	width: 1175px;/*第三部分内容小框*/
+	height: 310px;
+	margin: 0 auto;
+	position: relative;
+	top:20px ;
+}
+.body3_l{
+	width: 30%;/*三分左*/
+	height: 300px;
+	float: left;
+}
+.body3_m{
+	width: 30%;/*中*/
+	height: 300px;
+	margin-left: 60px;
+	float: left;
+}
+.body3_r{
+	width: 30%;/*右*/
+	height: 300px;
+	float: right;
+}
+/*文本公用class*/
+.body3_p1{
+	color: #03345F;
+	font-size: 20px;
+	font-weight: 600;
+}
+.body3_p2{
+	text-align: left;
+	margin-top: 10px;
+}
+.body3_pic{
+	width: 520px;/*4个雪碧图外框*/
+	height: 120px;
+	margin: 0px auto;
+	text-align: center;
+	position: relative;
+	top: 80px;
+}
+.body3_pic ul{
+	margin: 0 auto;
+}
+.body3_pic li{
+	width: 110px;
+	height: 110px;
+	margin: 0px 10px;
+	list-style: none;
+	float: left;
+}
+/*链接4个雪碧图*/
+#pic-1{
+	background-image: url(../img1/Fsprite1.png);
+	background-position:-20px -20px;
+}
+#pic-1:hover{
+	background-image: url(../img1/Fsprite1.png);
+	background-position:-20px -140px;
+}
+#pic-2{
+	background-image: url(../img1/Fsprite1.png);
+	background-position:-145px -20px;
+}
+#pic-2:hover{
+	background-image: url(../img1/Fsprite1.png);
+	background-position:-145px -140px;
+}
+#pic-3{
+	background-image: url(../img1/Fsprite1.png);
+	background-position:-275px -20px;
+}
+#pic-3:hover{
+	background-image: url(../img1/Fsprite1.png);
+	background-position:-275px -140px;
+}
+#pic-4{
+	background-image: url(../img1/Fsprite1.png);
+	background-position:-400px -20px;
+}
+#pic-4:hover{
+	background-image: url(../img1/Fsprite1.png);
+	background-position:-400px -140px;
+}
+#body_hr3{
+	width: 100%;/*第一条分界线*/
+	height: 167px;
+	margin: 0 auto;
+	position: relative;
+	top:120px;
+}
+#body_hr3 img{
+	width: 100%;
+	height: 167px;
+}
+
+.body4{
+	width: 100%;/*第四个内容*/
+	height: 1030px;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	top: 217px;
+}
+.body4_M{
+	width: 1213px;
+	height: 550px;
+	margin: 0px auto;
+	position: relative;
+	top: 40px;
+}
+.body4_l{
+	width: 652px;
+	height: 575px;/*左图*/
+	position: absolute;
+	top: 170px;
+	left: -214px;
+}
+.body4_m{
+	width: 866px;/*中间*/
+	height: 540px;
+	position: relative;
+	z-index: 3;
+}
+.body4_r{
+	width: 380px;
+	height: 500px;
+	float: right;/*右图*/
+	position: absolute;
+	top: 285px;
+	right: -75px;
+	z-index: 2;
+}
+.body4_pic{
+	width: 1000px;/*6个小图*/
+	height: 350px;
+	margin: 0px auto;
+	position: relative;
+	top: 50px;
+}
+.pic_u1{
+	position: relative;
+	left: -30px;
+	z-index: 3;
+}
+.pic_u1 li{
+	width: 260px;
+	height: 140px;
+	margin: 0px -59px;	
+	margin-left: 100px;
+	list-style: none;
+	float: left;
+	
+}
+.pic_u2{
+	position: relative;
+	left: -30px;
+	top: 40px;
+	z-index: 3;
+}
+.pic_u2 li{
+	width: 260px;
+	height: 140px;
+	margin: 0px -59px;	
+	margin-left: 100px;
+	list-style: none;
+	float: left;
+}
+.pic_u1 #u1_1{
+	background-image: url(../img1/2.JPG);
+	background-size: 100% 100%;
+}
+#u1_2{
+	background-image: url(../img1/3.JPG);
+	background-size: 100% 100%;
+}
+#u1_3{
+	background-image: url(../img1/4.JPG);
+	background-size: 100% 100%;
+}
+#u2_1{
+	background-image: url(../img1/5.JPG);
+	background-size: 100% 100%;
+	z-index: 2;
+}
+#u2_2{
+	background-image: url(../img1/6.JPG);
+	background-size: 100% 100%;
+}
+#u2_3{
+	background-image: url(../img1/7.JPG);
+	background-size: 100% 100%;
+}
+
+.black{
+	width: 260px;
+	height: 140px;
+	background-color: black;
+	background-color: rgba(0,0,0,0.5);	/*只对背景透明*/
+	display:none;
+}
+.black img{
+	position: relative;
+	top:50px;
+}
+.big_pic1{
+	width: 644px;
+	height: 650px;
+	position: relative;
+	top: -142px;
+	margin: 0 auto;
+	z-index: 4;
+	display: none;
+}
+.big_pic1 img{
+	position:absolute;
+	right: 147px;
+	height: 650px;
+	
+}
+.top_pic1{
+	width: 50px;
+	height: 45px;
+	position: absolute;
+	left: 446px;
+	background-image: url(../img1/Flightbox.png);
+	background-position:0px -117px;
+	z-index: 5;
+}
+.big_pic2{
+	width: 644px;
+	height: 500px;
+	position: relative;
+	top: -142px;
+	margin: 0 auto;
+	z-index: 4;
+	display: none;
+}
+.big_pic2 img{
+	position:absolute;
+	right: 14px;
+	height: 500px;	
+}
+.top_pic2{
+	width: 50px;
+	height: 45px;
+	position: absolute;
+	left: 583px;
+	background-image: url(../img1/Flightbox.png);
+	background-position:0px -117px;
+	z-index: 5;
+}
+.big_pic3{
+	width: 644px;
+	height: 580px;
+	position: relative;
+	top: -142px;
+	margin: 0 auto;
+	z-index: 4;
+	display: none;
+}
+.big_pic3 img{	
+	position:absolute;
+	right: 67px;
+	height: 580px;	
+}
+.top_pic3{
+	width: 50px;
+	height: 45px;
+	position: absolute;
+	left: 527px;
+	background-image: url(../img1/Flightbox.png);
+	background-position:0px -117px;
+	z-index: 5;
+}
+.big_pic4{
+	width: 644px;
+	height: 580px;
+	position: relative;
+	top: -142px;
+	margin: 0 auto;
+	z-index: 4;
+	display: none;
+}
+.big_pic4 img{	
+	position:absolute;
+	right: 67px;
+	height: 580px;	
+}
+.top_pic4{
+	width: 50px;
+	height: 45px;
+	position: absolute;
+	left: 527px;
+	background-image: url(../img1/Flightbox.png);
+	background-position:0px -117px;
+	z-index: 5;
+}
+.big_pic5{
+	width: 644px;
+	height: 580px;
+	position: relative;
+	top: -142px;
+	margin: 0 auto;
+	z-index: 4;
+	display: none;
+}
+.big_pic5 img{	
+	position:absolute;
+	right: 27px;
+	height: 550px;	
+}
+.top_pic5{
+	width: 50px;
+	height: 45px;
+	position: absolute;
+	left: 576px;
+	background-image: url(../img1/Flightbox.png);
+	background-position:0px -117px;
+	z-index: 5;
+}
+.big_pic6{
+	width: 644px;
+	height: 580px;
+	position: relative;
+	top: -142px;
+	margin: 0 auto;
+	z-index: 4;
+	display: none;
+}
+.big_pic6 img{	
+	position:absolute;
+	right: 100px;
+	height: 580px;	
+}
+.top_pic6{
+	width: 50px;
+	height: 45px;
+	position: absolute;
+	left: 495px;
+	background-image: url(../img1/Flightbox.png);
+	background-position:0px -117px;
+	z-index: 5;
+}
+
+
+
+
+/*.bg_black{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	background-color: rgba(0,0,0,0.5);
+	position:relative;
+	top: 10px;
+	z-index: 3;
+	display: block;
+}*/

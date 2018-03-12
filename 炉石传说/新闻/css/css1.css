@@ -1,0 +1,151 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-image: url(../img/bg1.jpg),url(../img/bg2.jpg);
+	background-size: 105% auto,155%;
+	background-position: top center,bottom center;
+	background-repeat: no-repeat,repeat;
+	background-attachment:fixed;
+}
+
+#box{
+	width:1024px ;/*实际宽度为1002,因为加上边框,高度同理*/
+	height: 2100px;
+	/*border: 1px black solid;*/
+	border-radius:8px ;
+	margin: 0 auto;
+	position: relative;
+	top: 45px;
+}
+#bar{
+	width: 1024px;/*实际宽度为1002,因为加上边框，高度同理*/
+	height: 52px;
+	/*border: 1px blue solid;*/
+	background-image: url(../img/bar.jpg);
+	background-size: 100% ;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 100;
+}
+#bar .lbar{
+	width: 85px;
+	height: 131px;
+	position: absolute;
+	left: -37px;
+	top: -10px;
+	z-index: 100;
+}
+#bar .rbar{
+	width: 85px;
+	height: 131px;
+	position: absolute;
+	left: 980px;
+	top: -10px;
+	z-index: 100;
+}
+#left{
+	width: 685px;
+	height: 1350px;/*box的高度减去导航栏的高度*/
+	/*border: 1px solid black;*/
+	position: absolute;
+	top: 52px;
+	left: 24px;
+	background-image: url(../img/bgcenter.png);
+	background-size: 102%;
+	background-position: top center;
+	z-index: 100;
+}
+
+
+#left #six{
+	width: 640px;
+	height: 900px;
+	border: 1px yellow solid;
+	position: absolute;
+	left: 20px;
+	top: 330px;/*轮播图的高度加上轮播图距离上的高度*/
+}
+
+#right{
+	width: 320px;
+	height:1350px ;
+	border: 1px green solid;
+	position: absolute;
+	left:685px;
+	top: 52px;
+	background-image: url(../img/bgright.png);
+	background-size: 100%;
+}
+#right #login{/*整个登陆的大框*/
+	height: 605px;
+	width: 315px;
+	border: 1px black solid;
+	position: absolute;
+}
+#right #login #login_1{/*登陆的小框*/
+	width: 280px;
+	height: 290px;
+	position: absolute;
+	left: 20px;
+	top: 135px;
+	border: 1px red solid;
+}
+#logo_box{
+	width:1000px ;
+	height: 185px;
+	position: relative;
+	top: 50px;
+	margin: 0 auto;
+	/*border: 1px black solid;*/
+}
+#logo{
+	width:350px ;
+	height: 184px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+#ice{
+	width:100%;
+	height: 300px;
+	position: absolute;
+	top: 0px;
+	background-image: url(../img/bg3.png);
+	background-size: 100%,100%;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	/*background-position: top center;*/
+	/*border:1px solid red;*/
+}
+#card{
+	width: 1300px;
+	height: 925px;
+	position: absolute;
+	left: -150px;
+	/*border: 1px solid red;*/
+	overflow: hidden;
+}
+#card img{
+	
+	width: 150%;
+	height: 100%;
+	position: absolute;
+	top: -40px;
+	left: -350px;
+	float: left;
+	
+}
+#btobg{
+	background-image: url(../img/bg-bot.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 1020px;
+	height: 34px;
+	position: absolute;
+	left: 3px;
+	bottom: -34px;
+	/*border: 1px solid red;*/
+}

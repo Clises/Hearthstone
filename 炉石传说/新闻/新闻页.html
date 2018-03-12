@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#box1 {
+				width: 1024px;
+				height: 500px;
+				position: absolute;
+				top: 52px;
+				border-top: 1px burlywood solid;
+				background-image: url(img/bgcenter.png);
+				background-size: 100% 100%;
+			}
+			
+			#div1 {
+				width: 944px;
+				height: 460px;
+				margin-top: 20px;
+				margin-left: 40px;
+				/*border: 2px black solid;*/
+			}
+			
+			#div1 .diva {
+				width: 300px;
+				height: 360px;
+				/*border: 1px peru solid;*/
+				background-image: url(img/新闻img/div1_bg.png);
+				background-size: 100% 100%;
+				position: absolute;
+				top: 100px;
+			}
+			
+			#div1 .divb {
+				width: 300px;
+				height: 360px;
+				/*border: 1px peru solid;*/
+				background-image: url(img/新闻img/div1_bg.png);
+				background-size: 100% 100%;
+				position: absolute;
+				top: 100px;
+				left: 366px;
+			}
+			
+			#div1 .divc {
+				width: 300px;
+				height: 360px;
+				/*border: 1px peru solid;*/
+				background-image: url(img/新闻img/div1_bg.png);
+				background-size: 100% 100%;
+				position: absolute;
+				top: 100px;
+				left: 688px;
+			}
+			
+			#div1 .diva .diva1 {
+				width: 240px;
+				height: 130px;
+				border: 3px solid;
+				background-image: url(img/新闻img/diva1.jpg);
+				background-size: 100% 100%;
+				margin-top: 30px;
+				margin-left: 30px;
+			}
+			
+			#div1 .diva .diva2 {
+				width: 240px;
+				height: 150px;
+				/*border: 1px chartreuse solid;*/
+				margin-top: 10px;
+				margin-left: 30px;
+			}
+			
+			#div1 .divb .divb1 {
+				width: 240px;
+				height: 130px;
+				border: 3px solid;
+				background-image: url(img/新闻img/divb1.jpg);
+				background-size: 100% 100%;
+				margin-top: 30px;
+				margin-left: 30px;
+			}
+			
+			#div1 .divb .divb2 {
+				width: 240px;
+				height: 150px;
+				/*border: 1px greenyellow solid;*/
+				margin-top: 10px;
+				margin-left: 30px;
+			}
+			
+			#div1 .divc .divc1 {
+				width: 240px;
+				height: 130px;
+				border: 3px solid;
+				background-image: url(img/新闻img/divc1.jpg);
+				background-size: 100% 100%;
+				margin-top: 30px;
+				margin-left: 30px;
+			}
+			
+			#div1 .divc .divc2 {
+				width: 240px;
+				height: 150px;
+				/*border: 1px chartreuse solid;*/
+				margin-top: 10px;
+				margin-left: 30px;
+			}
+			
+			a {
+				color: black;
+				text-decoration: none;
+			}
+			
+			#box2 {
+				width: 1024px;
+				height: 1500px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 552px;
+				background-image: url(img/bgcenter.png);
+				background-size: 100%;
+			}
+			
+			#tdiv1 {
+				width: 944px;
+				height: 50px;
+				/*border: 2px gray solid;*/
+				margin-left: 35px;
+			}
+			
+			#tdiv1 #tul1 {
+				width: 944px;
+				height: 40px;
+				position: absolute;
+				top: 0px;
+				left: 50px;
+			}
+			
+			#tdiv1 #tul1 .tli1 {
+				width: 180px;
+				height: 40px;
+				border: 1px white solid;
+				text-align: center;
+				line-height: 40px;
+				list-style: none;
+				float: left;
+				background-color: burlywood;
+			}
+			
+			#tdiv1 #tul1 .tli1:hover {
+				background-color: #D29E65;
+			}
+			
+			#tdiv2 {
+				width: 944px;
+				height: 200px;
+				/*border: 2px green solid;*/
+				margin: 30px;
+				position: relative;
+			}
+			
+			#tdiv2 #tdiv2a {
+				width: 350px;
+				height: 180px;
+				background-size: 100% 100%;
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				border: 2px solid;
+			}
+			
+			#tdiv2 #tdiv2b {
+				width: 500px;
+				height: 30px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 0px;
+				left: 400px;
+			}
+			
+			#tdiv2 #tdiv2c {
+				width: 500px;
+				height: 100px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 40px;
+				left: 400px;
+			}
+			
+			#tdiv2 #tdiv2d {
+				width: 100px;
+				height: 30px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 150px;
+				left: 400px;
+			}
+			
+			#tdiv3 {
+				width: 944px;
+				height: 200px;
+				/*border: 2px green solid;*/
+				margin: 30px;
+				position: relative;
+			}
+			
+			#tdiv3 #tdiv3a {
+				width: 350px;
+				height: 180px;
+				background-size: 100% 100%;
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				border: 2px solid;
+			}
+			
+			#tdiv3 #tdiv3b {
+				width: 500px;
+				height: 30px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 0px;
+				left: 400px;
+			}
+			
+			#tdiv3 #tdiv3c {
+				width: 500px;
+				height: 100px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 40px;
+				left: 400px;
+			}
+			
+			#tdiv3 #tdiv3d {
+				width: 100px;
+				height: 30px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 150px;
+				left: 400px;
+			}
+			
+			#tdiv4 {
+				width: 944px;
+				height: 200px;
+				/*border: 2px green solid;*/
+				margin: 30px;
+				position: relative;
+			}
+			
+			#tdiv4 #tdiv4a {
+				width: 350px;
+				height: 180px;
+				background-size: 100% 100%;
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				border: 2px solid;
+			}
+			
+			#tdiv4 #tdiv4b {
+				width: 500px;
+				height: 30px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 0px;
+				left: 400px;
+			}
+			
+			#tdiv4 #tdiv4c {
+				width: 500px;
+				height: 100px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 40px;
+				left: 400px;
+			}
+			
+			#tdiv4 #tdiv4d {
+				width: 100px;
+				height: 30px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 150px;
+				left: 400px;
+			}
+			
+			#tdiv5 {
+				width: 944px;
+				height: 200px;
+				/*border: 2px green solid;*/
+				margin: 30px;
+				position: relative;
+			}
+			
+			#tdiv5 #tdiv5a {
+				width: 350px;
+				height: 180px;
+				background-size: 100% 100%;
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				border: 2px solid;
+			}
+			
+			#tdiv5 #tdiv5b {
+				width: 500px;
+				height: 30px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 0px;
+				left: 400px;
+			}
+			
+			#tdiv5 #tdiv5c {
+				width: 500px;
+				height: 100px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 40px;
+				left: 400px;
+			}
+			
+			#tdiv5 #tdiv5d {
+				width: 100px;
+				height: 30px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 150px;
+				left: 400px;
+			}
+			
+			#tdiv6 {
+				width: 944px;
+				height: 200px;
+				/*border: 2px green solid;*/
+				margin: 30px;
+				position: relative;
+			}
+			
+			#tdiv6 #tdiv6a {
+				width: 350px;
+				height: 180px;
+				background-size: 100% 100%;
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				border: 2px solid;
+			}
+			
+			#tdiv6 #tdiv6b {
+				width: 500px;
+				height: 30px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 0px;
+				left: 400px;
+			}
+			
+			#tdiv6 #tdiv6c {
+				width: 500px;
+				height: 100px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 40px;
+				left: 400px;
+			}
+			
+			#tdiv6 #tdiv6d {
+				width: 100px;
+				height: 30px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 150px;
+				left: 400px;
+			}
+			
+			#tdiv7 {
+				width: 944px;
+				height: 200px;
+				/*border: 2px green solid;*/
+				margin: 30px;
+				position: relative;
+			}
+			
+			#tdiv7 #tdiv7a {
+				width: 350px;
+				height: 180px;
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				background-size: 100% 100%;
+				border: 2px solid;
+			}
+			
+			#tdiv7 #tdiv7b {
+				width: 500px;
+				height: 30px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 0px;
+				left: 400px;
+			}
+			
+			#tdiv7 #tdiv7c {
+				width: 500px;
+				height: 100px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 40px;
+				left: 400px;
+			}
+			
+			#tdiv7 #tdiv7d {
+				width: 100px;
+				height: 30px;
+				/*border: 2px red solid;*/
+				position: absolute;
+				top: 150px;
+				left: 400px;
+			}
+			
+			#box2 p {
+				color: #695745;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/css1.css" />
+		<link rel="stylesheet" type="text/css" href="css/daohang.css" />
+		<link rel="stylesheet" type="text/css" href="../css/farm.css" />
+		
+		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+		<!--导航栏滚动js	-->
+		<script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/daohang.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/farms.js" charset="utf-8"></script>
+	
+	
+		<script type="text/javascript">
+			window.onload = function() {
+				daohang1();
+				yincang();
+				
+				var aDiva1 = document.getElementsByClassName("diva1");
+				var aDivb1 = document.getElementsByClassName("divb1");
+				var aDivc1 = document.getElementsByClassName("divc1");
+				var aTli = document.getElementsByClassName("tli1");
+				var aTdiv2 = document.getElementsByClassName("tdiv2");
+				var aDivword = document.getElementsByClassName("divword");
+				var aDivword1 = document.getElementsByClassName("divword1");
+				var aDivword2 = document.getElementsByClassName("divword2");
+				var aDivpic = document.getElementsByClassName("aa");
+				var aImg = document.getElementsByClassName("image");
+				var aBig = document.getElementsByClassName("big");
+				ajax("new.txt", function(str1) {
+					var arr = eval(str1);
+					for(var i = 0; i < aImg.length; i++) {
+
+						aImg[i].src = arr[i].Img;
+						aDivword[i].innerHTML = arr[i].Title;
+						aDivword1[i].innerHTML = arr[i].Content;
+						aDivword2[i].innerHTML = arr[i].Time;
+					}
+
+				})
+				for(var j = 1; j < aBig.length; j++) {
+					aBig[j].style.display = "none";
+				}
+
+				for(var i = 0; i < aTli.length; i++) {
+					aTli[i].index = i;
+					aTli[i].onclick = function() {
+						for(var j = 0; j < aBig.length; j++) {
+							aBig[j].style.display = "none";
+						}
+						aBig[this.index].style.display = "block";
+					}
+				}
+				aDiva1[0].onmouseover = function() {
+					aDiva1[0].style.borderColor = "yellowgreen";
+
+				};
+				aDiva1[0].onmouseout = function() {
+					aDiva1[0].style.borderColor = "";
+				};
+				aDivb1[0].onmouseover = function() {
+					aDivb1[0].style.borderColor = "yellowgreen";
+				};
+				aDivb1[0].onmouseout = function() {
+					aDivb1[0].style.borderColor = "";
+				};
+				aDivc1[0].onmouseover = function() {
+					aDivc1[0].style.borderColor = "yellowgreen";
+				};
+				aDivc1[0].onmouseout = function() {
+					aDivc1[0].style.borderColor = "";
+				};
+
+				for(var j = 0; j < aTdiv2.length; j++) {
+					aTdiv2[j].index = j;
+					aTdiv2[j].onmouseover = function() {
+						this.style.backgroundColor = "burlywood";
+						aDivword[this.index].style.color = "orangered"
+						aDivpic[this.index].style.borderColor = "greenyellow";
+					}
+					aTdiv2[j].onmouseout = function() {
+						this.style.backgroundColor = "";
+						aDivword[this.index].style.color = ""
+						aDivpic[this.index].style.borderColor = "";
+					}
+				}
+
+				
+
+			}
+		</script>
+		
+	</head>
+
+	<body>
+		<div id="ice">
+			<!--首页最上边俩边的冰块背景图-->
+
+		</div>
+		<div id="logo_box">
+			<!--放置炉石图标的容器-->
+			<div id="logo">
+				<h1><img src="img/logo.png"/></h1>
+			</div>
+			<div id="card">
+				<!--背景图需要跟随鼠标动的卡牌-->
+				<img src="img/card1.png" />
+				<img src="img/card2.png" />
+				<img src="img/card3.png" />
+				<img src="img/card4.png" />
+				<img src="img/card5.png" />
+			</div>
+		</div>
+
+		<div id="box">
+			<div id="bar">
+				<!--//首页导航栏 (宽1000px)-->
+				<div class="lbar"><img src="img/barleft.png" /></div>
+
+				<!--导航栏效果-->
+				<div class="daohang">
+					<!--导航栏成块级元素之后显示的效果-->
+					<ul class="li1">
+						<li class="c1" id="oc1">
+							<a href="../炉石首页.html"></a>
+							<!--首页-->
+						</li>
+						<li class="c2">
+							<div id="onews">
+								<a href="新闻页.html"></a>
+								<!--新闻-->
+								<ul id="news">
+									<li class="lili">
+										<a href="#zuixin">最新</a>
+									</li>
+									<li class="lili">
+										<a href="#bowe">博文</a>
+									</li>
+									<li class="lili">
+										<a href="#bisai">赛事</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="c3">
+							<div id="onews1">
+								<a href="../游戏指南/index.html"></a>
+								<!--游戏指南-->
+								<ul id="news1">
+									<li class="lili">
+										<a href="../游戏指南/index.html#banben">版本</a>
+									</li>
+									<li class="lili">
+										<a href="../游戏指南/index.html#jichu">基础知识</a>
+									</li>
+
+								</ul>
+							</div>
+
+						</li>
+						<li class="c4">
+
+							<div id="onews2">
+								<a href="../视频图片.html"></a>
+								<!--视频图片-->
+								<ul id="news2">
+									<li class="lili">
+										<a href="../视频图片.html#shipin">视频</a>
+									</li>
+									<li class="lili">
+										<a href="../视频图片.html#tupian">截图</a>
+									</li>
+									<li class="lili">
+										<a href="../视频图片.html#tupian1">壁纸</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+						<li class="c5">
+							<!--卡牌工具-->
+							<a href="../卡牌工具1.html"></a>
+						</li>
+						<li class="c6">
+							<!--游戏下载-->
+							<a href="../游戏下载.html"></a>
+						</li>
+						<li class="c7">
+							<div id="onews3">
+								<a href="../电子竞技.html"></a>
+								<!--电子竞技-->
+								<ul id="news3">
+									<li class="lili">
+										<a href="../电子竞技.html#jifen">积分排名</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="c8">
+							<!--论坛-->
+							<a href="../论坛.html"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="rbar"><img src="img/barright.png" /></div>
+			</div>
+
+			<div id="box1">
+				<div id="div1">
+					<a href="#"> 炉石传说</a>
+					<font color="orange">
+						<新闻</font>
+						<a href="新英雄.html">
+							<div class="diva">
+								<div class="diva1"></div>
+								<div class="diva2">
+									
+										<h4>免费获取全新潜行英雄———玛维·影歌</h4>
+									<p>全新潜行英雄———玛维·影歌从阴影中崛起，急切的想要加入你的炉石收藏<br />2017.0610</p>
+								</div>
+
+							</div>
+						</a>
+						<a href="迎新合集.html">
+							<div class="divb">
+								<div class="divb1"></div>
+								<div class="divb2">
+									
+										<h4>超级好礼迎新合集</h4>
+									<p>我们的地精仓库管理员为广大新老玩家准备一份特别礼物：“迎新合集”<br /><br />2017.0610</p>
+								</div>
+							</div>
+							</a>
+							<a href="卡牌一览.html">
+							<div class="divc">
+								<div class="divc1"></div>
+								<div class="divc2">
+									
+										<h4>“冰封王座的骑士”全部卡片一览</h4>
+									<p>你可以在这里了解到所有“冰封王座的骑士”扩展包的卡牌<br /><br /><br />2017.0720</p>
+								</div>
+							</div>
+							</a>
+				</div>
+			</div>
+
+			<div id="box2">
+				<div id="tdiv1">
+					<ul id="tul1">
+						<a href="javascript:;" name="zuixin">
+							<li class="tli1"><strong>最新</strong></li>
+						</a>
+						<a href="javascript:;" >
+							<li class="tli1"><strong>博文</strong></li>
+						</a>
+						<a href="javascript:;">
+							<li class="tli1"><strong>活动</strong></li>
+						</a>
+						<a href="javascript:;">
+							<li class="tli1"><strong>赛事</strong></li>
+						</a>
+						<a href="javascript:;">
+							<li class="tli1"><strong>媒体</strong></li>
+						</a>
+					</ul>
+				</div>
+				<div class="big">
+
+					<a href="#">
+						<div id="tdiv2" class="tdiv2">
+							<div id="tdiv2a" class="aa">
+								<img class="image" src="#" style="width: 350px;height: 180px;" />
+							</div>
+							<div id="tdiv2b" class="divword">
+
+							</div>
+							<div id="tdiv2c" class="divword1">
+								<p></p>
+							</div>
+							<div id="tdiv2d" class="divword2">
+								<p>2017-8-24</p>
+							</div>
+						</div>
+					</a>
+					<a href="#" name="bowe">
+						<div id="tdiv3" class="tdiv2">
+							<div id="tdiv3a" class="aa">
+								<img class="image" src="#" style="width: 350px;height: 180px;" />
+							</div>
+							<div id="tdiv3b" class="divword">
+								<strong>黄金超级联赛夏季赛季前赛晋级名单</strong>
+							</div>
+							<div id="tdiv3c" class="divword1">
+								<p>从夏季赛季前赛晋级的16名选手已经诞生，超级联赛夏季赛将于8月26日18：00正式打响</p>
+							</div>
+							<div id="tdiv3d" class="divword2">
+								<p>2017-8-24</p>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div id="tdiv4" class="tdiv2">
+							<div id="tdiv4a" class="aa">
+								<img class="image" src="#" style="width: 350px;height: 180px;" />
+							</div>
+							<div id="tdiv4b" class="divword">
+								<strong>乱斗模式——“炎魔之王的恩赐” 现已开放</strong>
+							</div>
+							<div id="tdiv4c" class="divword1">
+								<p>索瑞森大帝对你的套牌施加了魔法：在你的回合结束时，你所有手牌的法力值消耗减少（1）点</p>
+							</div>
+							<div id="tdiv4d" class="divword2">
+								<p>2017-8-24</p>
+							</div>
+						</div>
+					</a>
+					<a href="#" name="bisai">
+						<div id="tdiv5" class="tdiv2">
+							<div id="tdiv5a" class="aa">
+								<img class="image" src="#" style="width: 350px;height: 180px;" />
+							</div>
+							<div id="tdiv5b" class="divword">
+								<strong>黄金公开赛桂林站落幕——下一站广州</strong>
+							</div>
+							<div id="tdiv5c" class="divword1">
+								<p>黄金公开赛桂林站在8月21日晚落下了帷幕,OMYuansu与琛哥哥分别获得专业组与公开组的冠军。</p>
+							</div>
+							<div id="tdiv5d" class="divword2">
+								<p>2017-8-22</p>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div id="tdiv6" class="tdiv2">
+							<div id="tdiv6a" class="aa">
+								<img class="image" src="#" style="width: 350px;height: 180px;" />
+							</div>
+							<div id="tdiv6b" class="divword">
+								<strong>全民实力赛夏季赛第六周参赛须知</strong>
+							</div>
+							<div id="tdiv6c" class="divword1">
+								<p>全民实力赛夏季赛第六周的比赛将于8月26号在全国15个城市同时开启， 其中天津为双人赛。</p>
+							</div>
+							<div id="tdiv6d" class="divword2">
+								<p>2017-8-22</p>
+							</div>
+						</div>
+					</a>
+					<div id="tdiv7" class="tdiv2">
+						<div id="tdiv7a" class="aa">
+							<img class="image" src="#" style="width: 350px;height: 180px;" />
+						</div>
+						<a href="#">
+							<div id="tdiv7b" class="divword">
+								<strong>2017高校星联赛秋季赛报名开启</strong>
+							</div>
+							<div id="tdiv7c" class="divword1">
+								<p>称霸高校赛，免费上大学。由网易与暴雪官方举办的2017暴雪游戏高校星联赛秋季赛从8月21日起正式开启报名。</p>
+							</div>
+							<div id="tdiv7d" class="divword2">
+								<p>2017-8-21</p>
+							</div>
+					</div>
+					</a>
+
+				</div>
+				<div class="big" class="big1">
+
+					<a href="#" >
+						<div id="tdiv2" class="tdiv2">
+							<div id="tdiv2a" class="aa">
+								<img class="image" src="img/1.jpg" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv2b" class="divword">
+								<br /> <strong>称霸高校赛，免费上大学</strong>
+							</div>
+							<div id="tdiv2c">
+								<br />
+								<p>来看看《炉石传说》最新动画短片 ：炉石与家，和艾娃一起看看为什么找到了炉石就找到了家！</p>
+							</div>
+							<div id="tdiv2d">
+								<p>2017-8-24</p>
+							</div>
+						</div>
+					</a>
+					<a href="#" >
+						<div id="tdiv3" class="tdiv2">
+							<div id="tdiv3a" class="aa">
+								<img class="image" src="img/3.png" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv3b" class="divword">
+								<br /><strong>冰封王座的骑士</strong>
+							</div>
+							<div id="tdiv3c">
+								<br />
+								<p>从夏季赛季前赛晋级的16名选手已经诞生，超级联赛夏季赛将于8月26日18：00正式打响</p>
+							</div>
+							<div id="tdiv3d">
+								<p>2017-8-24</p>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div id="tdiv4" class="tdiv2">
+							<div id="tdiv4a" class="aa">
+								<img class="image" src="img/商城/p10.jpg" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv4b" class="divword">
+								<br /><strong>新手礼包</strong>
+							</div>
+							<div id="tdiv4c">
+								<p>索瑞森大帝对你的套牌施加了魔法：在你的回合结束时，你所有手牌的法力值消耗减少（1）点</p>
+							</div>
+							<div id="tdiv4d">
+								<br />
+								<p>2017-8-24</p>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div id="tdiv5" class="tdiv2">
+							<div id="tdiv5a" class="aa">
+								<img class="image" src="img/新闻img/21.jpg" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv5b" class="divword" >
+								<br /><strong>黄金公开赛桂林站落幕——下一站广州</strong>
+							</div>
+							<div id="tdiv5c">
+								<br />
+								<p>黄金公开赛桂林站在8月21日晚落下了帷幕,OMYuansu与琛哥哥分别获得专业组与公开组的冠军。</p>
+							</div>
+							<div id="tdiv5d">
+								<p>2017-8-22</p>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div id="tdiv6" class="tdiv2">
+							<div id="tdiv6a" class="aa">
+								<img class="image" src="img/新闻img/22.jpg" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv6b" class="divword">
+								<br /><strong>全民实力赛夏季赛第六周参赛须知</strong>
+							</div>
+							<div id="tdiv6c">
+								<br />
+								<p>全民实力赛夏季赛第六周的比赛将于8月26号在全国15个城市同时开启， 其中天津为双人赛。</p>
+							</div>
+							<div id="tdiv6d">
+								<p>2017-8-22</p>
+							</div>
+						</div>
+					</a>
+					<div id="tdiv7" class="tdiv2">
+						<div id="tdiv7a" class="aa">
+							<img class="image" src="img/新闻img/27.jpg" style="width: 350px;height: 180px;" />
+
+						</div>
+						<a href="#">
+							<div id="tdiv7b" class="divword">
+								<br /><strong>2017高校星联赛秋季赛报名开启</strong>
+							</div>
+							<div id="tdiv7c">
+								<br />
+								<p>称霸高校赛，免费上大学。由网易与暴雪官方举办的2017暴雪游戏高校星联赛秋季赛从8月21日起正式开启报名。</p>
+							</div>
+							<div id="tdiv7d">
+								<p>2017-8-21</p>
+							</div>
+					</div>
+					</a>
+				</div>
+
+				<div class="big" class="big1">
+					<a href="#">
+						<div id="tdiv2" class="tdiv2">
+							<div id="tdiv2a" class="aa">
+								<img class="image" src="img/新闻img/27.jpg" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv2b" class="divword">
+								<br /> <strong>冠军名单</strong>
+							</div>
+							<div id="tdiv2c">
+								<br />
+								<p>来看看《炉石传说》最新动画短片 ：炉石与家，和艾娃一起看看为什么找到了炉石就找到了家！</p>
+							</div>
+							<div id="tdiv2d">
+								<p>2017-8-24</p>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div id="tdiv3" class="tdiv2">
+							<div id="tdiv3a" class="aa">
+								<img class="image" src="img/新闻img/26.jpg" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv3b" class="divword">
+								<br /> <strong>黄金超级联赛夏季赛季前赛晋级名单</strong>
+							</div>
+							<div id="tdiv3c">
+								<br />
+								<p>从夏季赛季前赛晋级的16名选手已经诞生，超级联赛夏季赛将于8月26日18：00正式打响</p>
+							</div>
+							<div id="tdiv3d">
+								<p>2017-8-24</p>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div id="tdiv4" class="tdiv2">
+							<div id="tdiv4a" class="aa">
+								<img class="image" src="img/新闻img/22.jpg" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv4b" class="divword">
+								<br /> <strong>乱斗模式——“炎魔之王的恩赐” 现已开放</strong>
+							</div>
+							<div id="tdiv4c">
+								<br />
+								<p>索瑞森大帝对你的套牌施加了魔法：在你的回合结束时，你所有手牌的法力值消耗减少（1）点</p>
+							</div>
+							<div id="tdiv4d">
+								<p>2017-8-24</p>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div id="tdiv5" class="tdiv2">
+							<div id="tdiv5a" class="aa">
+								<img class="image" src="img/新闻img/26.jpg" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv5b" class="divword">
+								<br /><strong>黄金公开赛桂林站落幕——下一站广州</strong>
+							</div>
+							<div id="tdiv5c">
+								<br />
+								<p>黄金公开赛桂林站在8月21日晚落下了帷幕,OMYuansu与琛哥哥分别获得专业组与公开组的冠军。</p>
+							</div>
+							<div id="tdiv5d">
+								<p>2017-8-22</p>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div id="tdiv6" class="tdiv2">
+							<div id="tdiv6a" class="aa">
+								<img class="image" src="img/新闻img/25.jpg" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv6b" class="divword">
+								<br /><strong>全民实力赛夏季赛第六周参赛须知</strong>
+							</div>
+							<div id="tdiv6c">
+								<br />
+								<p>全民实力赛夏季赛第六周的比赛将于8月26号在全国15个城市同时开启， 其中天津为双人赛。</p>
+							</div>
+							<div id="tdiv6d">
+								<p>2017-8-22</p>
+							</div>
+						</div>
+					</a>
+					<div id="tdiv7" class="tdiv2">
+						<div id="tdiv7a" class="aa">
+							<img class="image" src="img/新闻img/22.jpg" style="width: 350px;height: 180px;" />
+
+						</div>
+						<a href="#">
+							<div id="tdiv7b" class="divword">
+								<br /><strong>2017高校星联赛秋季赛报名开启</strong>
+							</div>
+							<div id="tdiv7c">
+								<br />
+								<p>称霸高校赛，免费上大学。由网易与暴雪官方举办的2017暴雪游戏高校星联赛秋季赛从8月21日起正式开启报名。</p>
+							</div>
+							<div id="tdiv7d">
+								<p>2017-8-21</p>
+							</div>
+					</div>
+					</a>
+				</div>
+
+				<div class="big" class="big1">
+					<a href="#">
+						<div id="tdiv2" class="tdiv2">
+							<div id="tdiv2a" class="aa">
+								<img class="image" src="img/新闻img/26.jpg" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv2b" class="divword">
+								<br /> <strong>冰封的骑士觉醒</strong>
+							</div>
+							<div id="tdiv2c">
+								<br />
+								<p>来看看《炉石传说》最新动画短片 ：炉石与家，和艾娃一起看看为什么找到了炉石就找到了家！</p>
+							</div>
+							<div id="tdiv2d">
+								<p>2017-8-24</p>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div id="tdiv3" class="tdiv2">
+							<div id="tdiv3a" class="aa">
+								<img class="image" src="img/新闻img/21.jpg" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv3b" class="divword">
+								<br /> <strong>黄金超级联赛夏季赛季前赛晋级名单</strong>
+							</div>
+							<div id="tdiv3c">
+								<br />
+								<p>从夏季赛季前赛晋级的16名选手已经诞生，超级联赛夏季赛将于8月26日18：00正式打响</p>
+							</div>
+							<div id="tdiv3d">
+								<p>2017-8-24</p>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div id="tdiv4" class="tdiv2">
+							<div id="tdiv4a" class="aa">
+								<img class="image" src="img/新闻img/22.jpg" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv4b" class="divword">
+								<br /> <strong>乱斗模式——“炎魔之王的恩赐” 现已开放</strong>
+							</div>
+							<div id="tdiv4c">
+								<br />
+								<p>索瑞森大帝对你的套牌施加了魔法：在你的回合结束时，你所有手牌的法力值消耗减少（1）点</p>
+							</div>
+							<div id="tdiv4d">
+								<p>2017-8-24</p>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div id="tdiv5" class="tdiv2">
+							<div id="tdiv5a" class="aa">
+								<img class="image" src="img/新闻img/27.jpg" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv5b" class="divword">
+								<br /><strong>黄金公开赛桂林站落幕——下一站广州</strong>
+							</div>
+							<div id="tdiv5c">
+								<br />
+								<p>黄金公开赛桂林站在8月21日晚落下了帷幕,OMYuansu与琛哥哥分别获得专业组与公开组的冠军。</p>
+							</div>
+							<div id="tdiv5d">
+								<p>2017-8-22</p>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div id="tdiv6" class="tdiv2">
+							<div id="tdiv6a" class="aa">
+								<img class="image" src="img/2.jpg" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv6b" class="divword">
+								<br /><strong>全民实力赛夏季赛第六周参赛须知</strong>
+							</div>
+							<div id="tdiv6c">
+								<br />
+								<p>全民实力赛夏季赛第六周的比赛将于8月26号在全国15个城市同时开启， 其中天津为双人赛。</p>
+							</div>
+							<div id="tdiv6d">
+								<p>2017-8-22</p>
+							</div>
+						</div>
+					</a>
+					<div id="tdiv7" class="tdiv2">
+						<div id="tdiv7a" class="aa">
+							<img class="image" src="img/新闻img/21.jpg" style="width: 350px;height: 180px;" />
+
+						</div>
+						<a href="#">
+							<div id="tdiv7b" class="divword">
+								<br /><strong>2017高校星联赛秋季赛报名开启</strong>
+							</div>
+							<div id="tdiv7c">
+								<br />
+								<p>称霸高校赛，免费上大学。由网易与暴雪官方举办的2017暴雪游戏高校星联赛秋季赛从8月21日起正式开启报名。</p>
+							</div>
+							<div id="tdiv7d">
+								<p>2017-8-21</p>
+							</div>
+					</div>
+					</a>
+				</div>
+				<div class="big" class="big1">
+					<a href="#">
+						<div id="tdiv2" class="tdiv2">
+							<div id="tdiv2a" class="aa">
+								<img class="image" src="img/3.png" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv2b" class="divword">
+								<br /> <strong>乱斗模式——“炎魔之王的恩赐” 现已开放</strong>
+							</div>
+							<div id="tdiv2c">
+								<br />
+								<p>来看看《炉石传说》最新动画短片 ：炉石与家，和艾娃一起看看为什么找到了炉石就找到了家！</p>
+							</div>
+							<div id="tdiv2d">
+								<p>2017-8-24</p>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div id="tdiv3" class="tdiv2">
+							<div id="tdiv3a" class="aa">
+								<img class="image" src="img/商城/p3.png" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv3b" class="divword">
+								<br /> <strong>黄金超级联赛夏季赛季前赛晋级名单</strong>
+							</div>
+							<div id="tdiv3c">
+								<br />
+								<p>从夏季赛季前赛晋级的16名选手已经诞生，超级联赛夏季赛将于8月26日18：00正式打响</p>
+							</div>
+							<div id="tdiv3d">
+								<p>2017-8-24</p>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div id="tdiv4" class="tdiv2">
+							<div id="tdiv4a" class="aa">
+								<img class="image" src="img/新闻img/21.jpg" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv4b" class="divword">
+								<br /> <strong>乱斗模式——“炎魔之王的恩赐” 现已开放</strong>
+							</div>
+							<div id="tdiv4c">
+								<br />
+								<p>索瑞森大帝对你的套牌施加了魔法：在你的回合结束时，你所有手牌的法力值消耗减少（1）点</p>
+							</div>
+							<div id="tdiv4d">
+								<p>2017-8-24</p>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div id="tdiv5" class="tdiv2">
+							<div id="tdiv5a" class="aa">
+								<img class="image" src="img/新闻img/26.jpg" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv5b" class="divword">
+								<br /><strong>黄金公开赛桂林站落幕——下一站广州</strong>
+							</div>
+							<div id="tdiv5c">
+								<br />
+								<p>黄金公开赛桂林站在8月21日晚落下了帷幕,OMYuansu与琛哥哥分别获得专业组与公开组的冠军。</p>
+							</div>
+							<div id="tdiv5d">
+								<p>2017-8-22</p>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div id="tdiv6" class="tdiv2">
+							<div id="tdiv6a" class="aa">
+								<img class="image" src="img/新闻img/27.jpg" style="width: 350px;height: 180px;" />
+
+							</div>
+							<div id="tdiv6b" class="divword">
+								<br /><strong>全民实力赛夏季赛第六周参赛须知</strong>
+							</div>
+							<div id="tdiv6c">
+								<br />
+								<p>全民实力赛夏季赛第六周的比赛将于8月26号在全国15个城市同时开启， 其中天津为双人赛。</p>
+							</div>
+							<div id="tdiv6d">
+								<p>2017-8-22</p>
+							</div>
+						</div>
+					</a>
+					<div id="tdiv7" class="tdiv2">
+						<div id="tdiv7a" class="aa">
+							<img class="image" src="img/新闻img/21.jpg" style="width: 350px;height: 180px;" />
+
+						</div>
+						<a href="#">
+							<div id="tdiv7b" class="divword">
+								<br /><strong>2017高校星联赛秋季赛报名开启</strong>
+							</div>
+							<div id="tdiv7c">
+								<br />
+								<p>称霸高校赛，免费上大学。由网易与暴雪官方举办的2017暴雪游戏高校星联赛秋季赛从8月21日起正式开启报名。</p>
+							</div>
+							<div id="tdiv7d">
+								<p>2017-8-21</p>
+							</div>
+					</div>
+					</a>
+				</div>
+				<div id="btobg"><!--页面底部补齐背景的图片-->
+				
+				</div>
+			</div>
+		</div>
+		<div id="farm">
+			<!--首页底部的内容-->
+			<!--<div class="farm1">
+				<a href="#"><div class="farm2"></div></a>
+			</div>-->
+			<div class="farm3">
+				<ul class="mul">
+					<li class="far1">
+						<a href="#">
+							<div class="da1"></div> 在线客服</a>
+					</li>
+					<li class="far2">
+						<a href="#">
+							<div class="da2"></div> 反馈</a>
+					</li>
+					<li class="far3">
+						<a href="#">
+							<div class="da3"></div>加入我们</a>
+					</li>
+				</ul>
+				<div class="mu2">
+					<span>合作品牌：</span>
+					<a href="#">
+						<div class="mu2t"></div>
+					</a>
+					<a href="#"><span>+</span>&nbsp;&nbsp;<span>|</span>&nbsp;<span>合作媒体</span></a>
+					<a href="javascript:;">
+						<div class="farmoo"></div>
+					</a>
+				</div>
+				<div class="farm3_1">
+					<table width="778" height="85">
+						<tr>
+							<td>
+								<a href="#" class="aooo2">网易游戏</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">网易看游戏</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">电玩巴士</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">17173</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">178</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">不凡游戏</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">UUU9</a>&nbsp;&nbsp;&nbsp;<span class="farnspan">收起</span></td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#" class="aooo2">腾讯游戏频道</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">口袋巴士</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">叶子猪</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">太平洋游戏</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">52PK</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">锐派</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">新浪游戏</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#" class="aooo2">天极网</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">要我玩</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">炉石咖啡厅</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">兔玩网</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">全球电竞网</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">掌游宝</a>
+							</td>
+							<td>
+								<a href="#" class="aooo2">多玩网</a>
+							</td>
+						</tr>
+					</table>
+					<a href="#" class="oaaa1">申请合作</a>
+				</div>
+				<div class="farm4">
+					<a href="#"><img src="../img/tuFlogo_blizzard.png" class="farmimg1"></a>
+					<a href="#"><img src="../img/wangyifarm.png" class="farmimg2"></a>
+				</div>
+				<div class="farm5">
+					<a href="#">隐私&nbsp;&nbsp;|&nbsp;&nbsp;法律条款&nbsp;&nbsp;|&nbsp;&nbsp;API</a>
+					<p>©2017 暴雪娱乐有限公司版权所有 由上海网之易网络科技发展有限公司运营 著作权侵权 新出审字[2013]1510号<br /> 文网进字[2013]029号 沪网文[2014]0731-161号 增值电信业务经营许可证编号：沪B2－20080012<br /> 互联网违法和不良信息举报电话：0571-28090163 沪公网安备 31011502022167号</p><br />
+					<div class="farm6">
+						<a href="#"><img src="../img/farm002.png" class="farmimg3"></a>
+						<a href="#"><img src="../img/farm004.png" class="farmimg4"></a>
+						<a href="#"><img src="../img/farm003.png" class="farmimg5"></a>
+						<a href="#"><img src="../img/farm001.png" class="farmimg6"></a>
+					</div>
+					<div class="farm7">| 适龄提示：适合13岁及以上使用 家长监护工程</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>

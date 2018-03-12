@@ -1,0 +1,48 @@
+#tubiao{
+	
+	width: 85px;
+	height: 266px;
+	position: absolute;
+	
+	right: 20px;
+	bottom: 100px;
+	position: fixed;
+	z-index: 1000;
+}
+
+
+.app{
+	width: 82px;
+	height: 82px;
+	background-color: darkgrey;
+	border-radius: 50%;
+	/*border:1px red solid;*/
+	overflow: hidden;
+	
+}
+.app img{
+	width: 82px;
+	height: 82px;
+	
+}
+.weibo{
+	width: 82px;
+	height: 82px;
+	background-color: darkgrey;
+	/*border:1px red solid;*/
+	background-image: url(../img/img1/weibo-icon.png);
+	overflow: hidden;
+	border-radius: 50%;
+	top: 1px;
+}
+.gotop{
+	width: 82px;
+	height: 82px;
+	background-color: darkgrey;
+	/*border:1px red solid;*/
+	position: absolute;
+	margin-bottom: 50px;
+	background-image: url(../img/img1/gotop-icon.png);
+	border-radius: 50%;
+	overflow: hidden;
+}

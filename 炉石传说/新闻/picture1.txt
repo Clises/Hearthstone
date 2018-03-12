@@ -1,0 +1,9 @@
+[{"tu":"img/卡牌一览img/pic1.png"},
+ {"tu":"img/卡牌一览img/pic2.png"},
+ {"tu":"img/卡牌一览img/pic3.png"},
+ {"tu":"img/卡牌一览img/pic4.png"},
+ {"tu":"img/卡牌一览img/pic5.png"},
+ {"tu":"img/卡牌一览img/pic6.png"},
+ {"tu":"img/卡牌一览img/pic7.png"}]
+ 
+ 
